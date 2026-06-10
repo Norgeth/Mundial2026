@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "snapshot_date": "2026-06-10",
+    "description": "Official FIFA World Cup 2026 structure: groups, Round of 32 template, bracket flow.",
+    "sources": [
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-draw-results",
+      "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
+      "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
+      "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage",
+      "https://www.skysports.com/football/news/11095/13481245/"
+    ]
+  },
+  "groups": {
+    "A": [
+      {"code": "MEX", "name_en": "Mexico", "name_pl": "Meksyk"},
+      {"code": "RSA", "name_en": "South Africa", "name_pl": "Republika Południowej Afryki"},
+      {"code": "KOR", "name_en": "South Korea", "name_pl": "Korea Południowa"},
+      {"code": "CZE", "name_en": "Czechia", "name_pl": "Czechy"}
+    ],
+    "B": [
+      {"code": "CAN", "name_en": "Canada", "name_pl": "Kanada"},
+      {"code": "BIH", "name_en": "Bosnia and Herzegovina", "name_pl": "Bośnia i Hercegowina"},
+      {"code": "QAT", "name_en": "Qatar", "name_pl": "Katar"},
+      {"code": "SUI", "name_en": "Switzerland", "name_pl": "Szwajcaria"}
+    ],
+    "C": [
+      {"code": "BRA", "name_en": "Brazil", "name_pl": "Brazylia"},
+      {"code": "MAR", "name_en": "Morocco", "name_pl": "Maroko"},
+      {"code": "HAI", "name_en": "Haiti", "name_pl": "Haiti"},
+      {"code": "SCO", "name_en": "Scotland", "name_pl": "Szkocja"}
+    ],
+    "D": [
+      {"code": "USA", "name_en": "United States", "name_pl": "Stany Zjednoczone"},
+      {"code": "PAR", "name_en": "Paraguay", "name_pl": "Paragwaj"},
+      {"code": "AUS", "name_en": "Australia", "name_pl": "Australia"},
+      {"code": "TUR", "name_en": "Türkiye", "name_pl": "Turcja"}
+    ],
+    "E": [
+      {"code": "GER", "name_en": "Germany", "name_pl": "Niemcy"},
+      {"code": "CUW", "name_en": "Curaçao", "name_pl": "Curaçao"},
+      {"code": "CIV", "name_en": "Ivory Coast", "name_pl": "Wybrzeże Kości Słoniowej"},
+      {"code": "ECU", "name_en": "Ecuador", "name_pl": "Ekwador"}
+    ],
+    "F": [
+      {"code": "NED", "name_en": "Netherlands", "name_pl": "Holandia"},
+      {"code": "JPN", "name_en": "Japan", "name_pl": "Japonia"},
+      {"code": "SWE", "name_en": "Sweden", "name_pl": "Szwecja"},
+      {"code": "TUN", "name_en": "Tunisia", "name_pl": "Tunezja"}
+    ],
+    "G": [
+      {"code": "BEL", "name_en": "Belgium", "name_pl": "Belgia"},
+      {"code": "EGY", "name_en": "Egypt", "name_pl": "Egipt"},
+      {"code": "IRN", "name_en": "Iran", "name_pl": "Iran"},
+      {"code": "NZL", "name_en": "New Zealand", "name_pl": "Nowa Zelandia"}
+    ],
+    "H": [
+      {"code": "ESP", "name_en": "Spain", "name_pl": "Hiszpania"},
+      {"code": "CPV", "name_en": "Cape Verde", "name_pl": "Republika Zielonego Przylądka"},
+      {"code": "KSA", "name_en": "Saudi Arabia", "name_pl": "Arabia Saudyjska"},
+      {"code": "URU", "name_en": "Uruguay", "name_pl": "Urugwaj"}
+    ],
+    "I": [
+      {"code": "FRA", "name_en": "France", "name_pl": "Francja"},
+      {"code": "SEN", "name_en": "Senegal", "name_pl": "Senegal"},
+      {"code": "IRQ", "name_en": "Iraq", "name_pl": "Irak"},
+      {"code": "NOR", "name_en": "Norway", "name_pl": "Norwegia"}
+    ],
+    "J": [
+      {"code": "ARG", "name_en": "Argentina", "name_pl": "Argentyna"},
+      {"code": "ALG", "name_en": "Algeria", "name_pl": "Algieria"},
+      {"code": "AUT", "name_en": "Austria", "name_pl": "Austria"},
+      {"code": "JOR", "name_en": "Jordan", "name_pl": "Jordania"}
+    ],
+    "K": [
+      {"code": "POR", "name_en": "Portugal", "name_pl": "Portugalia"},
+      {"code": "COD", "name_en": "DR Congo", "name_pl": "Demokratyczna Republika Konga"},
+      {"code": "UZB", "name_en": "Uzbekistan", "name_pl": "Uzbekistan"},
+      {"code": "COL", "name_en": "Colombia", "name_pl": "Kolumbia"}
+    ],
+    "L": [
+      {"code": "ENG", "name_en": "England", "name_pl": "Anglia"},
+      {"code": "CRO", "name_en": "Croatia", "name_pl": "Chorwacja"},
+      {"code": "GHA", "name_en": "Ghana", "name_pl": "Ghana"},
+      {"code": "PAN", "name_en": "Panama", "name_pl": "Panama"}
+    ]
+  },
+  "round_of_32": [
+    {"match_id": 73, "home": "2A", "away": "2B"},
+    {"match_id": 74, "home": "1E", "away": "3ABCDF"},
+    {"match_id": 75, "home": "1F", "away": "2C"},
+    {"match_id": 76, "home": "1C", "away": "2F"},
+    {"match_id": 77, "home": "1I", "away": "3CDFGH"},
+    {"match_id": 78, "home": "2E", "away": "2I"},
+    {"match_id": 79, "home": "1A", "away": "3CEFHI"},
+    {"match_id": 80, "home": "1L", "away": "3EHIJK"},
+    {"match_id": 81, "home": "1D", "away": "3BEFIJ"},
+    {"match_id": 82, "home": "1G", "away": "3AEHIJ"},
+    {"match_id": 83, "home": "2K", "away": "2L"},
+    {"match_id": 84, "home": "1H", "away": "2J"},
+    {"match_id": 85, "home": "1B", "away": "3EFGIJ"},
+    {"match_id": 86, "home": "1J", "away": "2H"},
+    {"match_id": 87, "home": "1K", "away": "3DEIJL"},
+    {"match_id": 88, "home": "2D", "away": "2G"}
+  ],
+  "bracket_flow": {
+    "R16": [
+      {"match_id": 89, "home": "W74", "away": "W77"},
+      {"match_id": 90, "home": "W73", "away": "W75"},
+      {"match_id": 91, "home": "W76", "away": "W78"},
+      {"match_id": 92, "home": "W79", "away": "W80"},
+      {"match_id": 93, "home": "W83", "away": "W84"},
+      {"match_id": 94, "home": "W81", "away": "W82"},
+      {"match_id": 95, "home": "W86", "away": "W88"},
+      {"match_id": 96, "home": "W85", "away": "W87"}
+    ],
+    "QF": [
+      {"match_id": 97, "home": "W89", "away": "W90"},
+      {"match_id": 98, "home": "W93", "away": "W94"},
+      {"match_id": 99, "home": "W91", "away": "W92"},
+      {"match_id": 100, "home": "W95", "away": "W96"}
+    ],
+    "SF": [
+      {"match_id": 101, "home": "W97", "away": "W98"},
+      {"match_id": 102, "home": "W99", "away": "W100"}
+    ],
+    "third_place": {"match_id": 103, "home": "L101", "away": "L102"},
+    "F": {"match_id": 104, "home": "W101", "away": "W102"}
+  },
+  "third_place_rule": {
+    "description": "The 12 third-placed teams are ranked (points, goal difference, goals scored, then deterministic fallback); the best 8 advance. Each third-place R32 slot accepts thirds only from the listed candidate groups; no team may face a team from its own group in the R32. The official FIFA Annex C lookup table (495 combinations) is not publicly reproduced, so the engine allocates thirds via constraint-satisfying assignment respecting the candidate sets above.",
+    "allocation_note": "Engine uses deterministic constraint matching as an approximation of FIFA Annex C."
+  }
+}

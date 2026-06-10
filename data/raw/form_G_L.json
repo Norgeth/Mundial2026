@@ -1,0 +1,1018 @@
+{
+  "source_urls": [
+    "https://github.com/martj42/international_results"
+  ],
+  "data_quality": [
+    "all teams have 5/5 matches"
+  ],
+  "teams": {
+    "BEL": [
+      {
+        "date": "2026-06-06",
+        "opponent": "Tunisia",
+        "venue": "H",
+        "goals_for": 5,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-02",
+        "opponent": "Croatia",
+        "venue": "A",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Mexico",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-28",
+        "opponent": "United States",
+        "venue": "A",
+        "goals_for": 5,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-18",
+        "opponent": "Liechtenstein",
+        "venue": "H",
+        "goals_for": 7,
+        "goals_against": 0,
+        "competition": "FIFA World Cup qualification"
+      }
+    ],
+    "EGY": [
+      {
+        "date": "2026-06-06",
+        "opponent": "Brazil",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-05-28",
+        "opponent": "Russia",
+        "venue": "H",
+        "goals_for": 1,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Spain",
+        "venue": "A",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Saudi Arabia",
+        "venue": "A",
+        "goals_for": 4,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-01-17",
+        "opponent": "Nigeria",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "African Cup of Nations"
+      }
+    ],
+    "IRN": [
+      {
+        "date": "2026-06-04",
+        "opponent": "Mali",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-05-29",
+        "opponent": "Gambia",
+        "venue": "N",
+        "goals_for": 3,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Costa Rica",
+        "venue": "N",
+        "goals_for": 5,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Nigeria",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-18",
+        "opponent": "Uzbekistan",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Al Ain International Cup"
+      }
+    ],
+    "NZL": [
+      {
+        "date": "2026-06-06",
+        "opponent": "England",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-02",
+        "opponent": "Haiti",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 4,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-30",
+        "opponent": "Chile",
+        "venue": "H",
+        "goals_for": 4,
+        "goals_against": 1,
+        "competition": "FIFA Series"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Finland",
+        "venue": "H",
+        "goals_for": 0,
+        "goals_against": 2,
+        "competition": "FIFA Series"
+      },
+      {
+        "date": "2025-11-18",
+        "opponent": "Ecuador",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 2,
+        "competition": "Friendly"
+      }
+    ],
+    "ESP": [
+      {
+        "date": "2026-06-08",
+        "opponent": "Peru",
+        "venue": "N",
+        "goals_for": 3,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-04",
+        "opponent": "Iraq",
+        "venue": "H",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Egypt",
+        "venue": "H",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Serbia",
+        "venue": "H",
+        "goals_for": 3,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-18",
+        "opponent": "Turkey",
+        "venue": "H",
+        "goals_for": 2,
+        "goals_against": 2,
+        "competition": "FIFA World Cup qualification"
+      }
+    ],
+    "CPV": [
+      {
+        "date": "2026-06-06",
+        "opponent": "Bermuda",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 3,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-05-31",
+        "opponent": "Serbia",
+        "venue": "N",
+        "goals_for": 3,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-30",
+        "opponent": "Finland",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "FIFA Series"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Chile",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 4,
+        "competition": "FIFA Series"
+      },
+      {
+        "date": "2025-11-17",
+        "opponent": "Egypt",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Al Ain International Cup"
+      }
+    ],
+    "KSA": [
+      {
+        "date": "2026-06-09",
+        "opponent": "Senegal",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-05",
+        "opponent": "Puerto Rico",
+        "venue": "N",
+        "goals_for": 3,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-05-30",
+        "opponent": "Ecuador",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Serbia",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Egypt",
+        "venue": "H",
+        "goals_for": 0,
+        "goals_against": 4,
+        "competition": "Friendly"
+      }
+    ],
+    "URU": [
+      {
+        "date": "2026-03-31",
+        "opponent": "Algeria",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "England",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-18",
+        "opponent": "United States",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 5,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-15",
+        "opponent": "Mexico",
+        "venue": "A",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-10-13",
+        "opponent": "Uzbekistan",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 1,
+        "competition": "Friendly"
+      }
+    ],
+    "FRA": [
+      {
+        "date": "2026-06-08",
+        "opponent": "Northern Ireland",
+        "venue": "H",
+        "goals_for": 3,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-04",
+        "opponent": "Ivory Coast",
+        "venue": "H",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-29",
+        "opponent": "Colombia",
+        "venue": "N",
+        "goals_for": 3,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-26",
+        "opponent": "Brazil",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-16",
+        "opponent": "Azerbaijan",
+        "venue": "A",
+        "goals_for": 3,
+        "goals_against": 1,
+        "competition": "FIFA World Cup qualification"
+      }
+    ],
+    "SEN": [
+      {
+        "date": "2026-06-09",
+        "opponent": "Saudi Arabia",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-05-31",
+        "opponent": "United States",
+        "venue": "A",
+        "goals_for": 2,
+        "goals_against": 3,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Gambia",
+        "venue": "H",
+        "goals_for": 3,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-28",
+        "opponent": "Peru",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-01-18",
+        "opponent": "Morocco",
+        "venue": "A",
+        "goals_for": 0,
+        "goals_against": 3,
+        "competition": "African Cup of Nations"
+      }
+    ],
+    "IRQ": [
+      {
+        "date": "2026-06-09",
+        "opponent": "Venezuela",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-04",
+        "opponent": "Spain",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-05-29",
+        "opponent": "Andorra",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Bolivia",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 1,
+        "competition": "FIFA World Cup qualification"
+      },
+      {
+        "date": "2025-12-12",
+        "opponent": "Jordan",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 1,
+        "competition": "Arab Cup"
+      }
+    ],
+    "NOR": [
+      {
+        "date": "2026-06-07",
+        "opponent": "Morocco",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-01",
+        "opponent": "Sweden",
+        "venue": "H",
+        "goals_for": 3,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Switzerland",
+        "venue": "H",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Netherlands",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-16",
+        "opponent": "Italy",
+        "venue": "A",
+        "goals_for": 4,
+        "goals_against": 1,
+        "competition": "FIFA World Cup qualification"
+      }
+    ],
+    "ARG": [
+      {
+        "date": "2026-06-09",
+        "opponent": "Iceland",
+        "venue": "N",
+        "goals_for": 3,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-06",
+        "opponent": "Honduras",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Zambia",
+        "venue": "H",
+        "goals_for": 5,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Mauritania",
+        "venue": "H",
+        "goals_for": 2,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-14",
+        "opponent": "Angola",
+        "venue": "A",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "Friendly"
+      }
+    ],
+    "ALG": [
+      {
+        "date": "2026-06-03",
+        "opponent": "Netherlands",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Uruguay",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Guatemala",
+        "venue": "N",
+        "goals_for": 7,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-01-10",
+        "opponent": "Nigeria",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 2,
+        "competition": "African Cup of Nations"
+      },
+      {
+        "date": "2026-01-06",
+        "opponent": "DR Congo",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 0,
+        "competition": "African Cup of Nations"
+      }
+    ],
+    "AUT": [
+      {
+        "date": "2026-06-01",
+        "opponent": "Tunisia",
+        "venue": "H",
+        "goals_for": 1,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "South Korea",
+        "venue": "H",
+        "goals_for": 1,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Ghana",
+        "venue": "H",
+        "goals_for": 5,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-18",
+        "opponent": "Bosnia and Herzegovina",
+        "venue": "H",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "FIFA World Cup qualification"
+      },
+      {
+        "date": "2025-11-15",
+        "opponent": "Cyprus",
+        "venue": "A",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "FIFA World Cup qualification"
+      }
+    ],
+    "JOR": [
+      {
+        "date": "2026-06-07",
+        "opponent": "Colombia",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-05-31",
+        "opponent": "Switzerland",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 4,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Nigeria",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Costa Rica",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-12-18",
+        "opponent": "Morocco",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 3,
+        "competition": "Arab Cup"
+      }
+    ],
+    "POR": [
+      {
+        "date": "2026-06-06",
+        "opponent": "Chile",
+        "venue": "H",
+        "goals_for": 2,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "United States",
+        "venue": "A",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-28",
+        "opponent": "Mexico",
+        "venue": "A",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-16",
+        "opponent": "Armenia",
+        "venue": "H",
+        "goals_for": 9,
+        "goals_against": 1,
+        "competition": "FIFA World Cup qualification"
+      },
+      {
+        "date": "2025-11-13",
+        "opponent": "Republic of Ireland",
+        "venue": "A",
+        "goals_for": 0,
+        "goals_against": 2,
+        "competition": "FIFA World Cup qualification"
+      }
+    ],
+    "COD": [
+      {
+        "date": "2026-06-09",
+        "opponent": "Chile",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-03",
+        "opponent": "Denmark",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Jamaica",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 0,
+        "competition": "FIFA World Cup qualification"
+      },
+      {
+        "date": "2026-03-25",
+        "opponent": "Bermuda",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-01-06",
+        "opponent": "Algeria",
+        "venue": "N",
+        "goals_for": 0,
+        "goals_against": 1,
+        "competition": "African Cup of Nations"
+      }
+    ],
+    "UZB": [
+      {
+        "date": "2026-06-08",
+        "opponent": "Netherlands",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-01",
+        "opponent": "Canada",
+        "venue": "A",
+        "goals_for": 0,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-30",
+        "opponent": "Venezuela",
+        "venue": "H",
+        "goals_for": 0,
+        "goals_against": 0,
+        "competition": "FIFA Series"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Gabon",
+        "venue": "H",
+        "goals_for": 3,
+        "goals_against": 1,
+        "competition": "FIFA Series"
+      },
+      {
+        "date": "2026-01-26",
+        "opponent": "China",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 2,
+        "competition": "Friendly"
+      }
+    ],
+    "COL": [
+      {
+        "date": "2026-06-07",
+        "opponent": "Jordan",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-01",
+        "opponent": "Costa Rica",
+        "venue": "H",
+        "goals_for": 3,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-29",
+        "opponent": "France",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 3,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-26",
+        "opponent": "Croatia",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-18",
+        "opponent": "Australia",
+        "venue": "N",
+        "goals_for": 3,
+        "goals_against": 0,
+        "competition": "Friendly"
+      }
+    ],
+    "ENG": [
+      {
+        "date": "2026-06-06",
+        "opponent": "New Zealand",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 0,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Japan",
+        "venue": "H",
+        "goals_for": 0,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Uruguay",
+        "venue": "H",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-16",
+        "opponent": "Albania",
+        "venue": "A",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "FIFA World Cup qualification"
+      },
+      {
+        "date": "2025-11-13",
+        "opponent": "Serbia",
+        "venue": "H",
+        "goals_for": 2,
+        "goals_against": 0,
+        "competition": "FIFA World Cup qualification"
+      }
+    ],
+    "CRO": [
+      {
+        "date": "2026-06-07",
+        "opponent": "Slovenia",
+        "venue": "H",
+        "goals_for": 2,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-02",
+        "opponent": "Belgium",
+        "venue": "H",
+        "goals_for": 0,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "Brazil",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 3,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-26",
+        "opponent": "Colombia",
+        "venue": "N",
+        "goals_for": 2,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-17",
+        "opponent": "Montenegro",
+        "venue": "A",
+        "goals_for": 3,
+        "goals_against": 2,
+        "competition": "FIFA World Cup qualification"
+      }
+    ],
+    "GHA": [
+      {
+        "date": "2026-06-02",
+        "opponent": "Wales",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-05-22",
+        "opponent": "Mexico",
+        "venue": "A",
+        "goals_for": 0,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-30",
+        "opponent": "Germany",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "Austria",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 5,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2025-11-18",
+        "opponent": "South Korea",
+        "venue": "A",
+        "goals_for": 0,
+        "goals_against": 1,
+        "competition": "Friendly"
+      }
+    ],
+    "PAN": [
+      {
+        "date": "2026-06-06",
+        "opponent": "Bosnia and Herzegovina",
+        "venue": "N",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-06-03",
+        "opponent": "Dominican Republic",
+        "venue": "H",
+        "goals_for": 4,
+        "goals_against": 2,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-05-31",
+        "opponent": "Brazil",
+        "venue": "A",
+        "goals_for": 2,
+        "goals_against": 6,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-31",
+        "opponent": "South Africa",
+        "venue": "A",
+        "goals_for": 2,
+        "goals_against": 1,
+        "competition": "Friendly"
+      },
+      {
+        "date": "2026-03-27",
+        "opponent": "South Africa",
+        "venue": "A",
+        "goals_for": 1,
+        "goals_against": 1,
+        "competition": "Friendly"
+      }
+    ]
+  }
+}

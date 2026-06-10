@@ -1,0 +1,600 @@
+{
+  "source_urls": [
+    "https://raw.githubusercontent.com/martj42/international_results/master/results.csv",
+    "https://github.com/martj42/international_results",
+    "https://www.espn.com/soccer/match/_/gameId/758376/paraguay-united-states",
+    "http://www.espn.com/soccer/match?gameId=444860",
+    "https://www.sportsmole.co.uk/football/mexico/head-to-head/mexico-vs-south-africa-head-to-head-record-and-past-meetings_598873.html",
+    "https://canadasoccer.com/match/632/"
+  ],
+  "data_quality": [
+    "Primary source: martj42/international_results dataset (community-maintained, widely used), complete through 2026-06-08; any match after that date is not covered.",
+    "Several results spot-verified against ESPN, US Soccer, Canada Soccer and Sports Mole (e.g. USA 2-1 Paraguay 2025-11-15, Czech Rep 1-2 South Korea 2016-06-05, Canada 3-1 Switzerland 2002-05-15, Mexico-South Africa 1-1 2010 WC, Mexico 2-2 South Korea 2025-09-09) - all matched.",
+    "CZE = Czech Republic/Czechia only (post-1993). Matches played as Czechoslovakia are excluded (e.g. Mexico met Czechoslovakia at the 1962 World Cup); hence MEX-CZE and RSA-CZE lists look short.",
+    "TUR is recorded as 'Turkey' in the source; GER includes the West Germany era; CUW record in the source includes the Netherlands Antilles era (back to 1924) and still shows zero meetings with GER, CIV and ECU.",
+    "Scores are full-time / after extra time; penalty shootouts ignored. Tournament labels taken from the source (e.g. 'Kirin Cup' and 'USA Cup' are friendly tournaments).",
+    "Pairs with empty 'matches' (RSA-KOR, CAN-BIH, MAR-HAI, HAI-SCO, PAR-TUR, GER-CUW, CUW-CIV, CUW-ECU, CIV-ECU) have no recorded senior men's A-international meeting ever.",
+    "11v11.com and worldfootball.net were unreachable from this environment (HTTP 403), so the GitHub dataset plus web-search verification was used instead."
+  ],
+  "pairs": [
+    {
+      "team_a": "MEX",
+      "team_b": "RSA",
+      "matches": [
+        {
+          "date": "2010-06-11",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "FIFA World Cup"
+        },
+        {
+          "date": "2005-07-08",
+          "goals_a": 1,
+          "goals_b": 2,
+          "competition": "Gold Cup"
+        },
+        {
+          "date": "2000-06-07",
+          "goals_a": 4,
+          "goals_b": 2,
+          "competition": "USA Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "MEX",
+      "team_b": "KOR",
+      "matches": [
+        {
+          "date": "2025-09-09",
+          "goals_a": 2,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2020-11-14",
+          "goals_a": 3,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2018-06-23",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "FIFA World Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "MEX",
+      "team_b": "CZE",
+      "matches": [
+        {
+          "date": "2000-02-08",
+          "goals_a": 1,
+          "goals_b": 2,
+          "competition": "Lunar New Year Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "RSA",
+      "team_b": "KOR",
+      "matches": []
+    },
+    {
+      "team_a": "RSA",
+      "team_b": "CZE",
+      "matches": [
+        {
+          "date": "1997-12-13",
+          "goals_a": 2,
+          "goals_b": 2,
+          "competition": "Confederations Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "KOR",
+      "team_b": "CZE",
+      "matches": [
+        {
+          "date": "2016-06-05",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2001-08-15",
+          "goals_a": 0,
+          "goals_b": 5,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1998-05-27",
+          "goals_a": 2,
+          "goals_b": 2,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "CAN",
+      "team_b": "BIH",
+      "matches": []
+    },
+    {
+      "team_a": "CAN",
+      "team_b": "QAT",
+      "matches": [
+        {
+          "date": "2022-09-23",
+          "goals_a": 2,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "CAN",
+      "team_b": "SUI",
+      "matches": [
+        {
+          "date": "2002-05-15",
+          "goals_a": 3,
+          "goals_b": 1,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "BIH",
+      "team_b": "QAT",
+      "matches": [
+        {
+          "date": "2010-08-10",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2000-01-24",
+          "goals_a": 0,
+          "goals_b": 2,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "BIH",
+      "team_b": "SUI",
+      "matches": [
+        {
+          "date": "2016-03-29",
+          "goals_a": 2,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "QAT",
+      "team_b": "SUI",
+      "matches": [
+        {
+          "date": "2018-11-14",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "BRA",
+      "team_b": "MAR",
+      "matches": [
+        {
+          "date": "2023-03-25",
+          "goals_a": 1,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1998-06-16",
+          "goals_a": 3,
+          "goals_b": 0,
+          "competition": "FIFA World Cup"
+        },
+        {
+          "date": "1997-10-09",
+          "goals_a": 2,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "BRA",
+      "team_b": "HAI",
+      "matches": [
+        {
+          "date": "2016-06-08",
+          "goals_a": 7,
+          "goals_b": 1,
+          "competition": "Copa América"
+        },
+        {
+          "date": "2004-08-18",
+          "goals_a": 6,
+          "goals_b": 0,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1974-04-21",
+          "goals_a": 4,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "BRA",
+      "team_b": "SCO",
+      "matches": [
+        {
+          "date": "2011-03-27",
+          "goals_a": 2,
+          "goals_b": 0,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1998-06-10",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "FIFA World Cup"
+        },
+        {
+          "date": "1990-06-20",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "FIFA World Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "MAR",
+      "team_b": "HAI",
+      "matches": []
+    },
+    {
+      "team_a": "MAR",
+      "team_b": "SCO",
+      "matches": [
+        {
+          "date": "1998-06-23",
+          "goals_a": 3,
+          "goals_b": 0,
+          "competition": "FIFA World Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "HAI",
+      "team_b": "SCO",
+      "matches": []
+    },
+    {
+      "team_a": "USA",
+      "team_b": "PAR",
+      "matches": [
+        {
+          "date": "2025-11-15",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2018-03-27",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2016-06-11",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "Copa América"
+        }
+      ]
+    },
+    {
+      "team_a": "USA",
+      "team_b": "AUS",
+      "matches": [
+        {
+          "date": "2025-10-14",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2010-06-05",
+          "goals_a": 3,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1998-11-06",
+          "goals_a": 0,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "USA",
+      "team_b": "TUR",
+      "matches": [
+        {
+          "date": "2025-06-07",
+          "goals_a": 1,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2014-06-01",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2010-05-29",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "PAR",
+      "team_b": "AUS",
+      "matches": [
+        {
+          "date": "2010-10-09",
+          "goals_a": 0,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2006-10-07",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2000-06-15",
+          "goals_a": 1,
+          "goals_b": 2,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "PAR",
+      "team_b": "TUR",
+      "matches": []
+    },
+    {
+      "team_a": "AUS",
+      "team_b": "TUR",
+      "matches": [
+        {
+          "date": "2004-05-24",
+          "goals_a": 0,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2004-05-21",
+          "goals_a": 1,
+          "goals_b": 3,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "GER",
+      "team_b": "CUW",
+      "matches": []
+    },
+    {
+      "team_a": "GER",
+      "team_b": "CIV",
+      "matches": [
+        {
+          "date": "2009-11-18",
+          "goals_a": 2,
+          "goals_b": 2,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "GER",
+      "team_b": "ECU",
+      "matches": [
+        {
+          "date": "2013-05-29",
+          "goals_a": 4,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2006-06-20",
+          "goals_a": 3,
+          "goals_b": 0,
+          "competition": "FIFA World Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "CUW",
+      "team_b": "CIV",
+      "matches": []
+    },
+    {
+      "team_a": "CUW",
+      "team_b": "ECU",
+      "matches": []
+    },
+    {
+      "team_a": "CIV",
+      "team_b": "ECU",
+      "matches": []
+    },
+    {
+      "team_a": "NED",
+      "team_b": "JPN",
+      "matches": [
+        {
+          "date": "2013-11-16",
+          "goals_a": 2,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2010-06-19",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "FIFA World Cup"
+        },
+        {
+          "date": "2009-09-05",
+          "goals_a": 3,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "NED",
+      "team_b": "SWE",
+      "matches": [
+        {
+          "date": "2017-10-10",
+          "goals_a": 2,
+          "goals_b": 0,
+          "competition": "FIFA World Cup qualification"
+        },
+        {
+          "date": "2016-09-06",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "FIFA World Cup qualification"
+        },
+        {
+          "date": "2011-10-11",
+          "goals_a": 2,
+          "goals_b": 3,
+          "competition": "UEFA Euro qualification"
+        }
+      ]
+    },
+    {
+      "team_a": "NED",
+      "team_b": "TUN",
+      "matches": [
+        {
+          "date": "2009-02-11",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1994-01-19",
+          "goals_a": 2,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1978-04-05",
+          "goals_a": 4,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "JPN",
+      "team_b": "SWE",
+      "matches": [
+        {
+          "date": "2002-05-25",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1997-02-13",
+          "goals_a": 0,
+          "goals_b": 1,
+          "competition": "King's Cup"
+        },
+        {
+          "date": "1996-02-22",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Lunar New Year Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "JPN",
+      "team_b": "TUN",
+      "matches": [
+        {
+          "date": "2022-06-14",
+          "goals_a": 0,
+          "goals_b": 3,
+          "competition": "Kirin Cup"
+        },
+        {
+          "date": "2015-03-27",
+          "goals_a": 2,
+          "goals_b": 0,
+          "competition": "Kirin Challenge Cup"
+        },
+        {
+          "date": "2003-10-08",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "SWE",
+      "team_b": "TUN",
+      "matches": [
+        {
+          "date": "2003-02-12",
+          "goals_a": 0,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1999-02-10",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1992-04-22",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    }
+  ]
+}
