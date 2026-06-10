@@ -1,9 +1,36 @@
 {
   "source_urls": [
-    "https://github.com/martj42/international_results"
+    "https://github.com/martj42/international_results",
+    "https://www.espn.com/soccer/match/_/gameId/401861776/serbia-mexico",
+    "https://www.espn.com/soccer/match/_/gameId/762260/germany-united-states",
+    "https://www.espn.com/soccer/match/_/gameId/401869743/australia-switzerland",
+    "https://www.espn.com/soccer/match/_/gameId/401861998/egypt-brazil",
+    "https://www.espn.com/soccer/match/_/gameId/401875160/south-africa-jamaica",
+    "https://www.goal.com/en-za/lists/jamaica-1-1-south-africa-confusion-reigns-after-bafana-bafana-s-behind-closed-doors-fifa-world-cup-warm-up/blt5b925bdb40e375d3",
+    "https://www.espn.com/soccer/match/_/gameId/401871496/el-salvador-south-korea",
+    "https://www.espn.com/soccer/match/_/gameId/401870095/guatemala-czechia",
+    "https://www.espn.com/soccer/match/_/gameId/401860780/republic-of-ireland-canada",
+    "https://www.espn.com/soccer/match/_/gameId/401871528/bosnia-herzegovina-panama",
+    "https://www.espn.com/soccer/match/_/gameId/401870103/el-salvador-qatar",
+    "https://www.espn.com/soccer/match/_/gameId/401866598/norway-morocco",
+    "https://www.espn.com/soccer/match/_/gameId/401872680/madagascar-morocco",
+    "https://www.espn.com/soccer/match/_/gameId/401871781/peru-haiti",
+    "https://www.espn.com/soccer/match/_/gameId/401868148/scotland-bolivia",
+    "https://www.espn.com/soccer/match/_/gameId/401871132/nicaragua-paraguay",
+    "https://www.espn.com/soccer/match/_/gameId/401871361/turkiye-venezuela",
+    "https://www.espn.com/soccer/match/_/gameId/401873741/aruba-curacao",
+    "https://www.espn.com/soccer/match/_/gameId/401864934/ivory-coast-france",
+    "https://www.espn.com/soccer/match/_/gameId/401870000/guatemala-ecuador",
+    "https://www.espn.com/soccer/match/_/gameId/401871814/uzbekistan-netherlands",
+    "https://japantoday.com/category/2026-fifa-world-cup/japan-edge-iceland-in-final-pre-world-cup-friendly",
+    "https://www.espn.com/soccer/match/_/gameId/401870034/greece-sweden",
+    "https://www.espn.com/soccer/match/_/gameId/401856622/tunisia-belgium"
   ],
   "data_quality": [
-    "all teams have 5/5 matches"
+    "all teams have 5/5 matches",
+    "2026-06-10: all 24 teams spot-checked against ESPN/FOX/federation reports (2 most recent matches per team, May-June 2026 friendlies). 2 corrections: RSA vs Jamaica 2026-06-06 corrected 1-0 -> 1-1 (SAFA officially announced 1-1 draw after initial score confusion at behind-closed-doors match in Pachuca; Goal.com/SAFA); CZE vs Guatemala 2026-06-04 corrected 5-1 -> 3-1 (ESPN/FOX/VAVEL all report 3-1, scorers Schick, Holes, Visinsky).",
+    "No completed matches newer than file entries found before 2026-06-10 (JPN last played 2026-05-31 vs Iceland, confirmed as final pre-WC match; PAR last played 2026-06-05 vs Nicaragua, confirmed as final friendly).",
+    "Minor date offsets vs ESPN kept per ±1 day tolerance (e.g. BRA-Panama listed Jun 1 on ESPN vs May 31 in file)."
   ],
   "teams": {
     "MEX": [
@@ -54,7 +81,7 @@
         "opponent": "Jamaica",
         "venue": "N",
         "goals_for": 1,
-        "goals_against": 0,
+        "goals_against": 1,
         "competition": "Friendly"
       },
       {
@@ -137,7 +164,7 @@
         "date": "2026-06-04",
         "opponent": "Guatemala",
         "venue": "N",
-        "goals_for": 5,
+        "goals_for": 3,
         "goals_against": 1,
         "competition": "Friendly"
       },
