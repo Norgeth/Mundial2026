@@ -1,7 +1,7 @@
 {
   "meta": {
     "snapshot_date": "2026-06-10",
-    "ranking_edition": "FIFA Men's World Ranking, 1 April 2026",
+    "ranking_edition": "FIFA Men's World Ranking, 1 April 2026 (latest official edition as of 2026-06-10; next release 11 June 2026)",
     "sources": {
       "structure": [
         "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-draw-results",
@@ -13,14 +13,27 @@
       "ranking": [
         "https://www.espn.com/soccer/story/_/id/46664763/fifa-mens-top-50-world-rankings",
         "https://www.hitc.com/official-fifa-rankings-in-full-ahead-of-2026-world-cup-including-mexico-canada-and-the-usa/",
-        "https://inside.fifa.com/fifa-world-ranking/men"
+        "https://inside.fifa.com/fifa-world-ranking/men",
+        "https://github.com/sslp23/fifa-ranking-scraper (data/resulting_data.csv, rank_date 2026-04-01, scraped from transfermarkt.com)",
+        "https://thesoccerera.com/fifa-mens-soccer-world-rankings/",
+        "https://businesstats.com/world-ranking-of-national-soccer-teams/"
       ]
     },
     "data_quality": [
-      "Rank positions verified for all 48 teams (1 April 2026 edition).",
-      "Exact points published only for the top 3 in accessible sources; points for 45 teams interpolated from verified rank along a typical FIFA points curve (see engine/build_ranking_raw.py).",
+      "Rank positions verified for all 48 teams (1 April 2026 edition); independently re-confirmed against the Transfermarkt-scraped dataset (github.com/sslp23/fifa-ranking-scraper, rank_date 2026-04-01) - all 48 ranks match.",
+      "FRA, ESP, ARG: exact official points with 2-decimal precision (1877.32 / 1876.40 / 1874.81).",
+      "Remaining 45 teams: exact published points at whole-point precision (rounded by publisher, +/-0.5) from the Transfermarkt-scraped April 2026 table; values for the top-20 teams (ENG, POR, BRA, NED, MAR, BEL, GER, CRO, COL, SEN, MEX, USA, URU, JPN, SUI) additionally cross-confirmed via web-search snippets (thesoccerera.com / businesstats.com aggregations).",
+      "No interpolated points remain in this file.",
+      "Edition-date verification (2026-06-10): the 1 April 2026 edition is the latest OFFICIAL FIFA ranking in force on the snapshot date; the next official release is scheduled for 11 June 2026 (after the snapshot). Daily 'live' rankings circulating online are unofficial recalculations and were deliberately not used.",
       "all teams have 5/5 matches",
+      "2026-06-10: all 24 teams spot-checked against ESPN/FOX/federation reports (2 most recent matches per team, May-June 2026 friendlies). 2 corrections: RSA vs Jamaica 2026-06-06 corrected 1-0 -> 1-1 (SAFA officially announced 1-1 draw after initial score confusion at behind-closed-doors match in Pachuca; Goal.com/SAFA); CZE vs Guatemala 2026-06-04 corrected 5-1 -> 3-1 (ESPN/FOX/VAVEL all report 3-1, scorers Schick, Holes, Visinsky).",
+      "No completed matches newer than file entries found before 2026-06-10 (JPN last played 2026-05-31 vs Iceland, confirmed as final pre-WC match; PAR last played 2026-06-05 vs Nicaragua, confirmed as final friendly).",
+      "Minor date offsets vs ESPN kept per ±1 day tolerance (e.g. BRA-Panama listed Jun 1 on ESPN vs May 31 in file).",
       "all teams have 5/5 matches",
+      "verified 2026-06-10: all 24 teams spot-checked (top 2 most recent matches each) against ESPN/FOX Sports/federation sources via web search; 1 correction: CPV vs Bermuda 2026-06-06 score was reversed (0-3 -> 3-0 win for Cape Verde, per ESPN/FOX/Bernews)",
+      "ESPN gameId 401871788 'New Zealand 1-2 Haiti Jun 5 2026' is a WOMEN'S friendly (Football Ferns) - correctly excluded from NZL men's form",
+      "Uruguay played no June 2026 matches before 2026-06-10 (next fixture 2026-06-16 vs Saudi Arabia); March friendlies vs England/Algeria confirmed as most recent",
+      "no completed matches newer than file entries found for any team before 2026-06-10",
       "Primary source: martj42/international_results dataset (community-maintained, widely used), complete through 2026-06-08; any match after that date is not covered.",
       "Several results spot-verified against ESPN, US Soccer, Canada Soccer and Sports Mole (e.g. USA 2-1 Paraguay 2025-11-15, Czech Rep 1-2 South Korea 2016-06-05, Canada 3-1 Switzerland 2002-05-15, Mexico-South Africa 1-1 2010 WC, Mexico 2-2 South Korea 2025-09-09) - all matched.",
       "CZE = Czech Republic/Czechia only (post-1993). Matches played as Czechoslovakia are excluded (e.g. Mexico met Czechoslovakia at the 1962 World Cup); hence MEX-CZE and RSA-CZE lists look short.",
@@ -28,7 +41,12 @@
       "Scores are full-time / after extra time; penalty shootouts ignored. Tournament labels taken from the source (e.g. 'Kirin Cup' and 'USA Cup' are friendly tournaments).",
       "Pairs with empty 'matches' (RSA-KOR, CAN-BIH, MAR-HAI, HAI-SCO, PAR-TUR, GER-CUW, CUW-CIV, CUW-ECU, CIV-ECU) have no recorded senior men's A-international meeting ever.",
       "11v11.com and worldfootball.net were unreachable from this environment (HTTP 403), so the GitHub dataset plus web-search verification was used instead.",
-      "19 of 36 pairs have no recorded meeting"
+      "19 of 36 pairs have no recorded meeting",
+      "Web-verified 2026-06-10: most recent meeting (date, score, competition) confirmed for all 17 pairs with matches via ESPN/UEFA/Wikipedia/Transfermarkt/footballdatabase; no discrepancies found, no corrections needed",
+      "Older entries spot-confirmed: ARG-AUT 1980 (5-1), ENG-CRO 2018 Nations League (2-1, 0-0), KSA-URU 2014 (1-1) and 2002 (3-2, h2h record 1W-1D-1L pre-2026 consistent); EGY-NZL date 2024-03-22 confirmed (ESPN/beIN/365scores) despite some outlets dating it 03-23",
+      "Note: ESPN's 2018 KSA-URU match report mentions a 2006 friendly (Uruguay 2-0); no corroboration found in h2h databases (record 1W-1D-1L over 2002/2014/2018 is consistent without it) - not added",
+      "IRN-NZL: external h2h sources confirm exactly 2 meetings (1 Iran win, 1 draw), consistent with 2003 (3-0) and 1973 (0-0) entries",
+      "Empty pairs confirmed never met via web search: FRA-IRQ, BEL-NZL (11v11: no h2h record), ARG-JOR, ESP-CPV, CRO-GHA, and all 6 Group K pairs (POR/COD/UZB/COL - no Group K matchup has ever been played per World Soccer Talk); remaining empties (SEN-IRQ, IRQ-NOR, BEL-IRN, AUT-JOR, CPV-KSA, CPV-URU, CRO-PAN, GHA-PAN) unverified but consistent with martj42 dataset"
     ]
   },
   "groups": {
@@ -111,7 +129,7 @@
       "name_pl": "Meksyk",
       "group": "A",
       "fifa_rank": 15,
-      "fifa_points": 1658.0,
+      "fifa_points": 1681.0,
       "recent_matches": [
         {
           "date": "2026-06-04",
@@ -160,14 +178,14 @@
       "name_pl": "Republika Południowej Afryki",
       "group": "A",
       "fifa_rank": 60,
-      "fifa_points": 1368.0,
+      "fifa_points": 1430.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
           "opponent": "Jamaica",
           "venue": "N",
           "goals_for": 1,
-          "goals_against": 0,
+          "goals_against": 1,
           "competition": "Friendly"
         },
         {
@@ -209,7 +227,7 @@
       "name_pl": "Korea Południowa",
       "group": "A",
       "fifa_rank": 25,
-      "fifa_points": 1574.0,
+      "fifa_points": 1589.0,
       "recent_matches": [
         {
           "date": "2026-06-03",
@@ -258,13 +276,13 @@
       "name_pl": "Czechy",
       "group": "A",
       "fifa_rank": 41,
-      "fifa_points": 1466.8,
+      "fifa_points": 1501.0,
       "recent_matches": [
         {
           "date": "2026-06-04",
           "opponent": "Guatemala",
           "venue": "N",
-          "goals_for": 5,
+          "goals_for": 3,
           "goals_against": 1,
           "competition": "Friendly"
         },
@@ -307,7 +325,7 @@
       "name_pl": "Kanada",
       "group": "B",
       "fifa_rank": 30,
-      "fifa_points": 1538.0,
+      "fifa_points": 1556.0,
       "recent_matches": [
         {
           "date": "2026-06-05",
@@ -356,7 +374,7 @@
       "name_pl": "Bośnia i Hercegowina",
       "group": "B",
       "fifa_rank": 65,
-      "fifa_points": 1342.0,
+      "fifa_points": 1386.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -405,7 +423,7 @@
       "name_pl": "Katar",
       "group": "B",
       "fifa_rank": 55,
-      "fifa_points": 1394.0,
+      "fifa_points": 1455.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -454,7 +472,7 @@
       "name_pl": "Szwajcaria",
       "group": "B",
       "fifa_rank": 19,
-      "fifa_points": 1623.0,
+      "fifa_points": 1649.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -503,7 +521,7 @@
       "name_pl": "Brazylia",
       "group": "C",
       "fifa_rank": 6,
-      "fifa_points": 1781.0,
+      "fifa_points": 1761.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -552,7 +570,7 @@
       "name_pl": "Maroko",
       "group": "C",
       "fifa_rank": 8,
-      "fifa_points": 1747.33,
+      "fifa_points": 1756.0,
       "recent_matches": [
         {
           "date": "2026-06-07",
@@ -601,7 +619,7 @@
       "name_pl": "Haiti",
       "group": "C",
       "fifa_rank": 83,
-      "fifa_points": 1254.8,
+      "fifa_points": 1292.0,
       "recent_matches": [
         {
           "date": "2026-06-05",
@@ -650,7 +668,7 @@
       "name_pl": "Szkocja",
       "group": "C",
       "fifa_rank": 43,
-      "fifa_points": 1456.4,
+      "fifa_points": 1498.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -699,7 +717,7 @@
       "name_pl": "Stany Zjednoczone",
       "group": "D",
       "fifa_rank": 16,
-      "fifa_points": 1648.67,
+      "fifa_points": 1673.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -748,7 +766,7 @@
       "name_pl": "Paragwaj",
       "group": "D",
       "fifa_rank": 40,
-      "fifa_points": 1472.0,
+      "fifa_points": 1504.0,
       "recent_matches": [
         {
           "date": "2026-06-05",
@@ -797,7 +815,7 @@
       "name_pl": "Australia",
       "group": "D",
       "fifa_rank": 27,
-      "fifa_points": 1559.6,
+      "fifa_points": 1581.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -846,7 +864,7 @@
       "name_pl": "Turcja",
       "group": "D",
       "fifa_rank": 22,
-      "fifa_points": 1599.2,
+      "fifa_points": 1599.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -895,7 +913,7 @@
       "name_pl": "Niemcy",
       "group": "E",
       "fifa_rank": 10,
-      "fifa_points": 1718.0,
+      "fifa_points": 1730.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -944,7 +962,7 @@
       "name_pl": "Curaçao",
       "group": "E",
       "fifa_rank": 82,
-      "fifa_points": 1259.2,
+      "fifa_points": 1295.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -993,7 +1011,7 @@
       "name_pl": "Wybrzeże Kości Słoniowej",
       "group": "E",
       "fifa_rank": 34,
-      "fifa_points": 1510.8,
+      "fifa_points": 1533.0,
       "recent_matches": [
         {
           "date": "2026-06-04",
@@ -1042,7 +1060,7 @@
       "name_pl": "Ekwador",
       "group": "E",
       "fifa_rank": 23,
-      "fifa_points": 1590.8,
+      "fifa_points": 1595.0,
       "recent_matches": [
         {
           "date": "2026-06-07",
@@ -1091,7 +1109,7 @@
       "name_pl": "Holandia",
       "group": "F",
       "fifa_rank": 7,
-      "fifa_points": 1762.0,
+      "fifa_points": 1758.0,
       "recent_matches": [
         {
           "date": "2026-06-08",
@@ -1140,7 +1158,7 @@
       "name_pl": "Japonia",
       "group": "F",
       "fifa_rank": 18,
-      "fifa_points": 1630.0,
+      "fifa_points": 1660.0,
       "recent_matches": [
         {
           "date": "2026-05-31",
@@ -1189,7 +1207,7 @@
       "name_pl": "Szwecja",
       "group": "F",
       "fifa_rank": 38,
-      "fifa_points": 1484.8,
+      "fifa_points": 1515.0,
       "recent_matches": [
         {
           "date": "2026-06-04",
@@ -1238,7 +1256,7 @@
       "name_pl": "Tunezja",
       "group": "F",
       "fifa_rank": 44,
-      "fifa_points": 1451.2,
+      "fifa_points": 1483.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -1287,7 +1305,7 @@
       "name_pl": "Belgia",
       "group": "G",
       "fifa_rank": 9,
-      "fifa_points": 1732.67,
+      "fifa_points": 1735.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -1336,7 +1354,7 @@
       "name_pl": "Egipt",
       "group": "G",
       "fifa_rank": 29,
-      "fifa_points": 1545.2,
+      "fifa_points": 1563.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -1385,7 +1403,7 @@
       "name_pl": "Iran",
       "group": "G",
       "fifa_rank": 21,
-      "fifa_points": 1607.6,
+      "fifa_points": 1615.0,
       "recent_matches": [
         {
           "date": "2026-06-04",
@@ -1434,7 +1452,7 @@
       "name_pl": "Nowa Zelandia",
       "group": "G",
       "fifa_rank": 85,
-      "fifa_points": 1246.0,
+      "fifa_points": 1282.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -1532,14 +1550,14 @@
       "name_pl": "Republika Zielonego Przylądka",
       "group": "H",
       "fifa_rank": 69,
-      "fifa_points": 1321.2,
+      "fifa_points": 1366.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
           "opponent": "Bermuda",
           "venue": "N",
-          "goals_for": 0,
-          "goals_against": 3,
+          "goals_for": 3,
+          "goals_against": 0,
           "competition": "Friendly"
         },
         {
@@ -1581,7 +1599,7 @@
       "name_pl": "Arabia Saudyjska",
       "group": "H",
       "fifa_rank": 61,
-      "fifa_points": 1362.8,
+      "fifa_points": 1421.0,
       "recent_matches": [
         {
           "date": "2026-06-09",
@@ -1630,7 +1648,7 @@
       "name_pl": "Urugwaj",
       "group": "H",
       "fifa_rank": 17,
-      "fifa_points": 1639.33,
+      "fifa_points": 1673.0,
       "recent_matches": [
         {
           "date": "2026-03-31",
@@ -1728,7 +1746,7 @@
       "name_pl": "Senegal",
       "group": "I",
       "fifa_rank": 14,
-      "fifa_points": 1670.67,
+      "fifa_points": 1689.0,
       "recent_matches": [
         {
           "date": "2026-06-09",
@@ -1777,7 +1795,7 @@
       "name_pl": "Irak",
       "group": "I",
       "fifa_rank": 57,
-      "fifa_points": 1383.6,
+      "fifa_points": 1447.0,
       "recent_matches": [
         {
           "date": "2026-06-09",
@@ -1826,7 +1844,7 @@
       "name_pl": "Norwegia",
       "group": "I",
       "fifa_rank": 31,
-      "fifa_points": 1531.2,
+      "fifa_points": 1551.0,
       "recent_matches": [
         {
           "date": "2026-06-07",
@@ -1924,7 +1942,7 @@
       "name_pl": "Algieria",
       "group": "J",
       "fifa_rank": 28,
-      "fifa_points": 1552.4,
+      "fifa_points": 1564.0,
       "recent_matches": [
         {
           "date": "2026-06-03",
@@ -1973,7 +1991,7 @@
       "name_pl": "Austria",
       "group": "J",
       "fifa_rank": 24,
-      "fifa_points": 1582.4,
+      "fifa_points": 1593.0,
       "recent_matches": [
         {
           "date": "2026-06-01",
@@ -2022,7 +2040,7 @@
       "name_pl": "Jordania",
       "group": "J",
       "fifa_rank": 63,
-      "fifa_points": 1352.4,
+      "fifa_points": 1391.0,
       "recent_matches": [
         {
           "date": "2026-06-07",
@@ -2071,7 +2089,7 @@
       "name_pl": "Portugalia",
       "group": "K",
       "fifa_rank": 5,
-      "fifa_points": 1800.0,
+      "fifa_points": 1764.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -2120,7 +2138,7 @@
       "name_pl": "Demokratyczna Republika Konga",
       "group": "K",
       "fifa_rank": 46,
-      "fifa_points": 1440.8,
+      "fifa_points": 1478.0,
       "recent_matches": [
         {
           "date": "2026-06-09",
@@ -2169,7 +2187,7 @@
       "name_pl": "Uzbekistan",
       "group": "K",
       "fifa_rank": 50,
-      "fifa_points": 1420.0,
+      "fifa_points": 1465.0,
       "recent_matches": [
         {
           "date": "2026-06-08",
@@ -2218,7 +2236,7 @@
       "name_pl": "Kolumbia",
       "group": "K",
       "fifa_rank": 13,
-      "fifa_points": 1683.33,
+      "fifa_points": 1693.0,
       "recent_matches": [
         {
           "date": "2026-06-07",
@@ -2267,7 +2285,7 @@
       "name_pl": "Anglia",
       "group": "L",
       "fifa_rank": 4,
-      "fifa_points": 1832.0,
+      "fifa_points": 1826.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
@@ -2316,7 +2334,7 @@
       "name_pl": "Chorwacja",
       "group": "L",
       "fifa_rank": 11,
-      "fifa_points": 1707.0,
+      "fifa_points": 1717.0,
       "recent_matches": [
         {
           "date": "2026-06-07",
@@ -2365,7 +2383,7 @@
       "name_pl": "Ghana",
       "group": "L",
       "fifa_rank": 74,
-      "fifa_points": 1296.8,
+      "fifa_points": 1346.0,
       "recent_matches": [
         {
           "date": "2026-06-02",
@@ -2414,7 +2432,7 @@
       "name_pl": "Panama",
       "group": "L",
       "fifa_rank": 33,
-      "fifa_points": 1517.6,
+      "fifa_points": 1541.0,
       "recent_matches": [
         {
           "date": "2026-06-06",
