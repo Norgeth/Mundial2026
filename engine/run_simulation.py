@@ -25,11 +25,12 @@ def load_snapshot():
         return json.load(f)
 
 
-def build_models(snapshot):
+def build_models(snapshot, news_scores=None):
     pts = [t["fifa_points"] for t in snapshot["teams"].values()]
     lo, hi = min(pts), max(pts)
+    news = news_scores or {}
     return {
-        code: predictor.TeamModel(code, t["fifa_points"], t["recent_matches"], lo, hi)
+        code: predictor.TeamModel(code, t["fifa_points"], t["recent_matches"], lo, hi, news.get(code))
         for code, t in snapshot["teams"].items()
     }
 
@@ -209,7 +210,13 @@ def monte_carlo(snapshot, cache, models):
 
 def main():
     snapshot = load_snapshot()
-    models = build_models(snapshot)
+    news_path = ROOT / "data" / "raw" / "news_scores.json"
+    news_scores = {}
+    if news_path.exists():
+        with open(news_path, encoding="utf-8") as f:
+            news_scores = json.load(f)
+        news_scores = {k: v for k, v in news_scores.items() if not k.startswith("_")}
+    models = build_models(snapshot, news_scores)
     h2h_index = build_h2h_index(snapshot)
     cache = GridCache(models, h2h_index)
 
@@ -250,7 +257,8 @@ def main():
             "algorithm": {
                 "weights": {"fifa_rank": predictor.WEIGHT_RANK,
                             "form": predictor.WEIGHT_FORM,
-                            "goals": predictor.WEIGHT_GOALS},
+                            "goals": predictor.WEIGHT_GOALS,
+                            "news": predictor.WEIGHT_NEWS},
                 "h2h_cap": predictor.H2H_DELTA_CAP,
                 "dixon_coles_rho": predictor.DIXON_COLES_RHO,
                 "lambda_bounds": [predictor.LAMBDA_MIN, predictor.LAMBDA_MAX],

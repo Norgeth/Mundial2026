@@ -1,0 +1,392 @@
+{
+  "_meta": {
+    "description": "Top 3 strzelcy reprezentacji + gwiazda drużyny. nt_goals_recent = gole w kwalifikacjach WC 2026 lub ostatnim ważnym turnieju (AFCON/Copa America).",
+    "source_date": "2026-06-10"
+  },
+  "teams": {
+    "ARG": {
+      "star_player": "Lionel Messi",
+      "scorers": [
+        {"name": "Lautaro Martínez", "position": "FW", "nt_goals_recent": 7},
+        {"name": "Julián Álvarez",   "position": "FW", "nt_goals_recent": 4},
+        {"name": "Lionel Messi",     "position": "FW", "nt_goals_recent": 3}
+      ]
+    },
+    "ESP": {
+      "star_player": "Lamine Yamal",
+      "scorers": [
+        {"name": "Mikel Oyarzabal", "position": "FW", "nt_goals_recent": 6},
+        {"name": "Mikel Merino",    "position": "MF", "nt_goals_recent": 6},
+        {"name": "Ferran Torres",   "position": "FW", "nt_goals_recent": 3}
+      ]
+    },
+    "ENG": {
+      "star_player": "Harry Kane",
+      "scorers": [
+        {"name": "Harry Kane",      "position": "FW", "nt_goals_recent": 8},
+        {"name": "Bukayo Saka",     "position": "MF", "nt_goals_recent": 3},
+        {"name": "Jude Bellingham", "position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "GER": {
+      "star_player": "Florian Wirtz",
+      "scorers": [
+        {"name": "Florian Wirtz",  "position": "MF", "nt_goals_recent": 7},
+        {"name": "Nick Woltemade", "position": "FW", "nt_goals_recent": 4},
+        {"name": "Kai Havertz",    "position": "FW", "nt_goals_recent": 3}
+      ]
+    },
+    "FRA": {
+      "star_player": "Kylian Mbappé",
+      "scorers": [
+        {"name": "Kylian Mbappé",      "position": "FW", "nt_goals_recent": 5},
+        {"name": "Michael Olise",      "position": "MF", "nt_goals_recent": 2},
+        {"name": "Jean-Philippe Mateta","position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "POR": {
+      "star_player": "Cristiano Ronaldo",
+      "scorers": [
+        {"name": "Cristiano Ronaldo", "position": "FW", "nt_goals_recent": 5},
+        {"name": "Bruno Fernandes",   "position": "MF", "nt_goals_recent": 3},
+        {"name": "Rafael Leão",       "position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "BEL": {
+      "star_player": "Kevin De Bruyne",
+      "scorers": [
+        {"name": "Jérémy Doku",        "position": "MF", "nt_goals_recent": 6},
+        {"name": "Romelu Lukaku",       "position": "FW", "nt_goals_recent": 5},
+        {"name": "Charles De Ketelaere","position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "MAR": {
+      "star_player": "Brahim Díaz",
+      "scorers": [
+        {"name": "Brahim Díaz",       "position": "MF", "nt_goals_recent": 5},
+        {"name": "Abde Ezzalzouli",   "position": "FW", "nt_goals_recent": 3},
+        {"name": "Achraf Hakimi",     "position": "DF", "nt_goals_recent": 1}
+      ]
+    },
+    "JPN": {
+      "star_player": "Takefusa Kubo",
+      "scorers": [
+        {"name": "Ayase Ueda",    "position": "FW", "nt_goals_recent": 6},
+        {"name": "Takefusa Kubo", "position": "MF", "nt_goals_recent": 4},
+        {"name": "Kōki Ogawa",   "position": "FW", "nt_goals_recent": 4}
+      ]
+    },
+    "NED": {
+      "star_player": "Cody Gakpo",
+      "scorers": [
+        {"name": "Cody Gakpo",    "position": "FW", "nt_goals_recent": 5},
+        {"name": "Wout Weghorst", "position": "FW", "nt_goals_recent": 3},
+        {"name": "Donyell Malen", "position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "BRA": {
+      "star_player": "Vinícius Júnior",
+      "scorers": [
+        {"name": "Vinícius Júnior", "position": "FW", "nt_goals_recent": 5},
+        {"name": "Raphinha",        "position": "FW", "nt_goals_recent": 4},
+        {"name": "Endrick",         "position": "FW", "nt_goals_recent": 3}
+      ]
+    },
+    "NOR": {
+      "star_player": "Erling Haaland",
+      "scorers": [
+        {"name": "Erling Haaland", "position": "FW", "nt_goals_recent": 7},
+        {"name": "Alexander Sørloth", "position": "FW", "nt_goals_recent": 4},
+        {"name": "Martin Ødegaard", "position": "MF", "nt_goals_recent": 3}
+      ]
+    },
+    "SWE": {
+      "star_player": "Viktor Gyökeres",
+      "scorers": [
+        {"name": "Viktor Gyökeres", "position": "FW", "nt_goals_recent": 7},
+        {"name": "Emil Forsberg",   "position": "MF", "nt_goals_recent": 3},
+        {"name": "Dejan Kulusevski","position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "COL": {
+      "star_player": "Luis Díaz",
+      "scorers": [
+        {"name": "Jhon Durán",     "position": "FW", "nt_goals_recent": 5},
+        {"name": "Luis Díaz",      "position": "FW", "nt_goals_recent": 4},
+        {"name": "James Rodríguez","position": "MF", "nt_goals_recent": 3}
+      ]
+    },
+    "CRO": {
+      "star_player": "Luka Modrić",
+      "scorers": [
+        {"name": "Andrej Kramarić",  "position": "FW", "nt_goals_recent": 5},
+        {"name": "Ante Budimir",     "position": "FW", "nt_goals_recent": 3},
+        {"name": "Ivan Perišić",     "position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "SEN": {
+      "star_player": "Sadio Mané",
+      "scorers": [
+        {"name": "Sadio Mané",        "position": "FW", "nt_goals_recent": 4},
+        {"name": "Ismaïla Sarr",      "position": "FW", "nt_goals_recent": 4},
+        {"name": "Nicolas Jackson",   "position": "FW", "nt_goals_recent": 3}
+      ]
+    },
+    "MEX": {
+      "star_player": "Hirving Lozano",
+      "scorers": [
+        {"name": "Raúl Jiménez",  "position": "FW", "nt_goals_recent": 5},
+        {"name": "Hirving Lozano","position": "FW", "nt_goals_recent": 3},
+        {"name": "Alexis Vega",   "position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "USA": {
+      "star_player": "Christian Pulisic",
+      "scorers": [
+        {"name": "Christian Pulisic","position": "MF", "nt_goals_recent": 4},
+        {"name": "Giovanni Reyna",   "position": "MF", "nt_goals_recent": 3},
+        {"name": "Folarin Balogun",  "position": "FW", "nt_goals_recent": 3}
+      ]
+    },
+    "URU": {
+      "star_player": "Darwin Núñez",
+      "scorers": [
+        {"name": "Darwin Núñez",    "position": "FW", "nt_goals_recent": 5},
+        {"name": "Federico Valverde","position": "MF", "nt_goals_recent": 3},
+        {"name": "Facundo Pellistri","position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "TUR": {
+      "star_player": "Hakan Çalhanoğlu",
+      "scorers": [
+        {"name": "Kerem Aktürkoğlu",  "position": "FW", "nt_goals_recent": 4},
+        {"name": "Hakan Çalhanoğlu",  "position": "MF", "nt_goals_recent": 3},
+        {"name": "Arda Güler",        "position": "MF", "nt_goals_recent": 3}
+      ]
+    },
+    "KOR": {
+      "star_player": "Son Heung-min",
+      "scorers": [
+        {"name": "Son Heung-min",   "position": "FW", "nt_goals_recent": 5},
+        {"name": "Hwang Hee-chan",  "position": "FW", "nt_goals_recent": 4},
+        {"name": "Lee Jae-sung",    "position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "EGY": {
+      "star_player": "Mohamed Salah",
+      "scorers": [
+        {"name": "Mohamed Salah",     "position": "FW", "nt_goals_recent": 6},
+        {"name": "Mostafa Mohamed",   "position": "FW", "nt_goals_recent": 3},
+        {"name": "Omar Marmoush",     "position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "SUI": {
+      "star_player": "Granit Xhaka",
+      "scorers": [
+        {"name": "Breel Embolo",    "position": "FW", "nt_goals_recent": 4},
+        {"name": "Zeki Amdouni",    "position": "FW", "nt_goals_recent": 3},
+        {"name": "Granit Xhaka",   "position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "IRN": {
+      "star_player": "Mehdi Taremi",
+      "scorers": [
+        {"name": "Mehdi Taremi",       "position": "FW", "nt_goals_recent": 5},
+        {"name": "Alireza Jahanbakhsh","position": "FW", "nt_goals_recent": 3},
+        {"name": "Sardar Azmoun",     "position": "FW", "nt_goals_recent": 3}
+      ]
+    },
+    "CAN": {
+      "star_player": "Jonathan David",
+      "scorers": [
+        {"name": "Jonathan David",   "position": "FW", "nt_goals_recent": 6},
+        {"name": "Cyle Larin",       "position": "FW", "nt_goals_recent": 3},
+        {"name": "Tajon Buchanan",   "position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "AUT": {
+      "star_player": "Marcel Sabitzer",
+      "scorers": [
+        {"name": "Marcel Sabitzer",  "position": "MF", "nt_goals_recent": 4},
+        {"name": "Michael Gregoritsch","position": "FW", "nt_goals_recent": 4},
+        {"name": "Christoph Baumgartner","position": "MF", "nt_goals_recent": 3}
+      ]
+    },
+    "ECU": {
+      "star_player": "Moisés Caicedo",
+      "scorers": [
+        {"name": "Enner Valencia",  "position": "FW", "nt_goals_recent": 5},
+        {"name": "Kendry Páez",     "position": "MF", "nt_goals_recent": 3},
+        {"name": "Moisés Caicedo",  "position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "CZE": {
+      "star_player": "Tomáš Souček",
+      "scorers": [
+        {"name": "Patrik Schick",  "position": "FW", "nt_goals_recent": 4},
+        {"name": "Lukáš Hložek",  "position": "FW", "nt_goals_recent": 3},
+        {"name": "Tomáš Souček",  "position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "SCO": {
+      "star_player": "Scott McTominay",
+      "scorers": [
+        {"name": "Lyndon Dykes",      "position": "FW", "nt_goals_recent": 3},
+        {"name": "Scott McTominay",   "position": "MF", "nt_goals_recent": 3},
+        {"name": "Lawrence Shankland","position": "FW", "nt_goals_recent": 3}
+      ]
+    },
+    "ALG": {
+      "star_player": "Riyad Mahrez",
+      "scorers": [
+        {"name": "Riyad Mahrez",     "position": "FW", "nt_goals_recent": 4},
+        {"name": "Youcef Belaïli",   "position": "FW", "nt_goals_recent": 3},
+        {"name": "Islam Slimani",    "position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "CIV": {
+      "star_player": "Sébastien Haller",
+      "scorers": [
+        {"name": "Sébastien Haller",  "position": "FW", "nt_goals_recent": 4},
+        {"name": "Nicolas Pépé",      "position": "FW", "nt_goals_recent": 3},
+        {"name": "Simon Adingra",     "position": "FW", "nt_goals_recent": 3}
+      ]
+    },
+    "AUS": {
+      "star_player": "Martin Boyle",
+      "scorers": [
+        {"name": "Mitch Boyle",      "position": "FW", "nt_goals_recent": 3},
+        {"name": "Jamie Maclaren",   "position": "FW", "nt_goals_recent": 3},
+        {"name": "Nestory Irankunda","position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "PAN": {
+      "star_player": "Édgar Bárcenas",
+      "scorers": [
+        {"name": "César Yanis",      "position": "FW", "nt_goals_recent": 3},
+        {"name": "Édgar Bárcenas",   "position": "FW", "nt_goals_recent": 2},
+        {"name": "Adalberto Carrasquilla","position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "PAR": {
+      "star_player": "Miguel Almirón",
+      "scorers": [
+        {"name": "Antonio Sanabria", "position": "FW", "nt_goals_recent": 4},
+        {"name": "Julio Enciso",     "position": "MF", "nt_goals_recent": 3},
+        {"name": "Miguel Almirón",   "position": "MF", "nt_goals_recent": 3}
+      ]
+    },
+    "TUN": {
+      "star_player": "Wahbi Khazri",
+      "scorers": [
+        {"name": "Wahbi Khazri",      "position": "MF", "nt_goals_recent": 3},
+        {"name": "Seifeddine Jaziri", "position": "FW", "nt_goals_recent": 3},
+        {"name": "Youssef Msakni",   "position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "COD": {
+      "star_player": "Nicolas Jackson",
+      "scorers": [
+        {"name": "Nicolas Jackson",  "position": "FW", "nt_goals_recent": 5},
+        {"name": "Yannick Bolasie",  "position": "FW", "nt_goals_recent": 2},
+        {"name": "Théo Bongonda",    "position": "FW", "nt_goals_recent": 1}
+      ]
+    },
+    "UZB": {
+      "star_player": "Eldor Shomurodov",
+      "scorers": [
+        {"name": "Eldor Shomurodov","position": "FW", "nt_goals_recent": 4},
+        {"name": "Jaloliddin Masharipov","position": "MF", "nt_goals_recent": 2},
+        {"name": "Sherzod Nasrullayev","position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "QAT": {
+      "star_player": "Akram Afif",
+      "scorers": [
+        {"name": "Akram Afif",       "position": "FW", "nt_goals_recent": 4},
+        {"name": "Hassan Al-Haydos", "position": "MF", "nt_goals_recent": 3},
+        {"name": "Almoez Ali",       "position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "IRQ": {
+      "star_player": "Mohanad Ali",
+      "scorers": [
+        {"name": "Mohanad Ali",       "position": "FW", "nt_goals_recent": 3},
+        {"name": "Amjad Attwan",      "position": "FW", "nt_goals_recent": 3},
+        {"name": "Aymen Hussein",     "position": "MF", "nt_goals_recent": 2}
+      ]
+    },
+    "RSA": {
+      "star_player": "Percy Tau",
+      "scorers": [
+        {"name": "Percy Tau",        "position": "FW", "nt_goals_recent": 3},
+        {"name": "Lyle Foster",      "position": "FW", "nt_goals_recent": 2},
+        {"name": "Bongani Zungu",    "position": "MF", "nt_goals_recent": 1}
+      ]
+    },
+    "KSA": {
+      "star_player": "Salem Al-Dawsari",
+      "scorers": [
+        {"name": "Salem Al-Dawsari", "position": "FW", "nt_goals_recent": 4},
+        {"name": "Firas Al-Buraikan","position": "FW", "nt_goals_recent": 3},
+        {"name": "Saleh Al-Shehri",  "position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "JOR": {
+      "star_player": "Yazan Al-Nabulsi",
+      "scorers": [
+        {"name": "Yazan Al-Nabulsi", "position": "FW", "nt_goals_recent": 2},
+        {"name": "Moussa Al-Taamari","position": "MF", "nt_goals_recent": 2},
+        {"name": "Ahmad Hayel",      "position": "FW", "nt_goals_recent": 1}
+      ]
+    },
+    "BIH": {
+      "star_player": "Ermin Bičakčić",
+      "scorers": [
+        {"name": "Edin Džeko",       "position": "FW", "nt_goals_recent": 4},
+        {"name": "Anel Ahmedhodžić", "position": "DF", "nt_goals_recent": 2},
+        {"name": "Deni Jurić",       "position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "CPV": {
+      "star_player": "Garry Rodrigues",
+      "scorers": [
+        {"name": "Garry Rodrigues",  "position": "FW", "nt_goals_recent": 3},
+        {"name": "Stopira",          "position": "DF", "nt_goals_recent": 2},
+        {"name": "Ryan Mendes",      "position": "FW", "nt_goals_recent": 1}
+      ]
+    },
+    "GHA": {
+      "star_player": "Mohammed Kudus",
+      "scorers": [
+        {"name": "Mohammed Kudus",      "position": "MF", "nt_goals_recent": 4},
+        {"name": "Iñaki Williams",     "position": "FW", "nt_goals_recent": 4},
+        {"name": "Kamal Sowah",        "position": "FW", "nt_goals_recent": 2}
+      ]
+    },
+    "CUW": {
+      "star_player": "Leandro Bacuna",
+      "scorers": [
+        {"name": "Leandro Bacuna",  "position": "MF", "nt_goals_recent": 2},
+        {"name": "Cuco Martina",    "position": "DF", "nt_goals_recent": 1},
+        {"name": "Quentin Labrousse","position": "FW", "nt_goals_recent": 1}
+      ]
+    },
+    "HAI": {
+      "star_player": "Frantzdy Pierrot",
+      "scorers": [
+        {"name": "Frantzdy Pierrot","position": "FW", "nt_goals_recent": 2},
+        {"name": "Derrick Etienne", "position": "FW", "nt_goals_recent": 2},
+        {"name": "Duckens Nazon",   "position": "FW", "nt_goals_recent": 1}
+      ]
+    },
+    "NZL": {
+      "star_player": "Chris Wood",
+      "scorers": [
+        {"name": "Chris Wood",   "position": "FW", "nt_goals_recent": 3},
+        {"name": "Liberato Cacace","position": "DF", "nt_goals_recent": 1},
+        {"name": "Sarpreet Singh","position": "MF", "nt_goals_recent": 1}
+      ]
+    }
+  }
+}
