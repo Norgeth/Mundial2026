@@ -25,12 +25,13 @@ def load_snapshot():
         return json.load(f)
 
 
-def build_models(snapshot, news_scores=None):
+def build_models(snapshot, news_scores=None, weights=None):
     pts = [t["fifa_points"] for t in snapshot["teams"].values()]
     lo, hi = min(pts), max(pts)
     news = news_scores or {}
     return {
-        code: predictor.TeamModel(code, t["fifa_points"], t["recent_matches"], lo, hi, news.get(code))
+        code: predictor.TeamModel(code, t["fifa_points"], t["recent_matches"],
+                                  lo, hi, news.get(code), weights)
         for code, t in snapshot["teams"].items()
     }
 
@@ -155,17 +156,17 @@ def simulate_knockout(snapshot, cache, tables, allocation, score_fn, draw_fn):
     return ko, by_round
 
 
-def deterministic_run(snapshot, cache, models):
+def deterministic_run(snapshot, cache_group, cache_ko, models_group, models_ko):
     score_fn = lambda h, a, gt: predictor.predict_score(gt[0])
-    draw_fn = lambda grid, h, a, s: knockout_winner(grid, h, a, s, models)
-    group_matches, tables = simulate_group_stage(snapshot, cache, score_fn)
-    ranked_thirds, allocation = qualify_thirds(snapshot, tables, models)
-    ko, by_round = simulate_knockout(snapshot, cache, tables, allocation,
+    draw_fn = lambda grid, h, a, s: knockout_winner(grid, h, a, s, models_ko)
+    group_matches, tables = simulate_group_stage(snapshot, cache_group, score_fn)
+    ranked_thirds, allocation = qualify_thirds(snapshot, tables, models_group)
+    ko, by_round = simulate_knockout(snapshot, cache_ko, tables, allocation,
                                      score_fn, draw_fn)
     return group_matches, tables, ranked_thirds, allocation, ko, by_round
 
 
-def monte_carlo(snapshot, cache, models):
+def monte_carlo(snapshot, cache_group, cache_ko, models_group):
     rnd = random.Random(MC_SEED)
     counters = {c: {"advance": 0, "qf": 0, "sf": 0, "final": 0, "champion": 0}
                 for c in snapshot["teams"]}
@@ -183,9 +184,9 @@ def monte_carlo(snapshot, cache, models):
         return (home if rnd.random() < p else away), True
 
     for _ in range(MC_RUNS):
-        _, tables = simulate_group_stage(snapshot, cache, score_fn)
-        _, allocation = qualify_thirds(snapshot, tables, models)
-        _, by_round = simulate_knockout(snapshot, cache, tables, allocation,
+        _, tables = simulate_group_stage(snapshot, cache_group, score_fn)
+        _, allocation = qualify_thirds(snapshot, tables, models_group)
+        _, by_round = simulate_knockout(snapshot, cache_ko, tables, allocation,
                                         score_fn, draw_fn)
         for m in by_round["R32"]:
             counters[m["home"]]["advance"] += 1
@@ -216,16 +217,19 @@ def main():
         with open(news_path, encoding="utf-8") as f:
             news_scores = json.load(f)
         news_scores = {k: v for k, v in news_scores.items() if not k.startswith("_")}
-    models = build_models(snapshot, news_scores)
+    models_group = build_models(snapshot, news_scores, predictor.GROUP_WEIGHTS)
+    models_ko    = build_models(snapshot, news_scores, predictor.KNOCKOUT_WEIGHTS)
     h2h_index = build_h2h_index(snapshot)
-    cache = GridCache(models, h2h_index)
+    cache_group = GridCache(models_group, h2h_index)
+    cache_ko    = GridCache(models_ko,    h2h_index)
 
     (group_matches, tables, ranked_thirds,
-     allocation, ko, by_round) = deterministic_run(snapshot, cache, models)
+     allocation, ko, by_round) = deterministic_run(
+        snapshot, cache_group, cache_ko, models_group, models_ko)
 
     print("Running Monte Carlo layer "
           f"({MC_RUNS} tournaments, seed {MC_SEED})...")
-    mc = monte_carlo(snapshot, cache, models)
+    mc = monte_carlo(snapshot, cache_group, cache_ko, models_group)
 
     team_goals, team_stage = {}, {}
     for letter, matches in group_matches.items():
@@ -255,10 +259,8 @@ def main():
             "snapshot_date": snapshot["meta"]["snapshot_date"],
             "ranking_edition": snapshot["meta"].get("ranking_edition"),
             "algorithm": {
-                "weights": {"fifa_rank": predictor.WEIGHT_RANK,
-                            "form": predictor.WEIGHT_FORM,
-                            "goals": predictor.WEIGHT_GOALS,
-                            "news": predictor.WEIGHT_NEWS},
+                "weights_group":    predictor.GROUP_WEIGHTS,
+                "weights_knockout": predictor.KNOCKOUT_WEIGHTS,
                 "h2h_cap": predictor.H2H_DELTA_CAP,
                 "dixon_coles_rho": predictor.DIXON_COLES_RHO,
                 "lambda_bounds": [predictor.LAMBDA_MIN, predictor.LAMBDA_MAX],
@@ -272,8 +274,8 @@ def main():
                 "group": t["group"],
                 "fifa_rank": t["fifa_rank"],
                 "fifa_points": t["fifa_points"],
-                "power": round(models[code].power, 1),
-                "form": models[code].form_string,
+                "power": round(models_group[code].power, 1),
+                "form": models_group[code].form_string,
             }
             for code, t in snapshot["teams"].items()
         },

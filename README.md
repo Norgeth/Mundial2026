@@ -18,7 +18,7 @@ wyniki na dwujęzycznej stronie (PL/EN).
 | 🥉 | Niemcy | pokonują Maroko 2:1 w meczu o 3. miejsce |
 
 Szanse na mistrzostwo (Monte Carlo, 10 000 symulowanych turniejów):
-**ARG 36,9%** · BEL 12,9% · GER 8,5% · FRA 6,2% · JPN 5,5% · POR 5,1%
+**ARG 34,9%** · BEL 12,9% · GER 8,2% · FRA 6,4% · POR 5,6% · ESP 5,0%
 
 Nagrody indywidualne: **Złoty But** — Florian Wirtz (Niemcy, 6 goli) ·
 **Złota Piłka** — Lionel Messi (Argentyna)
@@ -48,14 +48,19 @@ Frontend nie zawiera logiki — tylko renderuje wyliczone wyniki.
 
 ## Model
 
-1. **Power Index (0–100)** na drużynę — cztery składniki:
-   - `0,50 × znormalizowane punkty FIFA`
-   - `0,25 × ważona forma` (ostatnie 5 meczów, nowsze ważone wyżej)
-   - `0,15 × sigmoid bilansu bramkowego`
-   - `0,10 × gotowość przed turniejem` (sprawność zawodników, morale, kontuzje
-     — ocena 1–10 na podstawie artykułów z tygodnia przed turniejem)
+1. **Power Index (0–100)** na drużynę — dwa zestawy wag, osobne dla każdej fazy:
 
-   Historia H2H (≤3 bezpośrednie spotkania) dodaje korekę ±4 w fazie grupowej.
+   **Faza grupowa** (równe wagi):
+   - `0,25 × znormalizowane punkty FIFA`
+   - `0,25 × ważona forma` (ostatnie 5 meczów, nowsze ważone wyżej)
+   - `0,25 × sigmoid bilansu bramkowego`
+   - `0,25 × gotowość przed turniejem` (ocena 1–10 z artykułów dla wszystkich 48 drużyn)
+
+   **Faza pucharowa** (ranga FIFA decyduje):
+   - `0,50 × znormalizowane punkty FIFA`
+   - `~16,7% × forma`, `~16,7% × bilans bramkowy`, `~16,7% × gotowość`
+
+   Historia H2H (≤3 bezpośrednie spotkania) dodaje korektę ±4 w fazie grupowej.
 
 2. **Oczekiwane bramki**: wyliczane na bazie różnicy Power Index, modyfikowanej
    wskaźnikami ataku i obrony z ostatnich 5 meczów. Wyniki stabilizowane
@@ -81,7 +86,7 @@ Frontend nie zawiera logiki — tylko renderuje wyliczone wyniki.
 | Ranking FIFA (1.04.2026) | oficjalne datasety + ESPN | dokładne punkty dla 48 drużyn |
 | Ostatnie 5 meczów | [martj42/international\_results](https://github.com/martj42/international_results) | wszystkie 48 drużyn zweryfikowane; 3 poprawki |
 | H2H (72 pary) | j.w. | 33 pary z historią potwierdzone; 39 nigdy nie grało |
-| Gotowość drużyn | artykuły prasowe (czerwiec 2026) | 11 czołowych drużyn zbadanych, reszta domyślnie wg rangi |
+| Gotowość drużyn | artykuły prasowe (czerwiec 2026) | wszystkie 48 drużyn zbadane indywidualnie |
 | Strzelcy reprezentacji | kwalifikacje + AFCON/Copa América | top-3 dla wszystkich 48 drużyn |
 
 ## Reprodukcja
@@ -114,9 +119,10 @@ Monte Carlo layer for probabilities.
 **Individual awards:** Golden Boot — Florian Wirtz (Germany, 6 goals) ·
 Golden Ball — Lionel Messi (Argentina)
 
-**Model:** Power Index = 50% FIFA rank + 25% form + 15% goal diff + 10%
-pre-tournament readiness. Poisson + Dixon-Coles score grid, deterministic
-two-stage argmax, 10 000 Monte Carlo runs.
+**Model:** Dual Power Index — group stage: 25% FIFA rank / 25% form / 25%
+goal diff / 25% readiness; knockout: 50% FIFA rank / ~17% each remaining.
+Readiness scores (1–10) from article searches for all 48 teams. Poisson +
+Dixon-Coles score grid, deterministic two-stage argmax, 10 000 Monte Carlo runs.
 
 **Frontend:** dependency-free static page with PL/EN language toggle,
 served from `/docs` — GitHub Pages-ready.
