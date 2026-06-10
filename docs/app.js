@@ -55,6 +55,39 @@ function renderChampion(R) {
   );
 }
 
+function renderAwards(R) {
+  if (!R.awards) return;
+  const wrap = document.getElementById("awards");
+  const ball = R.awards.golden_ball;
+  const boot = R.awards.golden_boot;
+  if (ball) {
+    const card = el("div", "award-card");
+    card.append(
+      el("div", "award-title", "⚽ Złota Piłka — zawodnik turnieju"),
+      el("div", "award-player", ball.player),
+      el("div", "award-team", teamLabel(R, ball.team))
+    );
+    wrap.append(card);
+  }
+  if (boot) {
+    const card = el("div", "award-card");
+    card.append(
+      el("div", "award-title", "👟 Złoty But — król strzelców"),
+      el("div", "award-player", boot.player),
+      el("div", "award-team",
+         `${teamLabel(R, boot.team)} · ${boot.goals} ${boot.goals === 1 ? "gol" : (boot.goals < 5 ? "gole" : "goli")}`)
+    );
+    wrap.append(card);
+  }
+  const others = (R.awards.top_scorers || []).slice(1, 4)
+    .map(s => `${s.player} (${s.team}) ${s.expected_goals.toFixed(1)}`)
+    .join(" · ");
+  if (others) {
+    wrap.append(el("div", "award-others",
+      `Kolejni przewidywani strzelcy: ${others}`));
+  }
+}
+
 function renderMonteCarlo(R) {
   const wrap = document.getElementById("mc-bars");
   const rows = Object.entries(R.monte_carlo)
@@ -175,6 +208,7 @@ function renderBracket(R) {
 loadResults().then(R => {
   document.getElementById("snapshot-date").textContent = R.meta.snapshot_date;
   renderChampion(R);
+  renderAwards(R);
   renderMonteCarlo(R);
   renderGroups(R);
   renderBracket(R);
