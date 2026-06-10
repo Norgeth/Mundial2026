@@ -6,8 +6,9 @@
     "algorithm": {
       "weights": {
         "fifa_rank": 0.5,
-        "form": 0.3,
-        "goals": 0.2
+        "form": 0.25,
+        "goals": 0.15,
+        "news": 0.1
       },
       "h2h_cap": 4.0,
       "dixon_coles_rho": 0.1,
@@ -28,7 +29,7 @@
       "group": "A",
       "fifa_rank": 15,
       "fifa_points": 1681.0,
-      "power": 70.8,
+      "power": 68.5,
       "form": "WWWDD"
     },
     "RSA": {
@@ -37,7 +38,7 @@
       "group": "A",
       "fifa_rank": 60,
       "fifa_points": 1430.0,
-      "power": 28.5,
+      "power": 27.8,
       "form": "DDLDL"
     },
     "KOR": {
@@ -46,7 +47,7 @@
       "group": "A",
       "fifa_rank": 25,
       "fifa_points": 1589.0,
-      "power": 55.9,
+      "power": 55.5,
       "form": "WWLLW"
     },
     "CZE": {
@@ -55,7 +56,7 @@
       "group": "A",
       "fifa_rank": 41,
       "fifa_points": 1501.0,
-      "power": 54.7,
+      "power": 52.0,
       "form": "WWDDW"
     },
     "CAN": {
@@ -64,7 +65,7 @@
       "group": "B",
       "fifa_rank": 30,
       "fifa_points": 1556.0,
-      "power": 51.7,
+      "power": 51.0,
       "form": "DWDDW"
     },
     "BIH": {
@@ -73,7 +74,7 @@
       "group": "B",
       "fifa_rank": 65,
       "fifa_points": 1386.0,
-      "power": 28.7,
+      "power": 27.3,
       "form": "DDDDD"
     },
     "QAT": {
@@ -91,7 +92,7 @@
       "group": "B",
       "fifa_rank": 19,
       "fifa_points": 1649.0,
-      "power": 54.9,
+      "power": 55.0,
       "form": "DWDLD"
     },
     "BRA": {
@@ -100,7 +101,7 @@
       "group": "C",
       "fifa_rank": 6,
       "fifa_points": 1761.0,
-      "power": 75.6,
+      "power": 74.2,
       "form": "WWWLD"
     },
     "MAR": {
@@ -109,7 +110,7 @@
       "group": "C",
       "fifa_rank": 8,
       "fifa_points": 1756.0,
-      "power": 75.6,
+      "power": 74.6,
       "form": "DWWWD"
     },
     "HAI": {
@@ -118,7 +119,7 @@
       "group": "C",
       "fifa_rank": 83,
       "fifa_points": 1292.0,
-      "power": 25.1,
+      "power": 22.3,
       "form": "LWDLW"
     },
     "SCO": {
@@ -127,7 +128,7 @@
       "group": "C",
       "fifa_rank": 43,
       "fifa_points": 1498.0,
-      "power": 50.2,
+      "power": 48.2,
       "form": "WWLLW"
     },
     "USA": {
@@ -136,7 +137,7 @@
       "group": "D",
       "fifa_rank": 16,
       "fifa_points": 1673.0,
-      "power": 53.2,
+      "power": 54.0,
       "form": "LWLLW"
     },
     "PAR": {
@@ -145,7 +146,7 @@
       "group": "D",
       "fifa_rank": 40,
       "fifa_points": 1504.0,
-      "power": 49.5,
+      "power": 47.3,
       "form": "WLWWL"
     },
     "AUS": {
@@ -154,7 +155,7 @@
       "group": "D",
       "fifa_rank": 27,
       "fifa_points": 1581.0,
-      "power": 49.1,
+      "power": 48.1,
       "form": "DLWWL"
     },
     "TUR": {
@@ -163,7 +164,7 @@
       "group": "D",
       "fifa_rank": 22,
       "fifa_points": 1599.0,
-      "power": 67.1,
+      "power": 64.8,
       "form": "WWWWD"
     },
     "GER": {
@@ -172,7 +173,7 @@
       "group": "E",
       "fifa_rank": 10,
       "fifa_points": 1730.0,
-      "power": 82.4,
+      "power": 80.9,
       "form": "WWWWW"
     },
     "CUW": {
@@ -181,7 +182,7 @@
       "group": "E",
       "fifa_rank": 82,
       "fifa_points": 1295.0,
-      "power": 18.8,
+      "power": 17.4,
       "form": "WLLLD"
     },
     "CIV": {
@@ -190,7 +191,7 @@
       "group": "E",
       "fifa_rank": 34,
       "fifa_points": 1533.0,
-      "power": 59.5,
+      "power": 56.4,
       "form": "WWWLW"
     },
     "ECU": {
@@ -199,7 +200,7 @@
       "group": "E",
       "fifa_rank": 23,
       "fifa_points": 1595.0,
-      "power": 61.5,
+      "power": 59.0,
       "form": "WWDDW"
     },
     "NED": {
@@ -217,7 +218,7 @@
       "group": "F",
       "fifa_rank": 18,
       "fifa_points": 1660.0,
-      "power": 74.8,
+      "power": 72.7,
       "form": "WWWWW"
     },
     "SWE": {
@@ -226,7 +227,7 @@
       "group": "F",
       "fifa_rank": 38,
       "fifa_points": 1515.0,
-      "power": 44.7,
+      "power": 45.7,
       "form": "DLWWD"
     },
     "TUN": {
@@ -244,7 +245,7 @@
       "group": "G",
       "fifa_rank": 9,
       "fifa_points": 1735.0,
-      "power": 80.0,
+      "power": 78.3,
       "form": "WWDWW"
     },
     "EGY": {
@@ -253,7 +254,7 @@
       "group": "G",
       "fifa_rank": 29,
       "fifa_points": 1563.0,
-      "power": 50.3,
+      "power": 50.5,
       "form": "LWDWD"
     },
     "IRN": {
@@ -262,7 +263,7 @@
       "group": "G",
       "fifa_rank": 21,
       "fifa_points": 1615.0,
-      "power": 64.1,
+      "power": 62.0,
       "form": "WWWLD"
     },
     "NZL": {
@@ -271,7 +272,7 @@
       "group": "G",
       "fifa_rank": 85,
       "fifa_points": 1282.0,
-      "power": 13.6,
+      "power": 13.0,
       "form": "LLWLL"
     },
     "ESP": {
@@ -280,7 +281,7 @@
       "group": "H",
       "fifa_rank": 2,
       "fifa_points": 1876.4,
-      "power": 80.8,
+      "power": 82.4,
       "form": "WDDWD"
     },
     "CPV": {
@@ -289,7 +290,7 @@
       "group": "H",
       "fifa_rank": 69,
       "fifa_points": 1366.0,
-      "power": 37.6,
+      "power": 34.4,
       "form": "WWDLD"
     },
     "KSA": {
@@ -298,7 +299,7 @@
       "group": "H",
       "fifa_rank": 61,
       "fifa_points": 1421.0,
-      "power": 30.6,
+      "power": 30.1,
       "form": "DWLLL"
     },
     "URU": {
@@ -307,7 +308,7 @@
       "group": "H",
       "fifa_rank": 17,
       "fifa_points": 1673.0,
-      "power": 51.9,
+      "power": 53.6,
       "form": "DDLDW"
     },
     "FRA": {
@@ -316,7 +317,7 @@
       "group": "I",
       "fifa_rank": 1,
       "fifa_points": 1877.32,
-      "power": 85.1,
+      "power": 85.4,
       "form": "WLWWW"
     },
     "SEN": {
@@ -325,7 +326,7 @@
       "group": "I",
       "fifa_rank": 14,
       "fifa_points": 1689.0,
-      "power": 57.8,
+      "power": 58.5,
       "form": "DLWWL"
     },
     "IRQ": {
@@ -334,7 +335,7 @@
       "group": "I",
       "fifa_rank": 57,
       "fifa_points": 1447.0,
-      "power": 36.6,
+      "power": 34.8,
       "form": "LDWWL"
     },
     "NOR": {
@@ -343,7 +344,7 @@
       "group": "I",
       "fifa_rank": 31,
       "fifa_points": 1551.0,
-      "power": 49.8,
+      "power": 50.9,
       "form": "DWDLW"
     },
     "ARG": {
@@ -352,7 +353,7 @@
       "group": "J",
       "fifa_rank": 3,
       "fifa_points": 1874.81,
-      "power": 94.6,
+      "power": 94.2,
       "form": "WWWWW"
     },
     "ALG": {
@@ -361,7 +362,7 @@
       "group": "J",
       "fifa_rank": 28,
       "fifa_points": 1564.0,
-      "power": 56.8,
+      "power": 54.7,
       "form": "WDWLW"
     },
     "AUT": {
@@ -370,7 +371,7 @@
       "group": "J",
       "fifa_rank": 24,
       "fifa_points": 1593.0,
-      "power": 66.1,
+      "power": 62.8,
       "form": "WWWDW"
     },
     "JOR": {
@@ -379,7 +380,7 @@
       "group": "J",
       "fifa_rank": 63,
       "fifa_points": 1391.0,
-      "power": 20.4,
+      "power": 20.6,
       "form": "LLDDL"
     },
     "POR": {
@@ -388,7 +389,7 @@
       "group": "K",
       "fifa_rank": 5,
       "fifa_points": 1764.0,
-      "power": 76.5,
+      "power": 76.6,
       "form": "WWDWL"
     },
     "COD": {
@@ -397,7 +398,7 @@
       "group": "K",
       "fifa_rank": 46,
       "fifa_points": 1478.0,
-      "power": 40.0,
+      "power": 38.5,
       "form": "LDWWL"
     },
     "UZB": {
@@ -406,7 +407,7 @@
       "group": "K",
       "fifa_rank": 50,
       "fifa_points": 1465.0,
-      "power": 32.8,
+      "power": 32.5,
       "form": "LLDWD"
     },
     "COL": {
@@ -424,7 +425,7 @@
       "group": "L",
       "fifa_rank": 4,
       "fifa_points": 1826.0,
-      "power": 76.0,
+      "power": 77.8,
       "form": "WLDWW"
     },
     "CRO": {
@@ -433,7 +434,7 @@
       "group": "L",
       "fifa_rank": 11,
       "fifa_points": 1717.0,
-      "power": 62.8,
+      "power": 62.7,
       "form": "WLLWW"
     },
     "GHA": {
@@ -442,7 +443,7 @@
       "group": "L",
       "fifa_rank": 74,
       "fifa_points": 1346.0,
-      "power": 15.1,
+      "power": 16.3,
       "form": "DLLLL"
     },
     "PAN": {
@@ -451,7 +452,7 @@
       "group": "L",
       "fifa_rank": 33,
       "fifa_points": 1541.0,
-      "power": 47.4,
+      "power": 46.2,
       "form": "DWLWD"
     }
   },
@@ -690,7 +691,7 @@
           "home": "MAR",
           "away": "SCO",
           "score": [
-            1,
+            2,
             0
           ]
         },
@@ -719,10 +720,10 @@
           "W": 3,
           "D": 0,
           "L": 0,
-          "GF": 5,
+          "GF": 6,
           "GA": 1,
           "Pts": 9,
-          "GD": 4
+          "GD": 5
         },
         {
           "pos": 2,
@@ -744,9 +745,9 @@
           "D": 0,
           "L": 2,
           "GF": 2,
-          "GA": 3,
+          "GA": 4,
           "Pts": 3,
-          "GD": -1
+          "GD": -2
         },
         {
           "pos": 4,
@@ -768,8 +769,8 @@
           "home": "USA",
           "away": "PAR",
           "score": [
-            1,
-            2
+            2,
+            1
           ]
         },
         {
@@ -828,25 +829,25 @@
         },
         {
           "pos": 2,
-          "code": "PAR",
+          "code": "USA",
           "P": 3,
           "W": 2,
           "D": 0,
           "L": 1,
-          "GF": 3,
-          "GA": 2,
+          "GF": 5,
+          "GA": 4,
           "Pts": 6,
           "GD": 1
         },
         {
           "pos": 3,
-          "code": "USA",
+          "code": "PAR",
           "P": 3,
           "W": 1,
           "D": 0,
           "L": 2,
-          "GF": 4,
-          "GA": 5,
+          "GF": 2,
+          "GA": 3,
           "Pts": 3,
           "GD": -1
         },
@@ -1074,7 +1075,7 @@
           "home": "BEL",
           "away": "EGY",
           "score": [
-            2,
+            1,
             0
           ]
         },
@@ -1127,10 +1128,10 @@
           "W": 3,
           "D": 0,
           "L": 0,
-          "GF": 5,
+          "GF": 4,
           "GA": 0,
           "Pts": 9,
-          "GD": 5
+          "GD": 4
         },
         {
           "pos": 2,
@@ -1152,9 +1153,9 @@
           "D": 0,
           "L": 2,
           "GF": 2,
-          "GA": 3,
+          "GA": 2,
           "Pts": 3,
-          "GD": -1
+          "GD": 0
         },
         {
           "pos": 4,
@@ -1692,11 +1693,11 @@
         "qualified": true
       },
       {
-        "group": "D",
-        "code": "USA",
+        "group": "G",
+        "code": "EGY",
         "Pts": 3,
-        "GD": -1,
-        "GF": 4,
+        "GD": 0,
+        "GF": 2,
         "qualified": true
       },
       {
@@ -1716,16 +1717,8 @@
         "qualified": true
       },
       {
-        "group": "G",
-        "code": "EGY",
-        "Pts": 3,
-        "GD": -1,
-        "GF": 2,
-        "qualified": true
-      },
-      {
-        "group": "C",
-        "code": "SCO",
+        "group": "D",
+        "code": "PAR",
         "Pts": 3,
         "GD": -1,
         "GF": 2,
@@ -1745,6 +1738,14 @@
         "Pts": 3,
         "GD": -1,
         "GF": 1,
+        "qualified": true
+      },
+      {
+        "group": "C",
+        "code": "SCO",
+        "Pts": 3,
+        "GD": -2,
+        "GF": 2,
         "qualified": true
       },
       {
@@ -1807,10 +1808,10 @@
       {
         "match_id": 74,
         "home": "GER",
-        "away": "USA",
+        "away": "PAR",
         "score": [
           2,
-          1
+          0
         ],
         "winner": "GER",
         "penalties": false
@@ -1960,11 +1961,11 @@
       },
       {
         "match_id": 88,
-        "home": "PAR",
+        "home": "USA",
         "away": "IRN",
         "score": [
-          0,
-          1
+          1,
+          2
         ],
         "winner": "IRN",
         "penalties": false
@@ -2159,340 +2160,394 @@
   },
   "champion": "ARG",
   "third_place_winner": "GER",
+  "awards": {
+    "golden_boot": {
+      "player": "Florian Wirtz",
+      "team": "GER",
+      "goals": 6,
+      "expected_goals": 5.69
+    },
+    "golden_ball": {
+      "player": "Lionel Messi",
+      "team": "ARG"
+    },
+    "top_scorers": [
+      {
+        "player": "Florian Wirtz",
+        "team": "GER",
+        "expected_goals": 5.69
+      },
+      {
+        "player": "Lautaro Martínez",
+        "team": "ARG",
+        "expected_goals": 4.81
+      },
+      {
+        "player": "Brahim Díaz",
+        "team": "MAR",
+        "expected_goals": 4.55
+      },
+      {
+        "player": "Jérémy Doku",
+        "team": "BEL",
+        "expected_goals": 4.0
+      },
+      {
+        "player": "Harry Kane",
+        "team": "ENG",
+        "expected_goals": 3.73
+      },
+      {
+        "player": "Kylian Mbappé",
+        "team": "FRA",
+        "expected_goals": 3.64
+      },
+      {
+        "player": "Cristiano Ronaldo",
+        "team": "POR",
+        "expected_goals": 3.33
+      },
+      {
+        "player": "Romelu Lukaku",
+        "team": "BEL",
+        "expected_goals": 3.33
+      }
+    ]
+  },
   "monte_carlo": {
     "MEX": {
-      "advance": 95.5,
-      "qf": 36.0,
-      "sf": 17.1,
-      "final": 6.5,
-      "champion": 2.6
+      "advance": 95.2,
+      "qf": 35.2,
+      "sf": 16.8,
+      "final": 6.3,
+      "champion": 2.2
     },
     "RSA": {
-      "advance": 16.6,
-      "qf": 0.2,
+      "advance": 17.2,
+      "qf": 0.3,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "KOR": {
-      "advance": 73.3,
-      "qf": 9.2,
-      "sf": 2.3,
-      "final": 0.4,
-      "champion": 0.1
-    },
-    "CZE": {
-      "advance": 85.0,
-      "qf": 15.9,
-      "sf": 4.7,
-      "final": 1.1,
-      "champion": 0.2
-    },
-    "CAN": {
-      "advance": 91.0,
-      "qf": 11.9,
-      "sf": 2.5,
+      "advance": 74.9,
+      "qf": 9.8,
+      "sf": 2.2,
       "final": 0.6,
       "champion": 0.1
     },
+    "CZE": {
+      "advance": 83.5,
+      "qf": 14.4,
+      "sf": 4.0,
+      "final": 0.9,
+      "champion": 0.2
+    },
+    "CAN": {
+      "advance": 91.4,
+      "qf": 12.4,
+      "sf": 2.8,
+      "final": 0.7,
+      "champion": 0.1
+    },
     "BIH": {
-      "advance": 52.2,
+      "advance": 51.2,
       "qf": 0.8,
       "sf": 0.1,
       "final": 0.0,
       "champion": 0.0
     },
     "QAT": {
-      "advance": 30.9,
-      "qf": 0.2,
+      "advance": 31.0,
+      "qf": 0.3,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "SUI": {
-      "advance": 90.1,
-      "qf": 9.8,
-      "sf": 1.9,
-      "final": 0.4,
+      "advance": 89.9,
+      "qf": 10.3,
+      "sf": 2.0,
+      "final": 0.6,
       "champion": 0.1
     },
     "BRA": {
-      "advance": 93.9,
-      "qf": 28.6,
-      "sf": 13.6,
-      "final": 5.2,
-      "champion": 1.6
+      "advance": 94.3,
+      "qf": 29.6,
+      "sf": 14.6,
+      "final": 5.4,
+      "champion": 1.8
     },
     "MAR": {
-      "advance": 95.9,
-      "qf": 39.1,
-      "sf": 22.7,
-      "final": 10.2,
-      "champion": 4.5
+      "advance": 96.2,
+      "qf": 39.4,
+      "sf": 23.2,
+      "final": 10.4,
+      "champion": 4.7
     },
     "HAI": {
-      "advance": 14.5,
-      "qf": 0.2,
+      "advance": 14.1,
+      "qf": 0.3,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "SCO": {
-      "advance": 60.0,
-      "qf": 7.2,
+      "advance": 60.6,
+      "qf": 6.5,
       "sf": 1.8,
       "final": 0.3,
-      "champion": 0.1
+      "champion": 0.0
     },
     "USA": {
-      "advance": 61.0,
-      "qf": 3.2,
-      "sf": 0.7,
+      "advance": 63.9,
+      "qf": 3.8,
+      "sf": 0.8,
       "final": 0.1,
       "champion": 0.0
     },
     "PAR": {
-      "advance": 63.1,
-      "qf": 4.0,
-      "sf": 0.9,
+      "advance": 60.7,
+      "qf": 4.1,
+      "sf": 1.0,
       "final": 0.2,
       "champion": 0.0
     },
     "AUS": {
-      "advance": 54.3,
-      "qf": 2.8,
-      "sf": 0.6,
+      "advance": 55.2,
+      "qf": 2.6,
+      "sf": 0.5,
       "final": 0.1,
       "champion": 0.0
     },
     "TUR": {
       "advance": 92.0,
-      "qf": 22.0,
-      "sf": 10.3,
-      "final": 4.3,
-      "champion": 1.3
+      "qf": 20.9,
+      "sf": 8.8,
+      "final": 3.4,
+      "champion": 1.1
     },
     "GER": {
-      "advance": 98.0,
-      "qf": 52.6,
-      "sf": 34.8,
-      "final": 18.9,
-      "champion": 9.8
+      "advance": 97.9,
+      "qf": 51.0,
+      "sf": 33.4,
+      "final": 17.4,
+      "champion": 8.5
     },
     "CUW": {
-      "advance": 5.5,
+      "advance": 5.8,
       "qf": 0.0,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "CIV": {
-      "advance": 86.2,
-      "qf": 19.6,
-      "sf": 7.9,
-      "final": 2.1,
-      "champion": 0.6
+      "advance": 85.4,
+      "qf": 17.7,
+      "sf": 6.8,
+      "final": 1.9,
+      "champion": 0.4
     },
     "ECU": {
-      "advance": 87.2,
-      "qf": 20.2,
-      "sf": 8.4,
-      "final": 2.5,
-      "champion": 0.6
+      "advance": 87.1,
+      "qf": 18.7,
+      "sf": 6.9,
+      "final": 2.0,
+      "champion": 0.7
     },
     "NED": {
-      "advance": 94.2,
-      "qf": 24.0,
-      "sf": 10.8,
-      "final": 3.9,
-      "champion": 1.2
+      "advance": 93.9,
+      "qf": 26.4,
+      "sf": 11.8,
+      "final": 4.2,
+      "champion": 1.3
     },
     "JPN": {
-      "advance": 97.8,
-      "qf": 44.6,
-      "sf": 26.8,
-      "final": 13.4,
-      "champion": 6.2
+      "advance": 97.3,
+      "qf": 42.8,
+      "sf": 24.6,
+      "final": 11.9,
+      "champion": 5.5
     },
     "SWE": {
-      "advance": 53.0,
-      "qf": 2.3,
-      "sf": 0.5,
+      "advance": 54.6,
+      "qf": 2.8,
+      "sf": 0.6,
       "final": 0.1,
       "champion": 0.0
     },
     "TUN": {
-      "advance": 14.6,
+      "advance": 14.9,
       "qf": 0.1,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "BEL": {
-      "advance": 98.7,
-      "qf": 59.0,
-      "sf": 39.5,
-      "final": 25.2,
-      "champion": 13.8
+      "advance": 98.5,
+      "qf": 58.8,
+      "sf": 38.8,
+      "final": 24.7,
+      "champion": 12.9
     },
     "EGY": {
-      "advance": 76.9,
-      "qf": 9.6,
-      "sf": 2.1,
+      "advance": 78.9,
+      "qf": 10.8,
+      "sf": 2.6,
       "final": 0.6,
       "champion": 0.1
     },
     "IRN": {
-      "advance": 92.2,
-      "qf": 24.7,
-      "sf": 10.1,
-      "final": 3.8,
-      "champion": 1.1
+      "advance": 91.7,
+      "qf": 23.7,
+      "sf": 9.4,
+      "final": 3.9,
+      "champion": 1.0
     },
     "NZL": {
-      "advance": 4.8,
+      "advance": 4.9,
       "qf": 0.0,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "ESP": {
-      "advance": 99.0,
-      "qf": 34.3,
-      "sf": 17.7,
-      "final": 8.7,
-      "champion": 3.3
+      "advance": 99.2,
+      "qf": 37.0,
+      "sf": 20.6,
+      "final": 10.9,
+      "champion": 4.3
     },
     "CPV": {
-      "advance": 63.4,
-      "qf": 2.1,
+      "advance": 58.5,
+      "qf": 1.6,
       "sf": 0.3,
-      "final": 0.1,
+      "final": 0.0,
       "champion": 0.0
     },
     "KSA": {
-      "advance": 29.6,
-      "qf": 0.3,
-      "sf": 0.0,
+      "advance": 29.7,
+      "qf": 0.4,
+      "sf": 0.1,
       "final": 0.0,
       "champion": 0.0
     },
     "URU": {
-      "advance": 65.2,
-      "qf": 2.4,
-      "sf": 0.4,
-      "final": 0.0,
+      "advance": 68.9,
+      "qf": 2.7,
+      "sf": 0.5,
+      "final": 0.1,
       "champion": 0.0
     },
     "FRA": {
-      "advance": 97.8,
-      "qf": 43.3,
-      "sf": 26.2,
-      "final": 13.1,
-      "champion": 5.8
+      "advance": 97.9,
+      "qf": 44.6,
+      "sf": 27.8,
+      "final": 14.0,
+      "champion": 6.2
     },
     "SEN": {
-      "advance": 69.1,
-      "qf": 6.3,
-      "sf": 1.6,
+      "advance": 70.2,
+      "qf": 7.2,
+      "sf": 1.9,
       "final": 0.3,
       "champion": 0.1
     },
     "IRQ": {
-      "advance": 29.1,
-      "qf": 0.8,
+      "advance": 25.5,
+      "qf": 0.5,
       "sf": 0.1,
       "final": 0.0,
       "champion": 0.0
     },
     "NOR": {
-      "advance": 65.5,
-      "qf": 5.9,
-      "sf": 1.4,
-      "final": 0.2,
-      "champion": 0.1
+      "advance": 67.7,
+      "qf": 6.9,
+      "sf": 1.8,
+      "final": 0.3,
+      "champion": 0.0
     },
     "ARG": {
-      "advance": 99.0,
-      "qf": 74.4,
-      "sf": 61.2,
-      "final": 47.7,
-      "champion": 35.7
+      "advance": 99.2,
+      "qf": 75.8,
+      "sf": 62.5,
+      "final": 49.2,
+      "champion": 36.9
     },
     "ALG": {
-      "advance": 81.9,
-      "qf": 19.1,
-      "sf": 6.7,
-      "final": 2.3,
-      "champion": 0.5
+      "advance": 81.6,
+      "qf": 16.6,
+      "sf": 5.1,
+      "final": 1.6,
+      "champion": 0.4
     },
     "AUT": {
-      "advance": 89.4,
-      "qf": 28.9,
-      "sf": 13.2,
-      "final": 5.8,
-      "champion": 1.9
+      "advance": 89.1,
+      "qf": 26.1,
+      "sf": 11.3,
+      "final": 4.4,
+      "champion": 1.6
     },
     "JOR": {
-      "advance": 4.7,
-      "qf": 0.0,
+      "advance": 5.1,
+      "qf": 0.1,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "POR": {
       "advance": 97.7,
-      "qf": 51.8,
-      "sf": 21.4,
-      "final": 11.1,
-      "champion": 4.7
+      "qf": 52.3,
+      "sf": 22.4,
+      "final": 11.6,
+      "champion": 5.1
     },
     "COD": {
-      "advance": 47.0,
-      "qf": 2.6,
-      "sf": 0.2,
-      "final": 0.1,
+      "advance": 45.0,
+      "qf": 2.5,
+      "sf": 0.3,
+      "final": 0.0,
       "champion": 0.0
     },
     "UZB": {
-      "advance": 24.5,
+      "advance": 24.4,
       "qf": 0.7,
       "sf": 0.1,
       "final": 0.0,
       "champion": 0.0
     },
     "COL": {
-      "advance": 88.3,
-      "qf": 23.5,
-      "sf": 6.7,
-      "final": 2.3,
-      "champion": 0.6
+      "advance": 89.1,
+      "qf": 23.3,
+      "sf": 7.2,
+      "final": 2.2,
+      "champion": 0.5
     },
     "ENG": {
-      "advance": 98.5,
-      "qf": 39.4,
-      "sf": 18.9,
-      "final": 7.6,
-      "champion": 3.3
+      "advance": 98.8,
+      "qf": 41.9,
+      "sf": 21.0,
+      "final": 8.9,
+      "champion": 3.9
     },
     "CRO": {
-      "advance": 91.3,
-      "qf": 12.4,
-      "sf": 3.1,
+      "advance": 91.1,
+      "qf": 12.5,
+      "sf": 3.2,
       "final": 0.6,
       "champion": 0.1
     },
     "GHA": {
-      "advance": 6.6,
-      "qf": 0.1,
+      "advance": 7.0,
+      "qf": 0.0,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "PAN": {
-      "advance": 73.8,
-      "qf": 4.0,
-      "sf": 0.6,
+      "advance": 72.1,
+      "qf": 3.7,
+      "sf": 0.5,
       "final": 0.1,
       "champion": 0.0
     }
