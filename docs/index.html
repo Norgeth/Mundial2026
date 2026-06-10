@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundial 2026 — Silnik Predykcji</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="hero-kicker">Symulacja algorytmiczna &middot; snapshot danych: <span id="snapshot-date">…</span></p>
+    <h1>Mundial <span class="accent">2026</span></h1>
+    <p class="hero-sub">Predykcja całego turnieju: model Poissona z korektą Dixona-Colesa,
+       Power Index (ranking FIFA + forma + bilans bramkowy) oraz 10&nbsp;000 symulacji Monte Carlo.</p>
+  </header>
+
+  <main>
+    <section id="champion-section" class="champion-section">
+      <h2 class="section-title">Przewidywany Mistrz Świata</h2>
+      <div id="champion-card" class="champion-card"></div>
+      <div id="podium" class="podium"></div>
+    </section>
+
+    <section id="mc-section">
+      <h2 class="section-title">Szanse na mistrzostwo <span class="muted">(Monte Carlo, 10&nbsp;000 turniejów)</span></h2>
+      <div id="mc-bars" class="mc-bars"></div>
+    </section>
+
+    <section id="groups-section">
+      <h2 class="section-title">Faza grupowa <span class="muted">(przewidywane wyniki i tabele)</span></h2>
+      <div id="groups-grid" class="groups-grid"></div>
+      <details class="thirds-box">
+        <summary>Ranking drużyn z 3. miejsc (8 najlepszych awansuje)</summary>
+        <div id="thirds-table"></div>
+      </details>
+    </section>
+
+    <section id="bracket-section">
+      <h2 class="section-title">Faza pucharowa</h2>
+      <div class="bracket-scroll">
+        <div id="bracket" class="bracket"></div>
+      </div>
+      <div id="third-place-match" class="third-place-match"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Wynik deterministycznej symulacji — nie wróżba 😉 Dane zamrożone w przeddzień turnieju.
+       Metodologia i kod: <a href="https://github.com/norgeth/mundial2026" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+
+  <script src="results.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

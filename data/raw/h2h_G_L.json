@@ -1,0 +1,417 @@
+{
+  "source_urls": [
+    "https://github.com/martj42/international_results"
+  ],
+  "data_quality": [
+    "19 of 36 pairs have no recorded meeting"
+  ],
+  "pairs": [
+    {
+      "team_a": "BEL",
+      "team_b": "EGY",
+      "matches": [
+        {
+          "date": "2022-11-18",
+          "goals_a": 1,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2018-06-06",
+          "goals_a": 3,
+          "goals_b": 0,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2005-02-09",
+          "goals_a": 0,
+          "goals_b": 4,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "BEL",
+      "team_b": "IRN",
+      "matches": []
+    },
+    {
+      "team_a": "BEL",
+      "team_b": "NZL",
+      "matches": []
+    },
+    {
+      "team_a": "EGY",
+      "team_b": "IRN",
+      "matches": [
+        {
+          "date": "2000-06-07",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "EGY",
+      "team_b": "NZL",
+      "matches": [
+        {
+          "date": "2024-03-22",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "FIFA Series"
+        },
+        {
+          "date": "1999-07-15",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1999-07-10",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "IRN",
+      "team_b": "NZL",
+      "matches": [
+        {
+          "date": "2003-10-12",
+          "goals_a": 3,
+          "goals_b": 0,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1973-08-12",
+          "goals_a": 0,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "ESP",
+      "team_b": "CPV",
+      "matches": []
+    },
+    {
+      "team_a": "ESP",
+      "team_b": "KSA",
+      "matches": [
+        {
+          "date": "2012-09-07",
+          "goals_a": 5,
+          "goals_b": 0,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2010-05-29",
+          "goals_a": 3,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2006-06-23",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "FIFA World Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "ESP",
+      "team_b": "URU",
+      "matches": [
+        {
+          "date": "2013-06-16",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "Confederations Cup"
+        },
+        {
+          "date": "2013-02-06",
+          "goals_a": 3,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2005-08-17",
+          "goals_a": 2,
+          "goals_b": 0,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "CPV",
+      "team_b": "KSA",
+      "matches": []
+    },
+    {
+      "team_a": "CPV",
+      "team_b": "URU",
+      "matches": []
+    },
+    {
+      "team_a": "KSA",
+      "team_b": "URU",
+      "matches": [
+        {
+          "date": "2018-06-20",
+          "goals_a": 0,
+          "goals_b": 1,
+          "competition": "FIFA World Cup"
+        },
+        {
+          "date": "2014-10-10",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2002-03-27",
+          "goals_a": 3,
+          "goals_b": 2,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "FRA",
+      "team_b": "SEN",
+      "matches": [
+        {
+          "date": "2002-05-31",
+          "goals_a": 0,
+          "goals_b": 1,
+          "competition": "FIFA World Cup"
+        },
+        {
+          "date": "1963-04-18",
+          "goals_a": 0,
+          "goals_b": 2,
+          "competition": "African Friendship Games"
+        }
+      ]
+    },
+    {
+      "team_a": "FRA",
+      "team_b": "IRQ",
+      "matches": []
+    },
+    {
+      "team_a": "FRA",
+      "team_b": "NOR",
+      "matches": [
+        {
+          "date": "2014-05-27",
+          "goals_a": 4,
+          "goals_b": 0,
+          "competition": "Friendly"
+        },
+        {
+          "date": "2010-08-11",
+          "goals_a": 1,
+          "goals_b": 2,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1998-02-25",
+          "goals_a": 3,
+          "goals_b": 3,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "SEN",
+      "team_b": "IRQ",
+      "matches": []
+    },
+    {
+      "team_a": "SEN",
+      "team_b": "NOR",
+      "matches": [
+        {
+          "date": "2006-03-01",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "IRQ",
+      "team_b": "NOR",
+      "matches": []
+    },
+    {
+      "team_a": "ARG",
+      "team_b": "ALG",
+      "matches": [
+        {
+          "date": "2007-06-05",
+          "goals_a": 4,
+          "goals_b": 3,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "ARG",
+      "team_b": "AUT",
+      "matches": [
+        {
+          "date": "1990-05-03",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1980-05-21",
+          "goals_a": 5,
+          "goals_b": 1,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "ARG",
+      "team_b": "JOR",
+      "matches": []
+    },
+    {
+      "team_a": "ALG",
+      "team_b": "AUT",
+      "matches": [
+        {
+          "date": "1982-06-21",
+          "goals_a": 0,
+          "goals_b": 2,
+          "competition": "FIFA World Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "ALG",
+      "team_b": "JOR",
+      "matches": [
+        {
+          "date": "2004-05-30",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        },
+        {
+          "date": "1974-09-29",
+          "goals_a": 6,
+          "goals_b": 0,
+          "competition": "Kuneitra Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "AUT",
+      "team_b": "JOR",
+      "matches": []
+    },
+    {
+      "team_a": "POR",
+      "team_b": "COD",
+      "matches": []
+    },
+    {
+      "team_a": "POR",
+      "team_b": "UZB",
+      "matches": []
+    },
+    {
+      "team_a": "POR",
+      "team_b": "COL",
+      "matches": []
+    },
+    {
+      "team_a": "COD",
+      "team_b": "UZB",
+      "matches": []
+    },
+    {
+      "team_a": "COD",
+      "team_b": "COL",
+      "matches": []
+    },
+    {
+      "team_a": "UZB",
+      "team_b": "COL",
+      "matches": []
+    },
+    {
+      "team_a": "ENG",
+      "team_b": "CRO",
+      "matches": [
+        {
+          "date": "2021-06-13",
+          "goals_a": 1,
+          "goals_b": 0,
+          "competition": "UEFA Euro"
+        },
+        {
+          "date": "2018-11-18",
+          "goals_a": 2,
+          "goals_b": 1,
+          "competition": "UEFA Nations League"
+        },
+        {
+          "date": "2018-10-12",
+          "goals_a": 0,
+          "goals_b": 0,
+          "competition": "UEFA Nations League"
+        }
+      ]
+    },
+    {
+      "team_a": "ENG",
+      "team_b": "GHA",
+      "matches": [
+        {
+          "date": "2011-03-29",
+          "goals_a": 1,
+          "goals_b": 1,
+          "competition": "Friendly"
+        }
+      ]
+    },
+    {
+      "team_a": "ENG",
+      "team_b": "PAN",
+      "matches": [
+        {
+          "date": "2018-06-24",
+          "goals_a": 6,
+          "goals_b": 1,
+          "competition": "FIFA World Cup"
+        }
+      ]
+    },
+    {
+      "team_a": "CRO",
+      "team_b": "GHA",
+      "matches": []
+    },
+    {
+      "team_a": "CRO",
+      "team_b": "PAN",
+      "matches": []
+    },
+    {
+      "team_a": "GHA",
+      "team_b": "PAN",
+      "matches": []
+    }
+  ]
+}
