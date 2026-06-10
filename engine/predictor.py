@@ -1,23 +1,22 @@
 """Match prediction core for the Mundial Predictor Engine.
 
-Hybrid model (variant C from the architecture review):
-- Power Index per team: normalized FIFA points (50%) + recency-weighted
-  form from the last 5 matches (25%) + sigmoid of average goal difference (15%)
-  + pre-tournament readiness score from recent news articles (10%).
-- Expected goals derived from the power difference, scaled by each side's
-  attack/defence averages (square-rooted to dampen the noisy 5-match sample).
-- Independent-Poisson score grid with a Dixon-Coles low-score correction.
-- Two-stage argmax: first fix the outcome (win/draw/loss) by total
-  probability mass, then pick the most probable scoreline within it.
+Two weight configs are used (see GROUP_WEIGHTS / KNOCKOUT_WEIGHTS):
+- Group stage: 25% FIFA rank, 25% form, 25% goal diff, 25% news readiness.
+- Knockout stage: 50% FIFA rank, ~16.7% form, ~16.7% goal diff, ~16.7% news.
+
+Expected goals derived from the power difference, scaled by each side's
+attack/defence averages (square-rooted to dampen the noisy 5-match sample).
+Score grid: independent Poisson with a Dixon-Coles low-score correction.
+Two-stage argmax: fix outcome (win/draw/loss) by probability mass, then
+pick the most probable scoreline within that outcome region.
 """
 
 import math
 from bisect import bisect_right
 
-WEIGHT_RANK = 0.50
-WEIGHT_FORM = 0.25
-WEIGHT_GOALS = 0.15
-WEIGHT_NEWS = 0.10
+GROUP_WEIGHTS    = {"rank": 0.25, "form": 0.25, "goals": 0.25, "news": 0.25}
+KNOCKOUT_WEIGHTS = {"rank": 0.50, "form": 1.0 / 6, "goals": 1.0 / 6, "news": 1.0 / 6}
+
 FORM_RECENCY_WEIGHTS = [1.00, 0.85, 0.70, 0.55, 0.40]  # newest match first
 GOAL_SIGMOID_K = 0.4
 H2H_DELTA_PER_WIN = 1.33
@@ -41,7 +40,8 @@ def poisson_pmf(k, lam):
 class TeamModel:
     """Per-team strength figures derived once from the data snapshot."""
 
-    def __init__(self, code, fifa_points, recent_matches, min_pts, max_pts, news_score=None):
+    def __init__(self, code, fifa_points, recent_matches, min_pts, max_pts,
+                 news_score=None, weights=None):
         self.code = code
         self.fifa_points = fifa_points
         self.rank_score = 100.0 * (fifa_points - min_pts) / (max_pts - min_pts)
@@ -55,10 +55,11 @@ class TeamModel:
         # news_score 1–10 mapped to 0–100; default = 5 (neutral)
         news_norm = ((news_score - 1.0) / 9.0 * 100.0) if news_score is not None else 50.0
         self.news_score = news_score
-        self.power = (WEIGHT_RANK * self.rank_score
-                      + WEIGHT_FORM * form
-                      + WEIGHT_GOALS * self.goal_score
-                      + WEIGHT_NEWS * news_norm)
+        w = weights if weights is not None else GROUP_WEIGHTS
+        self.power = (w["rank"] * self.rank_score
+                      + w["form"] * form
+                      + w["goals"] * self.goal_score
+                      + w["news"] * news_norm)
         self.form_string = self._form_string(recent_matches)
 
     @staticmethod
