@@ -1,9 +1,33 @@
 {
   "source_urls": [
-    "https://github.com/martj42/international_results"
+    "https://github.com/martj42/international_results",
+    "https://www.espn.com/soccer/match/_/gameId/653666/egypt-belgium",
+    "https://www.espn.co.uk/football/match/_/gameId/699076/new-zealand-egypt",
+    "https://en.wikipedia.org/wiki/2024_FIFA_Series",
+    "https://www.espn.com/soccer/match/_/gameId/355029/saudi-arabia-spain",
+    "https://www.espn.com/soccer/match/_/gameId/365335/uruguay-spain",
+    "https://www.espn.com/soccer/match/_/gameId/498184/saudi-arabia-uruguay",
+    "https://www.espn.co.uk/football/match?gameId=406214",
+    "https://www.espn.com/soccer/match/_/gameId/46457/senegal-france",
+    "https://www.espn.co.uk/football/match/_/gameId/386668/norway-france",
+    "https://www.besoccer.com/match/senegal/seleccion-noruega/200695800/events",
+    "https://www.espn.com/soccer/match/_/gameId/218940/algeria-argentina",
+    "https://www.transfermarkt.us/austria_argentina/index/spielbericht/2257356",
+    "https://en.wikipedia.org/wiki/1982_FIFA_World_Cup_Group_2",
+    "https://www.footballdatabase.eu/en/match/summary/1023200-algerie-jordanie",
+    "https://www.uefa.com/uefaeuro/match/2024451--england-vs-croatia/",
+    "https://www.espn.com/soccer/match/_/gameId/313786/ghana-england",
+    "https://www.espn.com/soccer/match/_/gameId/498173/panama-england",
+    "https://en.fifaranking.net/nations/nzl/results/head-to-head/index.php?team=irn",
+    "https://worldsoccertalk.com/world-cup/cristiano-ronaldos-portugal-and-james-rodriguezs-colombia-to-make-history-as-2026-fifa-world-cup-will-feature-27-never-before-seen-international-clashes/"
   ],
   "data_quality": [
-    "19 of 36 pairs have no recorded meeting"
+    "19 of 36 pairs have no recorded meeting",
+    "Web-verified 2026-06-10: most recent meeting (date, score, competition) confirmed for all 17 pairs with matches via ESPN/UEFA/Wikipedia/Transfermarkt/footballdatabase; no discrepancies found, no corrections needed",
+    "Older entries spot-confirmed: ARG-AUT 1980 (5-1), ENG-CRO 2018 Nations League (2-1, 0-0), KSA-URU 2014 (1-1) and 2002 (3-2, h2h record 1W-1D-1L pre-2026 consistent); EGY-NZL date 2024-03-22 confirmed (ESPN/beIN/365scores) despite some outlets dating it 03-23",
+    "Note: ESPN's 2018 KSA-URU match report mentions a 2006 friendly (Uruguay 2-0); no corroboration found in h2h databases (record 1W-1D-1L over 2002/2014/2018 is consistent without it) - not added",
+    "IRN-NZL: external h2h sources confirm exactly 2 meetings (1 Iran win, 1 draw), consistent with 2003 (3-0) and 1973 (0-0) entries",
+    "Empty pairs confirmed never met via web search: FRA-IRQ, BEL-NZL (11v11: no h2h record), ARG-JOR, ESP-CPV, CRO-GHA, and all 6 Group K pairs (POR/COD/UZB/COL - no Group K matchup has ever been played per World Soccer Talk); remaining empties (SEN-IRQ, IRQ-NOR, BEL-IRN, AUT-JOR, CPV-KSA, CPV-URU, CRO-PAN, GHA-PAN) unverified but consistent with martj42 dataset"
   ],
   "pairs": [
     {
