@@ -3,11 +3,16 @@
   "source_urls": [
     "https://www.espn.com/soccer/story/_/id/46664763/fifa-mens-top-50-world-rankings",
     "https://www.hitc.com/official-fifa-rankings-in-full-ahead-of-2026-world-cup-including-mexico-canada-and-the-usa/",
-    "https://inside.fifa.com/fifa-world-ranking/men"
+    "https://inside.fifa.com/fifa-world-ranking/men",
+    "https://github.com/sslp23/fifa-ranking-scraper (data/resulting_data.csv, rank_date 2026-04-01, scraped from transfermarkt.com)",
+    "https://thesoccerera.com/fifa-mens-soccer-world-rankings/",
+    "https://businesstats.com/world-ranking-of-national-soccer-teams/"
   ],
   "data_quality": [
-    "Rank positions verified for all 48 teams (1 April 2026 edition).",
-    "Exact points published only for the top 3 in accessible sources; points for 45 teams interpolated from verified rank along a typical FIFA points curve (see engine/build_ranking_raw.py)."
+    "Rank positions verified for all 48 teams (1 April 2026 edition); independently re-confirmed against the Transfermarkt-scraped dataset (github.com/sslp23/fifa-ranking-scraper, rank_date 2026-04-01) - all 48 ranks match.",
+    "FRA, ESP, ARG: exact official points with 2-decimal precision (1877.32 / 1876.40 / 1874.81).",
+    "Remaining 45 teams: exact published points at whole-point precision (rounded by publisher, +/-0.5) from the Transfermarkt-scraped April 2026 table; values for the top-20 teams (ENG, POR, BRA, NED, MAR, BEL, GER, CRO, COL, SEN, MEX, USA, URU, JPN, SUI) additionally cross-confirmed via web-search snippets (thesoccerera.com / businesstats.com aggregations).",
+    "No interpolated points remain in this file."
   ],
   "teams": {
     "FRA": {
@@ -24,183 +29,183 @@
     },
     "ENG": {
       "rank": 4,
-      "points": 1832.0
+      "points": 1826.0
     },
     "POR": {
       "rank": 5,
-      "points": 1800.0
+      "points": 1764.0
     },
     "BRA": {
       "rank": 6,
-      "points": 1781.0
+      "points": 1761.0
     },
     "NED": {
       "rank": 7,
-      "points": 1762.0
+      "points": 1758.0
     },
     "MAR": {
       "rank": 8,
-      "points": 1747.33
+      "points": 1756.0
     },
     "BEL": {
       "rank": 9,
-      "points": 1732.67
+      "points": 1735.0
     },
     "GER": {
       "rank": 10,
-      "points": 1718.0
+      "points": 1730.0
     },
     "CRO": {
       "rank": 11,
-      "points": 1707.0
+      "points": 1717.0
     },
     "COL": {
       "rank": 13,
-      "points": 1683.33
+      "points": 1693.0
     },
     "SEN": {
       "rank": 14,
-      "points": 1670.67
+      "points": 1689.0
     },
     "MEX": {
       "rank": 15,
-      "points": 1658.0
+      "points": 1681.0
     },
     "USA": {
       "rank": 16,
-      "points": 1648.67
+      "points": 1673.0
     },
     "URU": {
       "rank": 17,
-      "points": 1639.33
+      "points": 1673.0
     },
     "JPN": {
       "rank": 18,
-      "points": 1630.0
+      "points": 1660.0
     },
     "SUI": {
       "rank": 19,
-      "points": 1623.0
+      "points": 1649.0
     },
     "IRN": {
       "rank": 21,
-      "points": 1607.6
+      "points": 1615.0
     },
     "TUR": {
       "rank": 22,
-      "points": 1599.2
+      "points": 1599.0
     },
     "ECU": {
       "rank": 23,
-      "points": 1590.8
+      "points": 1595.0
     },
     "AUT": {
       "rank": 24,
-      "points": 1582.4
+      "points": 1593.0
     },
     "KOR": {
       "rank": 25,
-      "points": 1574.0
+      "points": 1589.0
     },
     "AUS": {
       "rank": 27,
-      "points": 1559.6
+      "points": 1581.0
     },
     "ALG": {
       "rank": 28,
-      "points": 1552.4
+      "points": 1564.0
     },
     "EGY": {
       "rank": 29,
-      "points": 1545.2
+      "points": 1563.0
     },
     "CAN": {
       "rank": 30,
-      "points": 1538.0
+      "points": 1556.0
     },
     "NOR": {
       "rank": 31,
-      "points": 1531.2
+      "points": 1551.0
     },
     "PAN": {
       "rank": 33,
-      "points": 1517.6
+      "points": 1541.0
     },
     "CIV": {
       "rank": 34,
-      "points": 1510.8
+      "points": 1533.0
     },
     "SWE": {
       "rank": 38,
-      "points": 1484.8
+      "points": 1515.0
     },
     "PAR": {
       "rank": 40,
-      "points": 1472.0
+      "points": 1504.0
     },
     "CZE": {
       "rank": 41,
-      "points": 1466.8
+      "points": 1501.0
     },
     "SCO": {
       "rank": 43,
-      "points": 1456.4
+      "points": 1498.0
     },
     "TUN": {
       "rank": 44,
-      "points": 1451.2
+      "points": 1483.0
     },
     "COD": {
       "rank": 46,
-      "points": 1440.8
+      "points": 1478.0
     },
     "UZB": {
       "rank": 50,
-      "points": 1420.0
+      "points": 1465.0
     },
     "QAT": {
       "rank": 55,
-      "points": 1394.0
+      "points": 1455.0
     },
     "IRQ": {
       "rank": 57,
-      "points": 1383.6
+      "points": 1447.0
     },
     "RSA": {
       "rank": 60,
-      "points": 1368.0
+      "points": 1430.0
     },
     "KSA": {
       "rank": 61,
-      "points": 1362.8
+      "points": 1421.0
     },
     "JOR": {
       "rank": 63,
-      "points": 1352.4
+      "points": 1391.0
     },
     "BIH": {
       "rank": 65,
-      "points": 1342.0
+      "points": 1386.0
     },
     "CPV": {
       "rank": 69,
-      "points": 1321.2
+      "points": 1366.0
     },
     "GHA": {
       "rank": 74,
-      "points": 1296.8
+      "points": 1346.0
     },
     "CUW": {
       "rank": 82,
-      "points": 1259.2
+      "points": 1295.0
     },
     "HAI": {
       "rank": 83,
-      "points": 1254.8
+      "points": 1292.0
     },
     "NZL": {
       "rank": 85,
-      "points": 1246.0
+      "points": 1282.0
     }
   }
 }
