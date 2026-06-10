@@ -28,16 +28,7 @@ Pełne tabele grup, wszystkie 104 wyniki i drabinka pucharowa:
 
 ## Strona
 
-Statyczna strona bez żadnych zależności (ciemny motyw, przełącznik PL/EN).
-Publikacja przez GitHub Pages w ~2 minuty:
-
-**Settings → Pages → Source: _Deploy from a branch_ → branch `main`, folder
-`/docs` → Save.**
-
-Strona dostępna pod `https://norgeth.github.io/Mundial2026/`.
-
-Działa też offline — otwórz `docs/index.html` z dysku (plik `results.js`
-obsługuje tryb `file://`).
+Wyniki dostępne na [norgeth.github.io/Mundial2026](https://norgeth.github.io/Mundial2026/) — ciemny motyw, przełącznik PL/EN. Działa też offline po otwarciu `docs/index.html` z dysku.
 
 ## Architektura
 
