@@ -5,10 +5,9 @@
 ![Monte Carlo](https://img.shields.io/badge/monte_carlo-10\,000_turniejów-60a5fa)
 ![Snapshot](https://img.shields.io/badge/snapshot_danych-2026--06--10-fbbf24)
 
-Silnik symulacji Mundialu 2026 oparty na zamrożonym snapshocie rzeczywistych
-danych piłkarskich (10 czerwca 2026). Deterministyczny algorytm rozgrywa
-wszystkie 104 mecze — od fazy grupowej po finał — i renderuje wyniki na
-dwujęzycznej stronie statycznej (PL/EN).
+Symulacja Mundialu 2026 oparta na rzeczywistych danych z czerwca 2026.
+Algorytm przewiduje wszystkie 104 mecze — od grup do finału — i wyświetla
+wyniki na dwujęzycznej stronie (PL/EN).
 
 ## Wynik
 
@@ -67,20 +66,21 @@ Frontend nie zawiera logiki — tylko renderuje wyliczone wyniki.
 
    Historia H2H (≤3 bezpośrednie spotkania) dodaje korekę ±4 w fazie grupowej.
 
-2. **Oczekiwane bramki**: różnica Power Index wyznacza bazę każdej drużyny
-   (`1,35 × 10^(Δ/180)`), mnożoną przez wskaźniki ataku/obrony z ostatnich
-   5 meczów. Średnie skurczone bayesowsko w kierunku średniej MŚ (prior = 3 mecze).
-   λ ograniczone do [0,3; 3,0].
+2. **Oczekiwane bramki**: wyliczane na bazie różnicy Power Index, modyfikowanej
+   wskaźnikami ataku i obrony z ostatnich 5 meczów. Wyniki stabilizowane
+   w kierunku historycznej średniej MŚ (żeby np. 5-mecz bez straconej bramki
+   nie oznaczał "nieprzebitej obrony").
 
-3. **Siatka wyników**: niezależny Poisson dla 0–8 goli z korektą Dixona-Colesa
-   (ρ = 0,10) — redukuje nadreprezentację wyników 0:0 i 1:1.
+3. **Siatka wyników**: model statystyczny rozkładu goli (0–8 na drużynę),
+   z korektą dla bardziej realistycznej wyceny wyników 0:0 i 1:1.
 
-4. **Wynik deterministyczny** — dwustopniowy argmax: najpierw wynik (W/R/P),
-   potem najczęstszy scoreline w jego ramach. Identyczny wynik przy każdym
-   uruchomieniu.
+4. **Wynik deterministyczny** — algorytm wybiera najpierw najbardziej
+   prawdopodobny wynik meczu (wygrana/remis/porażka), potem najczęstszy
+   scoreline w tej kategorii. Zawsze ten sam wynik przy tym samym snapsocie.
 
-5. **Monte Carlo**: 10 000 pełnych symulacji (`random.Random(2026)`) daje
-   procentowe szanse na mistrzostwo i awans. Nie zmienia kanonicznej osi meczów.
+5. **Monte Carlo**: 10 000 losowych symulacji całego turnieju daje
+   procentowe szanse na mistrzostwo i awans — jako uzupełnienie
+   wyniku deterministycznego, nie jego zamiennik.
 
 ## Snapshot danych (zamrożony 2026-06-10)
 
