@@ -11,8 +11,9 @@ import random
 from datetime import date
 from pathlib import Path
 
-import predictor
+import awards
 import bracket
+import predictor
 
 ROOT = Path(__file__).resolve().parent.parent
 MC_RUNS = 10_000
@@ -219,6 +220,28 @@ def main():
           f"({MC_RUNS} tournaments, seed {MC_SEED})...")
     mc = monte_carlo(snapshot, cache, models)
 
+    team_goals, team_stage = {}, {}
+    for letter, matches in group_matches.items():
+        for home, away, gh, ga in matches:
+            team_goals[home] = team_goals.get(home, 0) + gh
+            team_goals[away] = team_goals.get(away, 0) + ga
+    for rnd_name, matches in by_round.items():
+        for m in matches:
+            team_goals[m["home"]] += m["score"][0]
+            team_goals[m["away"]] += m["score"][1]
+            team_stage[m["home"]] = rnd_name
+            team_stage[m["away"]] = rnd_name
+    champion = by_round["F"][0]["winner"]
+    team_stage[champion] = "CHAMPION"
+
+    awards_result = None
+    players_path = ROOT / "data" / "raw" / "players.json"
+    if players_path.exists():
+        with open(players_path, encoding="utf-8") as f:
+            players = json.load(f)
+        awards_result = awards.compute_awards(players, team_goals,
+                                              team_stage, champion)
+
     results = {
         "meta": {
             "generated_at": date.today().isoformat(),
@@ -278,6 +301,7 @@ def main():
         },
         "champion": by_round["F"][0]["winner"],
         "third_place_winner": by_round["third_place"][0]["winner"],
+        "awards": awards_result,
         "monte_carlo": mc,
     }
 

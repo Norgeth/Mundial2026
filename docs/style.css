@@ -69,6 +69,25 @@ main { max-width: 1280px; margin: 0 auto; padding: 0 20px 60px; }
 }
 .podium .medal { margin-right: 6px; }
 
+.awards {
+  display: flex; justify-content: center; gap: 16px;
+  margin-top: 22px; flex-wrap: wrap;
+}
+.award-card {
+  background: linear-gradient(145deg, var(--bg-card-2), var(--bg-card));
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 18px 28px; min-width: 260px;
+}
+.award-title {
+  font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--text-dim); margin-bottom: 8px; font-weight: 700;
+}
+.award-player { font-size: 1.25rem; font-weight: 900; }
+.award-team { color: var(--text-dim); font-size: 0.9rem; margin-top: 2px; }
+.award-others {
+  flex-basis: 100%; color: var(--text-dim); font-size: 0.8rem; margin-top: 4px;
+}
+
 /* ---- Monte Carlo bars ---- */
 .mc-bars { display: flex; flex-direction: column; gap: 8px; max-width: 760px; }
 .mc-row { display: grid; grid-template-columns: 200px 1fr 56px; align-items: center; gap: 12px; }
