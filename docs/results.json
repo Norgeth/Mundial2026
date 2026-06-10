@@ -2,7 +2,7 @@
   "meta": {
     "generated_at": "2026-06-10",
     "snapshot_date": "2026-06-10",
-    "ranking_edition": "FIFA Men's World Ranking, 1 April 2026",
+    "ranking_edition": "FIFA Men's World Ranking, 1 April 2026 (latest official edition as of 2026-06-10; next release 11 June 2026)",
     "algorithm": {
       "weights": {
         "fifa_rank": 0.5,
@@ -27,8 +27,8 @@
       "name_en": "Mexico",
       "group": "A",
       "fifa_rank": 15,
-      "fifa_points": 1658.0,
-      "power": 69.9,
+      "fifa_points": 1681.0,
+      "power": 70.8,
       "form": "WWWDD"
     },
     "RSA": {
@@ -36,17 +36,17 @@
       "name_en": "South Africa",
       "group": "A",
       "fifa_rank": 60,
-      "fifa_points": 1368.0,
-      "power": 31.8,
-      "form": "WDLDL"
+      "fifa_points": 1430.0,
+      "power": 28.5,
+      "form": "DDLDL"
     },
     "KOR": {
       "name_pl": "Korea Południowa",
       "name_en": "South Korea",
       "group": "A",
       "fifa_rank": 25,
-      "fifa_points": 1574.0,
-      "power": 56.1,
+      "fifa_points": 1589.0,
+      "power": 55.9,
       "form": "WWLLW"
     },
     "CZE": {
@@ -54,8 +54,8 @@
       "name_en": "Czechia",
       "group": "A",
       "fifa_rank": 41,
-      "fifa_points": 1466.8,
-      "power": 54.5,
+      "fifa_points": 1501.0,
+      "power": 54.7,
       "form": "WWDDW"
     },
     "CAN": {
@@ -63,8 +63,8 @@
       "name_en": "Canada",
       "group": "B",
       "fifa_rank": 30,
-      "fifa_points": 1538.0,
-      "power": 51.9,
+      "fifa_points": 1556.0,
+      "power": 51.7,
       "form": "DWDDW"
     },
     "BIH": {
@@ -72,8 +72,8 @@
       "name_en": "Bosnia and Herzegovina",
       "group": "B",
       "fifa_rank": 65,
-      "fifa_points": 1342.0,
-      "power": 27.6,
+      "fifa_points": 1386.0,
+      "power": 28.7,
       "form": "DDDDD"
     },
     "QAT": {
@@ -81,8 +81,8 @@
       "name_en": "Qatar",
       "group": "B",
       "fifa_rank": 55,
-      "fifa_points": 1394.0,
-      "power": 24.2,
+      "fifa_points": 1455.0,
+      "power": 27.0,
       "form": "DLLDL"
     },
     "SUI": {
@@ -90,8 +90,8 @@
       "name_en": "Switzerland",
       "group": "B",
       "fifa_rank": 19,
-      "fifa_points": 1623.0,
-      "power": 53.9,
+      "fifa_points": 1649.0,
+      "power": 54.9,
       "form": "DWDLD"
     },
     "BRA": {
@@ -99,8 +99,8 @@
       "name_en": "Brazil",
       "group": "C",
       "fifa_rank": 6,
-      "fifa_points": 1781.0,
-      "power": 77.7,
+      "fifa_points": 1761.0,
+      "power": 75.6,
       "form": "WWWLD"
     },
     "MAR": {
@@ -108,8 +108,8 @@
       "name_en": "Morocco",
       "group": "C",
       "fifa_rank": 8,
-      "fifa_points": 1747.33,
-      "power": 75.5,
+      "fifa_points": 1756.0,
+      "power": 75.6,
       "form": "DWWWD"
     },
     "HAI": {
@@ -117,8 +117,8 @@
       "name_en": "Haiti",
       "group": "C",
       "fifa_rank": 83,
-      "fifa_points": 1254.8,
-      "power": 25.0,
+      "fifa_points": 1292.0,
+      "power": 25.1,
       "form": "LWDLW"
     },
     "SCO": {
@@ -126,8 +126,8 @@
       "name_en": "Scotland",
       "group": "C",
       "fifa_rank": 43,
-      "fifa_points": 1456.4,
-      "power": 48.7,
+      "fifa_points": 1498.0,
+      "power": 50.2,
       "form": "WWLLW"
     },
     "USA": {
@@ -135,8 +135,8 @@
       "name_en": "United States",
       "group": "D",
       "fifa_rank": 16,
-      "fifa_points": 1648.67,
-      "power": 52.2,
+      "fifa_points": 1673.0,
+      "power": 53.2,
       "form": "LWLLW"
     },
     "PAR": {
@@ -144,8 +144,8 @@
       "name_en": "Paraguay",
       "group": "D",
       "fifa_rank": 40,
-      "fifa_points": 1472.0,
-      "power": 48.8,
+      "fifa_points": 1504.0,
+      "power": 49.5,
       "form": "WLWWL"
     },
     "AUS": {
@@ -153,8 +153,8 @@
       "name_en": "Australia",
       "group": "D",
       "fifa_rank": 27,
-      "fifa_points": 1559.6,
-      "power": 48.8,
+      "fifa_points": 1581.0,
+      "power": 49.1,
       "form": "DLWWL"
     },
     "TUR": {
@@ -162,8 +162,8 @@
       "name_en": "Türkiye",
       "group": "D",
       "fifa_rank": 22,
-      "fifa_points": 1599.2,
-      "power": 68.4,
+      "fifa_points": 1599.0,
+      "power": 67.1,
       "form": "WWWWD"
     },
     "GER": {
@@ -171,8 +171,8 @@
       "name_en": "Germany",
       "group": "E",
       "fifa_rank": 10,
-      "fifa_points": 1718.0,
-      "power": 82.2,
+      "fifa_points": 1730.0,
+      "power": 82.4,
       "form": "WWWWW"
     },
     "CUW": {
@@ -180,7 +180,7 @@
       "name_en": "Curaçao",
       "group": "E",
       "fifa_rank": 82,
-      "fifa_points": 1259.2,
+      "fifa_points": 1295.0,
       "power": 18.8,
       "form": "WLLLD"
     },
@@ -189,8 +189,8 @@
       "name_en": "Ivory Coast",
       "group": "E",
       "fifa_rank": 34,
-      "fifa_points": 1510.8,
-      "power": 59.4,
+      "fifa_points": 1533.0,
+      "power": 59.5,
       "form": "WWWLW"
     },
     "ECU": {
@@ -198,8 +198,8 @@
       "name_en": "Ecuador",
       "group": "E",
       "fifa_rank": 23,
-      "fifa_points": 1590.8,
-      "power": 62.5,
+      "fifa_points": 1595.0,
+      "power": 61.5,
       "form": "WWDDW"
     },
     "NED": {
@@ -207,8 +207,8 @@
       "name_en": "Netherlands",
       "group": "F",
       "fifa_rank": 7,
-      "fifa_points": 1762.0,
-      "power": 71.6,
+      "fifa_points": 1758.0,
+      "power": 70.7,
       "form": "WLDWW"
     },
     "JPN": {
@@ -216,8 +216,8 @@
       "name_en": "Japan",
       "group": "F",
       "fifa_rank": 18,
-      "fifa_points": 1630.0,
-      "power": 73.5,
+      "fifa_points": 1660.0,
+      "power": 74.8,
       "form": "WWWWW"
     },
     "SWE": {
@@ -225,8 +225,8 @@
       "name_en": "Sweden",
       "group": "F",
       "fifa_rank": 38,
-      "fifa_points": 1484.8,
-      "power": 44.0,
+      "fifa_points": 1515.0,
+      "power": 44.7,
       "form": "DLWWD"
     },
     "TUN": {
@@ -234,8 +234,8 @@
       "name_en": "Tunisia",
       "group": "F",
       "fifa_rank": 44,
-      "fifa_points": 1451.2,
-      "power": 32.1,
+      "fifa_points": 1483.0,
+      "power": 32.8,
       "form": "LLDWD"
     },
     "BEL": {
@@ -243,8 +243,8 @@
       "name_en": "Belgium",
       "group": "G",
       "fifa_rank": 9,
-      "fifa_points": 1732.67,
-      "power": 80.5,
+      "fifa_points": 1735.0,
+      "power": 80.0,
       "form": "WWDWW"
     },
     "EGY": {
@@ -252,8 +252,8 @@
       "name_en": "Egypt",
       "group": "G",
       "fifa_rank": 29,
-      "fifa_points": 1545.2,
-      "power": 50.4,
+      "fifa_points": 1563.0,
+      "power": 50.3,
       "form": "LWDWD"
     },
     "IRN": {
@@ -261,8 +261,8 @@
       "name_en": "Iran",
       "group": "G",
       "fifa_rank": 21,
-      "fifa_points": 1607.6,
-      "power": 64.7,
+      "fifa_points": 1615.0,
+      "power": 64.1,
       "form": "WWWLD"
     },
     "NZL": {
@@ -270,7 +270,7 @@
       "name_en": "New Zealand",
       "group": "G",
       "fifa_rank": 85,
-      "fifa_points": 1246.0,
+      "fifa_points": 1282.0,
       "power": 13.6,
       "form": "LLWLL"
     },
@@ -288,17 +288,17 @@
       "name_en": "Cape Verde",
       "group": "H",
       "fifa_rank": 69,
-      "fifa_points": 1321.2,
-      "power": 25.6,
-      "form": "LWDLD"
+      "fifa_points": 1366.0,
+      "power": 37.6,
+      "form": "WWDLD"
     },
     "KSA": {
       "name_pl": "Arabia Saudyjska",
       "name_en": "Saudi Arabia",
       "group": "H",
       "fifa_rank": 61,
-      "fifa_points": 1362.8,
-      "power": 28.2,
+      "fifa_points": 1421.0,
+      "power": 30.6,
       "form": "DWLLL"
     },
     "URU": {
@@ -306,8 +306,8 @@
       "name_en": "Uruguay",
       "group": "H",
       "fifa_rank": 17,
-      "fifa_points": 1639.33,
-      "power": 50.2,
+      "fifa_points": 1673.0,
+      "power": 51.9,
       "form": "DDLDW"
     },
     "FRA": {
@@ -324,8 +324,8 @@
       "name_en": "Senegal",
       "group": "I",
       "fifa_rank": 14,
-      "fifa_points": 1670.67,
-      "power": 57.2,
+      "fifa_points": 1689.0,
+      "power": 57.8,
       "form": "DLWWL"
     },
     "IRQ": {
@@ -333,8 +333,8 @@
       "name_en": "Iraq",
       "group": "I",
       "fifa_rank": 57,
-      "fifa_points": 1383.6,
-      "power": 33.6,
+      "fifa_points": 1447.0,
+      "power": 36.6,
       "form": "LDWWL"
     },
     "NOR": {
@@ -342,8 +342,8 @@
       "name_en": "Norway",
       "group": "I",
       "fifa_rank": 31,
-      "fifa_points": 1531.2,
-      "power": 49.7,
+      "fifa_points": 1551.0,
+      "power": 49.8,
       "form": "DWDLW"
     },
     "ARG": {
@@ -360,8 +360,8 @@
       "name_en": "Algeria",
       "group": "J",
       "fifa_rank": 28,
-      "fifa_points": 1552.4,
-      "power": 57.4,
+      "fifa_points": 1564.0,
+      "power": 56.8,
       "form": "WDWLW"
     },
     "AUT": {
@@ -369,8 +369,8 @@
       "name_en": "Austria",
       "group": "J",
       "fifa_rank": 24,
-      "fifa_points": 1582.4,
-      "power": 66.6,
+      "fifa_points": 1593.0,
+      "power": 66.1,
       "form": "WWWDW"
     },
     "JOR": {
@@ -378,8 +378,8 @@
       "name_en": "Jordan",
       "group": "J",
       "fifa_rank": 63,
-      "fifa_points": 1352.4,
-      "power": 19.6,
+      "fifa_points": 1391.0,
+      "power": 20.4,
       "form": "LLDDL"
     },
     "POR": {
@@ -387,8 +387,8 @@
       "name_en": "Portugal",
       "group": "K",
       "fifa_rank": 5,
-      "fifa_points": 1800.0,
-      "power": 79.9,
+      "fifa_points": 1764.0,
+      "power": 76.5,
       "form": "WWDWL"
     },
     "COD": {
@@ -396,8 +396,8 @@
       "name_en": "DR Congo",
       "group": "K",
       "fifa_rank": 46,
-      "fifa_points": 1440.8,
-      "power": 39.0,
+      "fifa_points": 1478.0,
+      "power": 40.0,
       "form": "LDWWL"
     },
     "UZB": {
@@ -405,8 +405,8 @@
       "name_en": "Uzbekistan",
       "group": "K",
       "fifa_rank": 50,
-      "fifa_points": 1420.0,
-      "power": 31.2,
+      "fifa_points": 1465.0,
+      "power": 32.8,
       "form": "LLDWD"
     },
     "COL": {
@@ -414,8 +414,8 @@
       "name_en": "Colombia",
       "group": "K",
       "fifa_rank": 13,
-      "fifa_points": 1683.33,
-      "power": 65.5,
+      "fifa_points": 1693.0,
+      "power": 65.4,
       "form": "WWLLW"
     },
     "ENG": {
@@ -423,8 +423,8 @@
       "name_en": "England",
       "group": "L",
       "fifa_rank": 4,
-      "fifa_points": 1832.0,
-      "power": 76.7,
+      "fifa_points": 1826.0,
+      "power": 76.0,
       "form": "WLDWW"
     },
     "CRO": {
@@ -432,7 +432,7 @@
       "name_en": "Croatia",
       "group": "L",
       "fifa_rank": 11,
-      "fifa_points": 1707.0,
+      "fifa_points": 1717.0,
       "power": 62.8,
       "form": "WLLWW"
     },
@@ -441,8 +441,8 @@
       "name_en": "Ghana",
       "group": "L",
       "fifa_rank": 74,
-      "fifa_points": 1296.8,
-      "power": 13.8,
+      "fifa_points": 1346.0,
+      "power": 15.1,
       "form": "DLLLL"
     },
     "PAN": {
@@ -450,8 +450,8 @@
       "name_en": "Panama",
       "group": "L",
       "fifa_rank": 33,
-      "fifa_points": 1517.6,
-      "power": 47.1,
+      "fifa_points": 1541.0,
+      "power": 47.4,
       "form": "DWLWD"
     }
   },
@@ -470,8 +470,8 @@
           "home": "KOR",
           "away": "CZE",
           "score": [
-            1,
-            2
+            0,
+            1
           ]
         },
         {
@@ -527,8 +527,8 @@
           "W": 2,
           "D": 0,
           "L": 1,
-          "GF": 4,
-          "GA": 2,
+          "GF": 3,
+          "GA": 1,
           "Pts": 6,
           "GD": 2
         },
@@ -539,8 +539,8 @@
           "W": 1,
           "D": 0,
           "L": 2,
-          "GF": 2,
-          "GA": 3,
+          "GF": 1,
+          "GA": 2,
           "Pts": 3,
           "GD": -1
         },
@@ -690,7 +690,7 @@
           "home": "MAR",
           "away": "SCO",
           "score": [
-            2,
+            1,
             0
           ]
         },
@@ -719,10 +719,10 @@
           "W": 3,
           "D": 0,
           "L": 0,
-          "GF": 6,
+          "GF": 5,
           "GA": 1,
           "Pts": 9,
-          "GD": 5
+          "GD": 4
         },
         {
           "pos": 2,
@@ -744,9 +744,9 @@
           "D": 0,
           "L": 2,
           "GF": 2,
-          "GA": 4,
+          "GA": 3,
           "Pts": 3,
-          "GD": -2
+          "GD": -1
         },
         {
           "pos": 4,
@@ -1216,8 +1216,8 @@
           "home": "CPV",
           "away": "KSA",
           "score": [
-            0,
-            1
+            1,
+            0
           ]
         }
       ],
@@ -1248,7 +1248,7 @@
         },
         {
           "pos": 3,
-          "code": "KSA",
+          "code": "CPV",
           "P": 3,
           "W": 1,
           "D": 0,
@@ -1260,7 +1260,7 @@
         },
         {
           "pos": 4,
-          "code": "CPV",
+          "code": "KSA",
           "P": 3,
           "W": 0,
           "D": 0,
@@ -1716,14 +1716,6 @@
         "qualified": true
       },
       {
-        "group": "A",
-        "code": "KOR",
-        "Pts": 3,
-        "GD": -1,
-        "GF": 2,
-        "qualified": true
-      },
-      {
         "group": "G",
         "code": "EGY",
         "Pts": 3,
@@ -1732,19 +1724,27 @@
         "qualified": true
       },
       {
-        "group": "B",
-        "code": "BIH",
+        "group": "C",
+        "code": "SCO",
+        "Pts": 3,
+        "GD": -1,
+        "GF": 2,
+        "qualified": true
+      },
+      {
+        "group": "A",
+        "code": "KOR",
         "Pts": 3,
         "GD": -1,
         "GF": 1,
         "qualified": true
       },
       {
-        "group": "C",
-        "code": "SCO",
+        "group": "B",
+        "code": "BIH",
         "Pts": 3,
-        "GD": -2,
-        "GF": 2,
+        "GD": -1,
+        "GF": 1,
         "qualified": true
       },
       {
@@ -1765,7 +1765,7 @@
       },
       {
         "group": "H",
-        "code": "KSA",
+        "code": "CPV",
         "Pts": 3,
         "GD": -2,
         "GF": 1,
@@ -1810,7 +1810,7 @@
         "away": "USA",
         "score": [
           2,
-          0
+          1
         ],
         "winner": "GER",
         "penalties": false
@@ -2161,193 +2161,193 @@
   "third_place_winner": "GER",
   "monte_carlo": {
     "MEX": {
-      "advance": 94.2,
-      "qf": 34.8,
-      "sf": 16.5,
-      "final": 6.3,
-      "champion": 2.2
+      "advance": 95.5,
+      "qf": 36.0,
+      "sf": 17.1,
+      "final": 6.5,
+      "champion": 2.6
     },
     "RSA": {
-      "advance": 21.6,
-      "qf": 0.5,
+      "advance": 16.6,
+      "qf": 0.2,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "KOR": {
-      "advance": 70.2,
+      "advance": 73.3,
       "qf": 9.2,
-      "sf": 2.1,
-      "final": 0.5,
+      "sf": 2.3,
+      "final": 0.4,
       "champion": 0.1
     },
     "CZE": {
-      "advance": 84.8,
-      "qf": 17.1,
-      "sf": 5.0,
-      "final": 1.4,
-      "champion": 0.3
+      "advance": 85.0,
+      "qf": 15.9,
+      "sf": 4.7,
+      "final": 1.1,
+      "champion": 0.2
     },
     "CAN": {
-      "advance": 92.1,
-      "qf": 11.5,
-      "sf": 2.3,
-      "final": 0.5,
+      "advance": 91.0,
+      "qf": 11.9,
+      "sf": 2.5,
+      "final": 0.6,
       "champion": 0.1
     },
     "BIH": {
-      "advance": 53.7,
-      "qf": 0.9,
+      "advance": 52.2,
+      "qf": 0.8,
       "sf": 0.1,
       "final": 0.0,
       "champion": 0.0
     },
     "QAT": {
-      "advance": 27.4,
-      "qf": 0.1,
+      "advance": 30.9,
+      "qf": 0.2,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "SUI": {
-      "advance": 90.3,
-      "qf": 8.7,
-      "sf": 1.5,
-      "final": 0.5,
+      "advance": 90.1,
+      "qf": 9.8,
+      "sf": 1.9,
+      "final": 0.4,
       "champion": 0.1
     },
     "BRA": {
-      "advance": 94.5,
-      "qf": 31.7,
-      "sf": 16.0,
-      "final": 5.8,
-      "champion": 2.1
+      "advance": 93.9,
+      "qf": 28.6,
+      "sf": 13.6,
+      "final": 5.2,
+      "champion": 1.6
     },
     "MAR": {
-      "advance": 96.2,
-      "qf": 38.5,
+      "advance": 95.9,
+      "qf": 39.1,
       "sf": 22.7,
-      "final": 10.1,
-      "champion": 4.6
+      "final": 10.2,
+      "champion": 4.5
     },
     "HAI": {
-      "advance": 14.7,
-      "qf": 0.3,
-      "sf": 0.1,
-      "final": 0.0,
-      "champion": 0.0
-    },
-    "SCO": {
-      "advance": 58.0,
-      "qf": 6.4,
-      "sf": 1.3,
-      "final": 0.2,
-      "champion": 0.0
-    },
-    "USA": {
-      "advance": 60.4,
-      "qf": 2.9,
-      "sf": 0.7,
-      "final": 0.1,
-      "champion": 0.0
-    },
-    "PAR": {
-      "advance": 62.2,
-      "qf": 4.1,
-      "sf": 1.1,
-      "final": 0.3,
-      "champion": 0.1
-    },
-    "AUS": {
-      "advance": 54.3,
-      "qf": 2.5,
-      "sf": 0.6,
-      "final": 0.1,
-      "champion": 0.0
-    },
-    "TUR": {
-      "advance": 93.5,
-      "qf": 23.8,
-      "sf": 10.4,
-      "final": 4.1,
-      "champion": 1.4
-    },
-    "GER": {
-      "advance": 97.8,
-      "qf": 52.2,
-      "sf": 35.1,
-      "final": 18.5,
-      "champion": 9.2
-    },
-    "CUW": {
-      "advance": 5.9,
-      "qf": 0.0,
-      "sf": 0.0,
-      "final": 0.0,
-      "champion": 0.0
-    },
-    "CIV": {
-      "advance": 86.0,
-      "qf": 20.4,
-      "sf": 8.1,
-      "final": 2.5,
-      "champion": 0.6
-    },
-    "ECU": {
-      "advance": 88.0,
-      "qf": 21.4,
-      "sf": 8.4,
-      "final": 2.4,
-      "champion": 0.8
-    },
-    "NED": {
-      "advance": 94.8,
-      "qf": 24.8,
-      "sf": 11.3,
-      "final": 4.3,
-      "champion": 1.5
-    },
-    "JPN": {
-      "advance": 97.7,
-      "qf": 41.2,
-      "sf": 23.4,
-      "final": 11.1,
-      "champion": 4.9
-    },
-    "SWE": {
-      "advance": 52.7,
-      "qf": 2.2,
-      "sf": 0.2,
-      "final": 0.0,
-      "champion": 0.0
-    },
-    "TUN": {
       "advance": 14.5,
       "qf": 0.2,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
+    "SCO": {
+      "advance": 60.0,
+      "qf": 7.2,
+      "sf": 1.8,
+      "final": 0.3,
+      "champion": 0.1
+    },
+    "USA": {
+      "advance": 61.0,
+      "qf": 3.2,
+      "sf": 0.7,
+      "final": 0.1,
+      "champion": 0.0
+    },
+    "PAR": {
+      "advance": 63.1,
+      "qf": 4.0,
+      "sf": 0.9,
+      "final": 0.2,
+      "champion": 0.0
+    },
+    "AUS": {
+      "advance": 54.3,
+      "qf": 2.8,
+      "sf": 0.6,
+      "final": 0.1,
+      "champion": 0.0
+    },
+    "TUR": {
+      "advance": 92.0,
+      "qf": 22.0,
+      "sf": 10.3,
+      "final": 4.3,
+      "champion": 1.3
+    },
+    "GER": {
+      "advance": 98.0,
+      "qf": 52.6,
+      "sf": 34.8,
+      "final": 18.9,
+      "champion": 9.8
+    },
+    "CUW": {
+      "advance": 5.5,
+      "qf": 0.0,
+      "sf": 0.0,
+      "final": 0.0,
+      "champion": 0.0
+    },
+    "CIV": {
+      "advance": 86.2,
+      "qf": 19.6,
+      "sf": 7.9,
+      "final": 2.1,
+      "champion": 0.6
+    },
+    "ECU": {
+      "advance": 87.2,
+      "qf": 20.2,
+      "sf": 8.4,
+      "final": 2.5,
+      "champion": 0.6
+    },
+    "NED": {
+      "advance": 94.2,
+      "qf": 24.0,
+      "sf": 10.8,
+      "final": 3.9,
+      "champion": 1.2
+    },
+    "JPN": {
+      "advance": 97.8,
+      "qf": 44.6,
+      "sf": 26.8,
+      "final": 13.4,
+      "champion": 6.2
+    },
+    "SWE": {
+      "advance": 53.0,
+      "qf": 2.3,
+      "sf": 0.5,
+      "final": 0.1,
+      "champion": 0.0
+    },
+    "TUN": {
+      "advance": 14.6,
+      "qf": 0.1,
+      "sf": 0.0,
+      "final": 0.0,
+      "champion": 0.0
+    },
     "BEL": {
-      "advance": 98.6,
-      "qf": 58.4,
-      "sf": 38.3,
-      "final": 24.7,
+      "advance": 98.7,
+      "qf": 59.0,
+      "sf": 39.5,
+      "final": 25.2,
       "champion": 13.8
     },
     "EGY": {
-      "advance": 78.2,
-      "qf": 10.5,
-      "sf": 2.7,
-      "final": 0.7,
+      "advance": 76.9,
+      "qf": 9.6,
+      "sf": 2.1,
+      "final": 0.6,
       "champion": 0.1
     },
     "IRN": {
-      "advance": 92.5,
-      "qf": 24.8,
-      "sf": 10.7,
-      "final": 4.3,
-      "champion": 1.5
+      "advance": 92.2,
+      "qf": 24.7,
+      "sf": 10.1,
+      "final": 3.8,
+      "champion": 1.1
     },
     "NZL": {
       "advance": 4.8,
@@ -2357,142 +2357,142 @@
       "champion": 0.0
     },
     "ESP": {
-      "advance": 99.3,
-      "qf": 33.3,
-      "sf": 17.0,
-      "final": 8.3,
-      "champion": 3.2
+      "advance": 99.0,
+      "qf": 34.3,
+      "sf": 17.7,
+      "final": 8.7,
+      "champion": 3.3
     },
     "CPV": {
-      "advance": 39.0,
-      "qf": 0.3,
-      "sf": 0.1,
-      "final": 0.0,
+      "advance": 63.4,
+      "qf": 2.1,
+      "sf": 0.3,
+      "final": 0.1,
       "champion": 0.0
     },
     "KSA": {
-      "advance": 39.6,
+      "advance": 29.6,
       "qf": 0.3,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "URU": {
-      "advance": 74.2,
-      "qf": 1.9,
-      "sf": 0.3,
+      "advance": 65.2,
+      "qf": 2.4,
+      "sf": 0.4,
       "final": 0.0,
       "champion": 0.0
     },
     "FRA": {
-      "advance": 97.9,
-      "qf": 42.8,
-      "sf": 26.0,
-      "final": 12.7,
-      "champion": 5.1
+      "advance": 97.8,
+      "qf": 43.3,
+      "sf": 26.2,
+      "final": 13.1,
+      "champion": 5.8
     },
     "SEN": {
-      "advance": 71.1,
-      "qf": 6.0,
-      "sf": 1.4,
-      "final": 0.2,
+      "advance": 69.1,
+      "qf": 6.3,
+      "sf": 1.6,
+      "final": 0.3,
       "champion": 0.1
     },
     "IRQ": {
-      "advance": 25.7,
-      "qf": 0.6,
+      "advance": 29.1,
+      "qf": 0.8,
       "sf": 0.1,
       "final": 0.0,
       "champion": 0.0
     },
     "NOR": {
-      "advance": 68.1,
-      "qf": 5.7,
-      "sf": 1.6,
+      "advance": 65.5,
+      "qf": 5.9,
+      "sf": 1.4,
       "final": 0.2,
-      "champion": 0.0
+      "champion": 0.1
     },
     "ARG": {
       "advance": 99.0,
-      "qf": 74.8,
-      "sf": 59.9,
-      "final": 47.5,
-      "champion": 35.3
+      "qf": 74.4,
+      "sf": 61.2,
+      "final": 47.7,
+      "champion": 35.7
     },
     "ALG": {
-      "advance": 82.6,
-      "qf": 18.1,
-      "sf": 6.1,
-      "final": 2.1,
-      "champion": 0.4
+      "advance": 81.9,
+      "qf": 19.1,
+      "sf": 6.7,
+      "final": 2.3,
+      "champion": 0.5
     },
     "AUT": {
-      "advance": 90.5,
-      "qf": 29.8,
-      "sf": 13.4,
-      "final": 6.1,
-      "champion": 2.0
+      "advance": 89.4,
+      "qf": 28.9,
+      "sf": 13.2,
+      "final": 5.8,
+      "champion": 1.9
     },
     "JOR": {
-      "advance": 4.5,
+      "advance": 4.7,
       "qf": 0.0,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "POR": {
-      "advance": 98.2,
-      "qf": 56.9,
-      "sf": 25.5,
-      "final": 14.3,
-      "champion": 6.7
+      "advance": 97.7,
+      "qf": 51.8,
+      "sf": 21.4,
+      "final": 11.1,
+      "champion": 4.7
     },
     "COD": {
-      "advance": 44.8,
-      "qf": 2.2,
-      "sf": 0.3,
-      "final": 0.0,
+      "advance": 47.0,
+      "qf": 2.6,
+      "sf": 0.2,
+      "final": 0.1,
       "champion": 0.0
     },
     "UZB": {
-      "advance": 23.8,
-      "qf": 0.5,
+      "advance": 24.5,
+      "qf": 0.7,
       "sf": 0.1,
       "final": 0.0,
       "champion": 0.0
     },
     "COL": {
-      "advance": 89.8,
-      "qf": 22.2,
+      "advance": 88.3,
+      "qf": 23.5,
       "sf": 6.7,
-      "final": 2.2,
-      "champion": 0.4
+      "final": 2.3,
+      "champion": 0.6
     },
     "ENG": {
-      "advance": 98.8,
-      "qf": 39.5,
-      "sf": 19.2,
-      "final": 7.2,
-      "champion": 3.0
+      "advance": 98.5,
+      "qf": 39.4,
+      "sf": 18.9,
+      "final": 7.6,
+      "champion": 3.3
     },
     "CRO": {
-      "advance": 91.6,
-      "qf": 12.0,
-      "sf": 3.0,
-      "final": 0.5,
+      "advance": 91.3,
+      "qf": 12.4,
+      "sf": 3.1,
+      "final": 0.6,
       "champion": 0.1
     },
     "GHA": {
-      "advance": 6.1,
+      "advance": 6.6,
       "qf": 0.1,
       "sf": 0.0,
       "final": 0.0,
       "champion": 0.0
     },
     "PAN": {
-      "advance": 75.9,
+      "advance": 73.8,
       "qf": 4.0,
-      "sf": 0.5,
+      "sf": 0.6,
       "final": 0.1,
       "champion": 0.0
     }
