@@ -1,5 +1,5 @@
 {
-  "ranking_edition": "FIFA Men's World Ranking, 1 April 2026",
+  "ranking_edition": "FIFA Men's World Ranking, 1 April 2026 (latest official edition as of 2026-06-10; next release 11 June 2026)",
   "source_urls": [
     "https://www.espn.com/soccer/story/_/id/46664763/fifa-mens-top-50-world-rankings",
     "https://www.hitc.com/official-fifa-rankings-in-full-ahead-of-2026-world-cup-including-mexico-canada-and-the-usa/",
@@ -12,7 +12,8 @@
     "Rank positions verified for all 48 teams (1 April 2026 edition); independently re-confirmed against the Transfermarkt-scraped dataset (github.com/sslp23/fifa-ranking-scraper, rank_date 2026-04-01) - all 48 ranks match.",
     "FRA, ESP, ARG: exact official points with 2-decimal precision (1877.32 / 1876.40 / 1874.81).",
     "Remaining 45 teams: exact published points at whole-point precision (rounded by publisher, +/-0.5) from the Transfermarkt-scraped April 2026 table; values for the top-20 teams (ENG, POR, BRA, NED, MAR, BEL, GER, CRO, COL, SEN, MEX, USA, URU, JPN, SUI) additionally cross-confirmed via web-search snippets (thesoccerera.com / businesstats.com aggregations).",
-    "No interpolated points remain in this file."
+    "No interpolated points remain in this file.",
+    "Edition-date verification (2026-06-10): the 1 April 2026 edition is the latest OFFICIAL FIFA ranking in force on the snapshot date; the next official release is scheduled for 11 June 2026 (after the snapshot). Daily 'live' rankings circulating online are unofficial recalculations and were deliberately not used."
   ],
   "teams": {
     "FRA": {
