@@ -1,9 +1,54 @@
 {
   "source_urls": [
-    "https://github.com/martj42/international_results"
+    "https://github.com/martj42/international_results",
+    "https://www.espn.com/soccer/match/_/gameId/401856622/tunisia-belgium",
+    "https://www.espn.com/soccer/match/_/gameId/401861998/egypt-brazil",
+    "https://www.espn.com/soccer/match/_/gameId/401874358/mali-iran",
+    "https://www.espn.com/soccer/match/_/gameId/401860828/new-zealand-england",
+    "https://www.espn.com/soccer/match/_/gameId/401867679/spain-peru",
+    "https://bernews.com/2026/06/football-cape-verde-defeat-bermuda-3-0/",
+    "https://www.foxsports.com/soccer/friendlies-men-cape-verde-vs-bermuda-jun-06-2026-game-boxscore-865517",
+    "https://www.espn.com/soccer/match/_/gameId/401871172/serbia-cape-verde",
+    "https://www.espn.com/soccer/match/_/gameId/401871362/senegal-saudi-arabia",
+    "https://www.espn.com/soccer/match/_/gameId/401869804/northern-ireland-france",
+    "https://www.espn.com/soccer/match/_/gameId/401873603/venezuela-iraq",
+    "https://www.espn.com/soccer/match/_/gameId/401866598/norway-morocco",
+    "https://www.espn.com/soccer/match/_/gameId/401867950/iceland-argentina",
+    "https://www.espn.com/soccer/match/_/gameId/401863500/algeria-netherlands",
+    "https://www.espn.com/soccer/match/_/gameId/401856597/tunisia-austria",
+    "https://www.espn.com/soccer/match/_/gameId/401862883/chile-portugal",
+    "https://www.espn.com/soccer/match/_/gameId/401871830/new-zealand-haiti",
+    "https://www.espn.com/soccer/match/_/gameId/401871169/denmark-congo-dr",
+    "https://www.espn.com/soccer/match/_/gameId/401871814/uzbekistan-netherlands",
+    "https://www.espn.com/soccer/match/_/gameId/401856623/slovenia-croatia",
+    "https://www.espn.com/soccer/match/_/gameId/401862320/jordan-colombia",
+    "https://www.espn.com/soccer/match/_/gameId/401866134/costa-rica-colombia",
+    "https://www.espn.com/soccer/match/_/gameId/401863573/ghana-wales",
+    "https://www.espn.com/soccer/match/_/gameId/401871528/bosnia-herzegovina-panama",
+    "https://www.espn.com/soccer/match/_/gameId/401870853/russia-egypt",
+    "https://www.espn.com/soccer/match/_/gameId/401872547/gambia-iran",
+    "https://www.espn.com/soccer/match/_/gameId/401873680/saudi-arabia-puerto-rico",
+    "https://www.espn.com/soccer/match/_/gameId/401862319/jordan-switzerland",
+    "https://www.espn.com/soccer/match/_/gameId/401871471/iraq-spain",
+    "https://www.espn.com/soccer/match/_/gameId/401856361/belgium-croatia",
+    "https://www.espn.com/soccer/match/_/gameId/401864055/sweden-norway",
+    "https://www.espn.com/soccer/match/_/gameId/401853575",
+    "https://www.espn.com/soccer/match/_/gameId/401870075/dominican-republic-panama",
+    "https://www.espn.com/soccer/match/_/gameId/401868047/honduras-argentina",
+    "https://www.espn.com/soccer/match/_/gameId/762554/japan-england",
+    "https://www.espn.com/soccer/match/_/gameId/401861774/ghana-mexico",
+    "https://www.espn.com/soccer/match/_/gameId/762259/portugal-united-states",
+    "https://www.espn.com/soccer/match/_/gameId/401856596/south-korea-austria",
+    "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/Internationals/england-v-new-zealand-international-match-saturday-6-june-2026-match-centre",
+    "https://www.aljazeera.com/sports/2026/6/5/iran-beat-mali-in-final-warm-up-before-heading-to-world-cup",
+    "https://www.espn.com/soccer/team/results/_/id/212/uruguay"
   ],
   "data_quality": [
-    "all teams have 5/5 matches"
+    "all teams have 5/5 matches",
+    "verified 2026-06-10: all 24 teams spot-checked (top 2 most recent matches each) against ESPN/FOX Sports/federation sources via web search; 1 correction: CPV vs Bermuda 2026-06-06 score was reversed (0-3 -> 3-0 win for Cape Verde, per ESPN/FOX/Bernews)",
+    "ESPN gameId 401871788 'New Zealand 1-2 Haiti Jun 5 2026' is a WOMEN'S friendly (Football Ferns) - correctly excluded from NZL men's form",
+    "Uruguay played no June 2026 matches before 2026-06-10 (next fixture 2026-06-16 vs Saudi Arabia); March friendlies vs England/Algeria confirmed as most recent",
+    "no completed matches newer than file entries found for any team before 2026-06-10"
   ],
   "teams": {
     "BEL": [
@@ -221,8 +266,8 @@
         "date": "2026-06-06",
         "opponent": "Bermuda",
         "venue": "N",
-        "goals_for": 0,
-        "goals_against": 3,
+        "goals_for": 3,
+        "goals_against": 0,
         "competition": "Friendly"
       },
       {
