@@ -415,7 +415,7 @@ main { max-width:1120px; margin:0 auto; padding:0 28px 96px; }
 
 /* ─── BRACKET ──────────────────────────────────────── */
 .bracket-scroll { overflow-x:auto; padding:14px 4px 16px; }
-.bracket { display:flex; gap:18px; min-width:1124px; align-items:flex-start; padding-right:28px; }
+.bracket { display:flex; gap:18px; align-items:flex-start; padding-right:24px; }
 .round { display:flex; flex-direction:column; flex:1; min-width:168px; }
 .round-title {
   text-align:center;
