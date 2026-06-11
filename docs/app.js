@@ -15,7 +15,7 @@ const T = {
   pl: {
     page_title:     "Mundial 2026 — Predykcja",
     hero_h1:        'Mundial <span class="accent">2026</span>',
-    hero_kicker:    "Mundial 2026 · dane z:",
+    hero_kicker:    "Mundial 2026 · USA · Kanada · Meksyk · dane z:",
     hero_sub:       "Wszystkie 104 mecze — od fazy grupowej po finał. Dane z 10 czerwca 2026.",
     champion:       "Przewidywany Mistrz Świata",
     mc_title:       "Szanse na mistrzostwo",
@@ -42,7 +42,7 @@ const T = {
   en: {
     page_title:     "World Cup 2026 — Prediction Engine",
     hero_h1:        'World Cup <span class="accent">2026</span>',
-    hero_kicker:    "World Cup 2026 · data from:",
+    hero_kicker:    "World Cup 2026 · USA · Canada · Mexico · data from:",
     hero_sub:       "Full predicted results for all 104 matches — group stage, round of 32 and knockout. Data frozen June 10 2026.",
     champion:       "Predicted World Champion",
     mc_title:       "Championship probability",

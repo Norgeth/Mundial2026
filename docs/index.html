@@ -5,44 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="page-title">Mundial 2026 — Predykcja</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700;800;900&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/logo-mark.svg">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .lang-toggle {
-      display: flex;
-      gap: .5rem;
-      justify-content: center;
-      margin-top: .75rem;
-    }
-    .lang-btn {
-      background: transparent;
-      border: 2px solid rgba(255,255,255,.35);
-      color: #fff;
-      padding: .3rem .9rem;
-      border-radius: 2rem;
-      font-size: .85rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: background .18s, border-color .18s;
-    }
-    .lang-btn.active {
-      background: rgba(255,255,255,.18);
-      border-color: #fff;
-    }
-    .lang-btn:hover { border-color: #fff; }
-  </style>
 </head>
 <body>
+  <nav class="nav">
+    <a class="nav-brand" href="#">
+      <img src="assets/logo-mark.svg" alt="Mundial 2026">
+      <span>Mundial 2026</span>
+    </a>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-pl" onclick="setLang('pl')">🇵🇱 PL</button>
+      <button class="lang-btn"        id="btn-en" onclick="setLang('en')">🏴󠁧󠁢󠁥󠁮󠁧󠁿 EN</button>
+    </div>
+  </nav>
+
   <header class="hero">
     <p class="hero-kicker" id="hero-kicker">Mundial 2026 · dane z: <span id="snapshot-date">…</span></p>
     <h1 id="hero-h1">Mundial <span class="accent">2026</span></h1>
     <p class="hero-sub" id="hero-sub">
       Wszystkie 104 mecze — od fazy grupowej po finał. Dane z 10 czerwca 2026.
     </p>
-    <div class="lang-toggle">
-      <button class="lang-btn active" id="btn-pl" onclick="setLang('pl')">🇵🇱 PL</button>
-      <button class="lang-btn"        id="btn-en" onclick="setLang('en')">🏴󠁧󠁢󠁥󠁮󠁧󠁿 EN</button>
-    </div>
   </header>
 
   <main>
