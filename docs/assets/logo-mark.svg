@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mundial 2026">
+  <defs>
+    <linearGradient id="m26fiesta" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00b85f"></stop>
+      <stop offset="0.52" stop-color="#fbb913"></stop>
+      <stop offset="1" stop-color="#f5421f"></stop>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#m26fiesta)"></rect>
+  <path d="M32 13 L36.7 25.5 L50.07 26.13 L39.6 34.47 L43.17 47.37 L32 40 L20.83 47.37 L24.4 34.47 L13.93 26.13 L27.3 25.53 Z" fill="#ffffff"></path>
+</svg>

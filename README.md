@@ -28,7 +28,7 @@ Pełne tabele grup, wszystkie 104 wyniki i drabinka pucharowa:
 
 ## Strona
 
-Wyniki dostępne na [norgeth.github.io/Mundial2026](https://norgeth.github.io/Mundial2026/) — ciemny motyw, przełącznik PL/EN. Działa też offline po otwarciu `docs/index.html` z dysku.
+Wyniki dostępne na [norgeth.github.io/Mundial2026](https://norgeth.github.io/Mundial2026/) — festiwalowy motyw (zieleń murawy, złoto, koral gospodarzy), przełącznik PL/EN. Działa też offline po otwarciu `docs/index.html` z dysku.
 
 ## Architektura
 
