@@ -414,9 +414,12 @@ main { max-width:1120px; margin:0 auto; padding:0 28px 96px; }
 .thirds-box .out { color:var(--text-faint); }
 
 /* ─── BRACKET ──────────────────────────────────────── */
-.bracket-scroll { overflow-x:auto; padding:14px 4px 16px; }
-.bracket { display:flex; gap:18px; align-items:flex-start; padding-right:24px; }
-.round { display:flex; flex-direction:column; flex:1; min-width:168px; }
+/* Columns shrink to fit the container (min-width:0) so all five rounds —
+   up to and including the final — always display without horizontal scroll
+   on desktop. Below 960px the whole bracket stacks vertically (see below). */
+.bracket-scroll { padding:16px 22px 18px; }
+.bracket { display:flex; gap:16px; align-items:flex-start; }
+.round { display:flex; flex-direction:column; flex:1 1 0; min-width:0; }
 .round-title {
   text-align:center;
   font-family:var(--font-body);
@@ -480,14 +483,35 @@ footer a { color:var(--green-300); }
 footer a:hover { color:var(--green-200); }
 
 /* ─── RESPONSIVE ───────────────────────────────────── */
+
+/* Tablets / phones: stack the bracket vertically — one round per block,
+   match cards full width. Avoids any horizontal scroll on small screens. */
+@media (max-width:960px) {
+  .bracket-scroll { padding:0; }
+  .bracket { flex-direction:column; gap:0; min-width:0; }
+  .round { width:100%; }
+  .round + .round { margin-top:28px; }
+  .round-title {
+    text-align:left;
+    font-size:.74rem;
+    margin-bottom:12px;
+  }
+  .round-matches { gap:10px; }
+  .third-place-match { max-width:none; }
+}
+
 @media (max-width:640px) {
   main { padding:0 16px 64px; }
   .nav { padding:10px 16px; }
   .nav-brand span { font-size:1.15rem; }
-  .hero { padding:60px 18px 52px; }
+  .hero { padding:56px 18px 48px; }
+  .hero-sub { font-size:.98rem; }
   .section-title { font-size:1.7rem; margin:52px 0 18px; }
-  .mc-row { grid-template-columns:130px 1fr 48px; }
-  .champion-card { padding:30px 36px; }
-  .champion-card .name { font-size:2rem; }
+  .mc-row { grid-template-columns:118px 1fr 46px; gap:10px; }
+  .champion-card { padding:28px 28px; max-width:100%; }
+  .champion-card .name { font-size:1.9rem; }
+  .champion-card .flag { font-size:3rem; }
+  .awards { gap:10px; }
+  .award-card { min-width:0; width:100%; }
   .groups-grid { grid-template-columns:1fr; }
 }
