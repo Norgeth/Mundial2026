@@ -17,10 +17,6 @@
       <span>Mundial 2026</span>
     </a>
     <div class="nav-controls">
-      <div class="view-toggle">
-        <button class="view-btn active" id="btn-view-pred" onclick="setView('pred')">Predykcje</button>
-        <button class="view-btn"        id="btn-view-live" onclick="setView('live')">Wyniki live</button>
-      </div>
       <div class="lang-toggle">
         <button class="lang-btn active" id="btn-pl" onclick="setLang('pl')">🇵🇱 PL</button>
         <button class="lang-btn"        id="btn-en" onclick="setLang('en')">🏴󠁧󠁢󠁥󠁮󠁧󠁿 EN</button>
@@ -37,6 +33,8 @@
   </header>
 
   <main>
+    <div id="accuracy-banner" class="accuracy-banner"></div>
+
     <section id="champion-section" class="champion-section">
       <h2 class="section-title" id="title-champion">Przewidywany Mistrz Świata</h2>
       <div id="champion-card" class="champion-card"></div>
