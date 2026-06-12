@@ -46,7 +46,15 @@ const T = {
     exact_n:   n => n === 1 ? "dokładny wynik" : n < 5 ? "dokładne wyniki" : "dokładnych wyników",
     outcome_n: n => n === 1 ? "poprawny typ" : n < 5 ? "poprawne typy" : "poprawnych typów",
     miss_n:    n => n === 1 ? "pudło" : n < 5 ? "pudła" : "pudeł",
+    pair_full_n: n => n === 1 ? "trafiona para" : n < 5 ? "trafione pary" : "trafionych par",
+    pair_half_n: n => n === 1 ? "para z 1 drużyną" : "pary z 1 drużyną",
     played_of:      "z 104 meczów rozegranych",
+    pts:            "pkt",
+    scoring_rules:  "dokładny wynik 3 pkt · poprawny typ 1 pkt · para pucharowa 3 pkt · 1 drużyna w parze 1 pkt",
+    bonus_title:    "Bonusy po turnieju (po 5 pkt) —",
+    bonus_champion: "Mistrz",
+    bonus_boot:     "Król strzelców",
+    bonus_mvp:      "MVP",
     footer: 'Wynik deterministycznej symulacji — dane zamrożone w przedzień turnieju. Metodologia i kod: <a href="https://github.com/norgeth/mundial2026" target="_blank" rel="noopener">GitHub</a>.',
     rounds: { R32: "1/16 finału", R16: "1/8 finału", QF: "Ćwierćfinały", SF: "Półfinały", F: "Finał" },
     name: (t) => t.name_pl,
@@ -79,7 +87,15 @@ const T = {
     exact_n:   n => n === 1 ? "exact score" : "exact scores",
     outcome_n: n => n === 1 ? "correct outcome" : "correct outcomes",
     miss_n:    n => n === 1 ? "miss" : "misses",
+    pair_full_n: n => n === 1 ? "exact pair" : "exact pairs",
+    pair_half_n: n => n === 1 ? "pair with 1 team" : "pairs with 1 team",
     played_of:      "of 104 matches played",
+    pts:            "pts",
+    scoring_rules:  "exact score 3 pts · correct outcome 1 pt · knockout pair 3 pts · 1 team in pair 1 pt",
+    bonus_title:    "Post-tournament bonuses (5 pts each) —",
+    bonus_champion: "Champion",
+    bonus_boot:     "Top scorer",
+    bonus_mvp:      "MVP",
     footer: 'Deterministic simulation result — data frozen before the tournament. Methodology & code: <a href="https://github.com/norgeth/mundial2026" target="_blank" rel="noopener">GitHub</a>.',
     rounds: { R32: "Round of 32", R16: "Round of 16", QF: "Quarter-finals", SF: "Semi-finals", F: "Final" },
     name: (t) => t.name_en,
@@ -132,51 +148,128 @@ function getVerdict(pred, real) {
   return "miss";
 }
 
-function computeAccuracy(R) {
-  let exact = 0, outcome = 0, miss = 0, total = 0;
+/* Official competition scoring:
+   exact score 3 pts · correct outcome 1 pt · miss 0 pts
+   knockout pair fully right 3 pts · one team right 1 pt
+   pre-tournament bonus picks (champion / top scorer / MVP) 5 pts each */
+const SCORING = { exact: 3, outcome: 1, pairFull: 3, pairHalf: 1, bonus: 5 };
+
+const verdictPts = v =>
+  v === "exact" ? SCORING.exact : v === "outcome" ? SCORING.outcome : 0;
+
+/* Map a real match date to the tournament stage (official 2026 calendar). */
+const KO_STAGES = [
+  ["R32",         "2026-06-28", "2026-07-03"],
+  ["R16",         "2026-07-04", "2026-07-07"],
+  ["QF",          "2026-07-08", "2026-07-11"],
+  ["SF",          "2026-07-13", "2026-07-16"],
+  ["third_place", "2026-07-18", "2026-07-18"],
+  ["F",           "2026-07-19", "2026-07-19"],
+];
+
+function stageForDate(date) {
+  if (!date || date <= "2026-06-27") return "group";
+  for (const [stage, from, to] of KO_STAGES)
+    if (date >= from && date <= to) return stage;
+  return "group";
+}
+
+function computeScore(R) {
+  const s = { exact: 0, outcome: 0, miss: 0, played: 0,
+              matchPts: 0, pairFull: 0, pairHalf: 0, pairPts: 0,
+              champion: null, points: 0 };
+
+  const addVerdict = v => {
+    if (v === "exact") s.exact++;
+    else if (v === "outcome") s.outcome++;
+    else s.miss++;
+    s.played++;
+    s.matchPts += verdictPts(v);
+  };
+
   for (const group of Object.values(R.group_stage)) {
     for (const m of group.matches) {
       const real = realResult(m.home, m.away);
-      if (!real) continue;
-      total++;
-      const v = getVerdict(m.score, real);
-      if (v === "exact") exact++;
-      else if (v === "outcome") outcome++;
-      else miss++;
+      if (real) addVerdict(getVerdict(m.score, real));
     }
   }
-  for (const round of ["R32", "R16", "QF", "SF", "F", "third_place"]) {
-    if (!R.knockout[round]) continue;
-    for (const m of R.knockout[round]) {
-      const real = realResult(m.home, m.away);
-      if (!real) continue;
-      total++;
-      const v = getVerdict(m.score, real);
-      if (v === "exact") exact++;
-      else if (v === "outcome") outcome++;
-      else miss++;
+
+  /* Knockout: real matches bucketed by stage, compared with predicted pairs. */
+  const realByStage = {};
+  if (LIVE && Array.isArray(LIVE.matches)) {
+    for (const rm of LIVE.matches) {
+      if (rm.status !== "final") continue;
+      const st = stageForDate(rm.date);
+      if (st === "group") continue;
+      (realByStage[st] = realByStage[st] || []).push(rm);
     }
   }
-  return { exact, outcome, miss, total };
+  for (const [stage, realMatches] of Object.entries(realByStage)) {
+    const predicted = R.knockout[stage] || [];
+    for (const rm of realMatches) {
+      let overlap = 0, exactPair = null;
+      for (const pm of predicted) {
+        const o = (pm.home === rm.home || pm.away === rm.home ? 1 : 0)
+                + (pm.home === rm.away || pm.away === rm.away ? 1 : 0);
+        if (o > overlap) { overlap = o; exactPair = o === 2 ? pm : null; }
+      }
+      if (overlap === 2) { s.pairFull++; s.pairPts += SCORING.pairFull; }
+      else if (overlap === 1) { s.pairHalf++; s.pairPts += SCORING.pairHalf; }
+      if (exactPair) {
+        addVerdict(getVerdict(exactPair.score,
+                              realResult(exactPair.home, exactPair.away)));
+      }
+    }
+  }
+
+  s.points = s.matchPts + s.pairPts;
+
+  /* Champion bonus resolves itself once the final has been played. */
+  const fin = (realByStage.F || [])[0];
+  if (fin && fin.score[0] !== fin.score[1]) {
+    const champ = fin.score[0] > fin.score[1] ? fin.home : fin.away;
+    s.champion = champ === R.champion ? "hit" : "miss";
+    if (s.champion === "hit") s.points += SCORING.bonus;
+  }
+  return s;
 }
 
-function renderAccuracy(R) {
+function renderScore(R) {
   const banner = document.getElementById("accuracy-banner");
   if (!banner) return;
-  const stats = computeAccuracy(R);
-  if (stats.total === 0) {
+  const s = computeScore(R);
+  if (s.played === 0 && s.pairFull === 0 && s.pairHalf === 0) {
     banner.style.display = "none";
     return;
   }
   banner.style.display = "";
   const t = T[LANG];
+
+  let chips =
+    `<span class="acc-chip exact"><span class="acc-n">✓ ${s.exact}</span> ${t.exact_n(s.exact)} <span class="acc-pts">+${s.exact * SCORING.exact}</span></span>` +
+    `<span class="acc-chip outcome"><span class="acc-n">~ ${s.outcome}</span> ${t.outcome_n(s.outcome)} <span class="acc-pts">+${s.outcome * SCORING.outcome}</span></span>` +
+    `<span class="acc-chip miss"><span class="acc-n">✗ ${s.miss}</span> ${t.miss_n(s.miss)}</span>`;
+  if (s.pairFull || s.pairHalf) {
+    chips +=
+      `<span class="acc-chip pair"><span class="acc-n">${s.pairFull}</span> ${t.pair_full_n(s.pairFull)} <span class="acc-pts">+${s.pairFull * SCORING.pairFull}</span></span>` +
+      `<span class="acc-chip pair"><span class="acc-n">${s.pairHalf}</span> ${t.pair_half_n(s.pairHalf)} <span class="acc-pts">+${s.pairHalf * SCORING.pairHalf}</span></span>`;
+  }
+
+  const bonus = [
+    [t.bonus_champion, teamLabel(R, R.champion),
+     s.champion === "hit" ? "hit" : s.champion === "miss" ? "miss" : "open"],
+    [t.bonus_boot, `${R.awards.golden_boot.player}`, "open"],
+    [t.bonus_mvp, `${R.awards.golden_ball.player}`, "open"],
+  ].map(([label, pick, state]) => {
+    const mark = state === "hit" ? " ✓ +5" : state === "miss" ? " ✗" : "";
+    return `<span class="bonus-pick ${state}">${label}: <b>${pick}</b>${mark}</span>`;
+  }).join(" · ");
+
   banner.innerHTML =
-    '<div class="acc-chips">' +
-      `<span class="acc-chip exact"><span class="acc-n">✓ ${stats.exact}</span> ${t.exact_n(stats.exact)}</span>` +
-      `<span class="acc-chip outcome"><span class="acc-n">~ ${stats.outcome}</span> ${t.outcome_n(stats.outcome)}</span>` +
-      `<span class="acc-chip miss"><span class="acc-n">✗ ${stats.miss}</span> ${t.miss_n(stats.miss)}</span>` +
-    "</div>" +
-    `<div class="acc-sub">${stats.total} ${t.played_of}</div>`;
+    `<div class="score-total"><span class="score-n">${s.points}</span> ${t.pts}</div>` +
+    `<div class="acc-chips">${chips}</div>` +
+    `<div class="acc-sub">${s.played} ${t.played_of} · ${t.scoring_rules}</div>` +
+    `<div class="acc-bonus">${t.bonus_title} ${bonus}</div>`;
 }
 
 function renderChampion(R) {
@@ -305,10 +398,12 @@ function renderGroups(R) {
 
       if (verdict) {
         const icon = verdict === "exact" ? "✓" : verdict === "outcome" ? "~" : "✗";
+        const pts = verdictPts(verdict);
         const realRow = el("div", `gm gm-result ${verdict}`);
         realRow.append(
           el("span", "h", teamLabel(R, m.home)),
-          el("span", "s", `${icon} ${real.score[0]} : ${real.score[1]}`),
+          el("span", "s", `${icon} ${real.score[0]} : ${real.score[1]}` +
+             `<span class="ptbadge">+${pts}</span>`),
           el("span", "a", teamLabel(R, m.away))
         );
         wrapper.append(realRow);
@@ -362,7 +457,8 @@ function koMatchCard(R, m, extraClass) {
   if (verdict) {
     const icon = verdict === "exact" ? "✓" : verdict === "outcome" ? "~" : "✗";
     card.append(el("div", `ko-verdict ${verdict}`,
-      `${icon} ${real.score[0]} : ${real.score[1]}`));
+      `${icon} ${real.score[0]} : ${real.score[1]}` +
+      `<span class="ptbadge">+${verdictPts(verdict)}</span>`));
   }
   return card;
 }
@@ -413,7 +509,7 @@ function renderAll(R) {
   renderChampion(R);
   renderAwards(R);
   renderMonteCarlo(R);
-  renderAccuracy(R);
+  renderScore(R);
   renderGroups(R);
   renderBracket(R);
 }

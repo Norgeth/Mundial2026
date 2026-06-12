@@ -47,12 +47,26 @@ docs/                        # statyczny frontend (gotowy na GitHub Pages)
 Dane płyną jednostronnie: `snapshot.json → run_simulation.py → results.json → index.html`.
 Frontend nie zawiera logiki — tylko renderuje wyliczone wyniki.
 
-## Wyniki na żywo
+## Wyniki na żywo i punktacja
 
-Strona ma przełącznik **Predykcje / Wyniki live**. W trybie live pokazywane są
-wyłącznie mecze już rozegrane (✓, zielony wynik), a tabele grup liczone są
-z prawdziwych rezultatów; nierozegrane mecze i drabinka pozostają puste,
-dopóki turniej ich nie rozstrzygnie.
+Strona porównuje predykcje z rzeczywistością w jednym widoku: pod każdym
+rozegranym meczem pojawia się prawdziwy wynik (✓ dokładny / ~ poprawny typ /
+✗ pudło), a baner u góry liczy punkty wg oficjalnej punktacji konkursu:
+
+| Trafienie | Punkty |
+|---|---|
+| Dokładny wynik meczu | **3 pkt** |
+| Poprawny zwycięzca / remis | **1 pkt** |
+| Błędny typ | 0 pkt |
+| Pełna para w fazie pucharowej | **3 pkt** |
+| Jedna drużyna z pary | **1 pkt** |
+| Bonus: mistrz świata (Argentyna) | **5 pkt** |
+| Bonus: król strzelców (F. Wirtz) | **5 pkt** |
+| Bonus: MVP (L. Messi) | **5 pkt** |
+
+Fazę pucharową rozpoznajemy po dacie meczu (R32 od 28.06, R16 od 4.07, ĆF od
+8.07, PF od 13.07, finał 19.07). Bonus za mistrza rozlicza się automatycznie
+po finale; król strzelców i MVP — ręcznie po ogłoszeniu nagród.
 
 Prawdziwe wyniki pobiera `engine/fetch_live_results.py` (publiczne API wyników,
 bez klucza) i zapisuje do `docs/live_results.json`. Workflow GitHub Actions
