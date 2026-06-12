@@ -103,6 +103,33 @@ main { max-width:1120px; margin:0 auto; padding:0 28px 96px; }
   color:var(--ink-900);
 }
 
+/* ─── NAV CONTROLS ─────────────────────────────────── */
+.nav-controls { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+
+/* segmented view toggle (Predictions / Live results) */
+.view-toggle {
+  display:flex;
+  background:var(--surface-sunken);
+  border:1px solid var(--border-faint);
+  border-radius:var(--radius-pill);
+  padding:3px;
+}
+.view-btn {
+  background:transparent;
+  border:none;
+  color:var(--text-muted);
+  padding:.3rem .85rem;
+  border-radius:var(--radius-pill);
+  font-family:var(--font-body);
+  font-size:.76rem;
+  font-weight:700;
+  cursor:pointer;
+  transition:background var(--dur-fast) var(--ease-out),
+             color var(--dur-fast) var(--ease-out);
+}
+.view-btn.active { background:var(--brand); color:var(--ink-950); }
+.view-btn:not(.active):hover { color:var(--text-strong); }
+
 /* ─── LANG TOGGLE ──────────────────────────────────── */
 .lang-toggle { display:flex; gap:6px; }
 .lang-btn {
@@ -384,6 +411,20 @@ main { max-width:1120px; margin:0 auto; padding:0 28px 96px; }
   color:var(--text-strong);
   font-size:1rem;
 }
+.gm .s .real { color:var(--brand-strong); }
+.gm .s .tbd  { color:var(--text-faint); font-weight:600; }
+
+/* live banner */
+.live-banner {
+  margin-top:24px;
+  padding:10px 16px;
+  background:var(--brand-soft);
+  border:1px solid var(--green-200);
+  border-radius:var(--radius-md);
+  color:var(--green-800);
+  font-size:.84rem;
+  font-weight:600;
+}
 
 /* ─── THIRDS TABLE ─────────────────────────────────── */
 .thirds-box {
@@ -461,6 +502,8 @@ main { max-width:1120px; margin:0 auto; padding:0 28px 96px; }
 }
 .ko-row.winner .t { color:var(--text-strong); font-weight:700; }
 .ko-row.winner .g { color:var(--brand-strong); }
+.ko-row .g.real { color:var(--brand-strong); }
+.ko-match.played { border-color:var(--green-300); }
 .ko-pens {
   font-size:.66rem; color:var(--text-muted); text-align:center;
   padding:4px 8px; background:var(--surface-sunken);
@@ -502,7 +545,8 @@ footer a:hover { color:var(--green-200); }
 
 @media (max-width:640px) {
   main { padding:0 16px 64px; }
-  .nav { padding:10px 16px; }
+  .nav { padding:10px 16px; flex-wrap:wrap; gap:8px; }
+  .nav-controls { gap:8px; width:100%; justify-content:space-between; }
   .nav-brand span { font-size:1.15rem; }
   .hero { padding:56px 18px 48px; }
   .hero-sub { font-size:.98rem; }
