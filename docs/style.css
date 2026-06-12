@@ -412,7 +412,7 @@ main { max-width:1120px; margin:0 auto; padding:0 28px 96px; }
 .gm.gm-result.miss    { background:rgba(245,66,31,.07); }
 .gm.gm-result.miss .s    { color:var(--coral-500); }
 
-/* ─── ACCURACY BANNER ─────────────────────────────────── */
+/* ─── SCORE BANNER ────────────────────────────────────── */
 .accuracy-banner {
   margin:32px 0 8px;
   padding:18px 24px;
@@ -422,6 +422,55 @@ main { max-width:1120px; margin:0 auto; padding:0 28px 96px; }
   box-shadow:var(--shadow-sm);
   text-align:center;
 }
+.score-total {
+  font-family:var(--font-body);
+  font-weight:700;
+  font-size:.92rem;
+  color:var(--text-muted);
+  margin-bottom:12px;
+}
+.score-total .score-n {
+  font-family:var(--font-display);
+  font-weight:900;
+  font-size:2.6rem;
+  line-height:1;
+  color:var(--text-strong);
+  margin-right:4px;
+}
+.acc-pts {
+  font-family:var(--font-mono);
+  font-variant-numeric:tabular-nums;
+  font-size:.72rem;
+  font-weight:600;
+  opacity:.75;
+}
+.acc-bonus {
+  margin-top:10px;
+  padding-top:10px;
+  border-top:1px dashed var(--border-faint);
+  font-size:.76rem;
+  color:var(--text-muted);
+}
+.acc-bonus .bonus-pick b { color:var(--text-body); font-weight:700; }
+.acc-bonus .bonus-pick.hit  { color:var(--green-700); }
+.acc-bonus .bonus-pick.hit b { color:var(--green-700); }
+.acc-bonus .bonus-pick.miss { color:var(--coral-500); }
+.ptbadge {
+  display:inline-block;
+  margin-left:6px;
+  padding:0 5px;
+  border-radius:var(--radius-pill);
+  background:var(--surface-sunken);
+  font-family:var(--font-mono);
+  font-variant-numeric:tabular-nums;
+  font-size:.64rem;
+  font-weight:600;
+  color:var(--text-muted);
+  vertical-align:2px;
+}
+.gm-result.exact .ptbadge   { background:var(--green-100); color:var(--green-800); }
+.gm-result.outcome .ptbadge { background:var(--gold-100);  color:var(--gold-600); }
+.ko-verdict .ptbadge { background:rgba(255,255,255,.6); }
 .acc-chips {
   display:flex;
   justify-content:center;
@@ -445,6 +494,7 @@ main { max-width:1120px; margin:0 auto; padding:0 28px 96px; }
 .acc-chip.exact   { background:var(--green-100); color:var(--green-800); }
 .acc-chip.outcome { background:var(--gold-100);  color:var(--gold-600); }
 .acc-chip.miss    { background:var(--coral-100); color:var(--coral-600); }
+.acc-chip.pair    { background:#e3ecff; color:var(--azul-500); }
 .acc-sub {
   margin-top:8px;
   font-size:.76rem;
