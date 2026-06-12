@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-06-12T12:00:00+00:00",
+    "updated_at": "2026-06-12T08:44:50+00:00",
     "source": "ESPN scoreboard API",
     "matches_final": 2
   },
@@ -8,15 +8,21 @@
     {
       "home": "MEX",
       "away": "RSA",
-      "score": [2, 0],
+      "score": [
+        2,
+        0
+      ],
       "date": "2026-06-11",
       "status": "final"
     },
     {
       "home": "KOR",
       "away": "CZE",
-      "score": [2, 1],
-      "date": "2026-06-11",
+      "score": [
+        2,
+        1
+      ],
+      "date": "2026-06-12",
       "status": "final"
     }
   ]
