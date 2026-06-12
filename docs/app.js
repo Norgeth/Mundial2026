@@ -292,20 +292,29 @@ function renderGroups(R) {
     for (const m of group.matches) {
       const real = realResult(m.home, m.away);
       const verdict = getVerdict(m.score, real);
-      const gm = el("div", "gm" + (verdict ? ` gm-${verdict}` : ""));
 
-      let scoreHtml = `<span class="pred">${m.score[0]} : ${m.score[1]}</span>`;
-      if (verdict) {
-        const icon = verdict === "exact" ? "✓" : verdict === "outcome" ? "~" : "✗";
-        scoreHtml += `<span class="cmp ${verdict}">${icon} ${real.score[0]} : ${real.score[1]}</span>`;
-      }
+      const wrapper = el("div", "match-card" + (verdict ? ` mc-${verdict}` : ""));
 
-      gm.append(
+      const predRow = el("div", "gm");
+      predRow.append(
         el("span", "h", teamLabel(R, m.home)),
-        el("span", "s", scoreHtml),
+        el("span", "s", `${m.score[0]} : ${m.score[1]}`),
         el("span", "a", teamLabel(R, m.away))
       );
-      matches.append(gm);
+      wrapper.append(predRow);
+
+      if (verdict) {
+        const icon = verdict === "exact" ? "✓" : verdict === "outcome" ? "~" : "✗";
+        const realRow = el("div", `gm gm-result ${verdict}`);
+        realRow.append(
+          el("span", "h", teamLabel(R, m.home)),
+          el("span", "s", `${icon} ${real.score[0]} : ${real.score[1]}`),
+          el("span", "a", teamLabel(R, m.away))
+        );
+        wrapper.append(realRow);
+      }
+
+      matches.append(wrapper);
     }
     card.append(matches);
     grid.append(card);
