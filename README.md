@@ -33,18 +33,32 @@ Wyniki dostępne na [norgeth.github.io/Mundial2026](https://norgeth.github.io/Mu
 ## Architektura
 
 ```
-data/raw/                  # pliki z danymi (ranking FIFA, forma, H2H, strzelcy, readiness)
-data/snapshot.json         # zmerge'owana, zwalidowana baza danych — źródło prawdy
-engine/predictor.py        # model meczowy: Power Index, Poisson + Dixon-Coles
-engine/bracket.py          # tabele, ranking 3. miejsc, przydział do R32
-engine/run_simulation.py   # punkt wejścia → docs/results.json + results.js
-engine/awards.py           # Złoty But / Złota Piłka
-engine/merge_snapshot.py   # scala data/raw/* w snapshot, waliduje
-docs/                      # statyczny frontend (gotowy na GitHub Pages)
+data/raw/                    # pliki z danymi (ranking FIFA, forma, H2H, strzelcy, readiness)
+data/snapshot.json           # zmerge'owana, zwalidowana baza danych — źródło prawdy
+engine/predictor.py          # model meczowy: Power Index, Poisson + Dixon-Coles
+engine/bracket.py            # tabele, ranking 3. miejsc, przydział do R32
+engine/run_simulation.py     # punkt wejścia → docs/results.json + results.js
+engine/awards.py             # Złoty But / Złota Piłka
+engine/merge_snapshot.py     # scala data/raw/* w snapshot, waliduje
+engine/fetch_live_results.py # pobiera prawdziwe wyniki → docs/live_results.json
+docs/                        # statyczny frontend (gotowy na GitHub Pages)
 ```
 
 Dane płyną jednostronnie: `snapshot.json → run_simulation.py → results.json → index.html`.
 Frontend nie zawiera logiki — tylko renderuje wyliczone wyniki.
+
+## Wyniki na żywo
+
+Strona ma przełącznik **Predykcje / Wyniki live**. W trybie live pokazywane są
+wyłącznie mecze już rozegrane (✓, zielony wynik), a tabele grup liczone są
+z prawdziwych rezultatów; nierozegrane mecze i drabinka pozostają puste,
+dopóki turniej ich nie rozstrzygnie.
+
+Prawdziwe wyniki pobiera `engine/fetch_live_results.py` (publiczne API wyników,
+bez klucza) i zapisuje do `docs/live_results.json`. Workflow GitHub Actions
+(`.github/workflows/live-results.yml`) odświeża plik co 4 godziny w trakcie
+turnieju; można go też odpalić ręcznie (`workflow_dispatch` albo lokalnie:
+`python3 engine/fetch_live_results.py`).
 
 ## Model
 

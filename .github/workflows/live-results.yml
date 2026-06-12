@@ -1,0 +1,31 @@
+name: Update live results
+
+on:
+  schedule:
+    # Every 4 hours during the tournament window (June-July 2026).
+    - cron: "15 */4 * 6,7 *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest final scores
+        run: python3 engine/fetch_live_results.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet docs/live_results.json docs/live_results.js; then
+            git add docs/live_results.json docs/live_results.js
+            git commit -m "Update live results"
+            git push
+          else
+            echo "No new results."
+          fi
