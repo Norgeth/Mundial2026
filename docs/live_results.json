@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-13T17:44:30+00:00",
+    "updated_at": "2026-06-13T21:37:32+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 4
+    "matches_final": 5
   },
   "matches": [
     {
@@ -33,6 +33,16 @@
         1
       ],
       "date": "2026-06-12",
+      "status": "final"
+    },
+    {
+      "home": "QAT",
+      "away": "SUI",
+      "score": [
+        1,
+        1
+      ],
+      "date": "2026-06-13",
       "status": "final"
     },
     {
