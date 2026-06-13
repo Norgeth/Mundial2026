@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-12T22:00:20+00:00",
+    "updated_at": "2026-06-13T04:49:55+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 3
+    "matches_final": 4
   },
   "matches": [
     {
@@ -33,6 +33,16 @@
         1
       ],
       "date": "2026-06-12",
+      "status": "final"
+    },
+    {
+      "home": "USA",
+      "away": "PAR",
+      "score": [
+        4,
+        1
+      ],
+      "date": "2026-06-13",
       "status": "final"
     }
   ]
