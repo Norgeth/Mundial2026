@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-14T17:46:24+00:00",
+    "updated_at": "2026-06-14T21:37:55+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 8
+    "matches_final": 9
   },
   "matches": [
     {
@@ -71,6 +71,16 @@
       "score": [
         2,
         0
+      ],
+      "date": "2026-06-14",
+      "status": "final"
+    },
+    {
+      "home": "GER",
+      "away": "CUW",
+      "score": [
+        7,
+        1
       ],
       "date": "2026-06-14",
       "status": "final"
