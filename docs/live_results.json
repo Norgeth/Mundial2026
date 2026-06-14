@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-14T05:05:14+00:00",
+    "updated_at": "2026-06-14T11:08:14+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 7
+    "matches_final": 8
   },
   "matches": [
     {
@@ -63,6 +63,16 @@
         1
       ],
       "date": "2026-06-13",
+      "status": "final"
+    },
+    {
+      "home": "AUS",
+      "away": "TUR",
+      "score": [
+        2,
+        0
+      ],
+      "date": "2026-06-14",
       "status": "final"
     },
     {
