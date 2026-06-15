@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-15T14:34:57+00:00",
+    "updated_at": "2026-06-15T19:55:28+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 12
+    "matches_final": 13
   },
   "matches": [
     {
@@ -113,6 +113,16 @@
         2
       ],
       "date": "2026-06-14",
+      "status": "final"
+    },
+    {
+      "home": "ESP",
+      "away": "CPV",
+      "score": [
+        0,
+        0
+      ],
+      "date": "2026-06-15",
       "status": "final"
     },
     {
