@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-14T21:37:55+00:00",
+    "updated_at": "2026-06-15T05:26:44+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 9
+    "matches_final": 12
   },
   "matches": [
     {
@@ -76,6 +76,16 @@
       "status": "final"
     },
     {
+      "home": "CIV",
+      "away": "ECU",
+      "score": [
+        1,
+        0
+      ],
+      "date": "2026-06-14",
+      "status": "final"
+    },
+    {
       "home": "GER",
       "away": "CUW",
       "score": [
@@ -93,6 +103,26 @@
         1
       ],
       "date": "2026-06-14",
+      "status": "final"
+    },
+    {
+      "home": "NED",
+      "away": "JPN",
+      "score": [
+        2,
+        2
+      ],
+      "date": "2026-06-14",
+      "status": "final"
+    },
+    {
+      "home": "SWE",
+      "away": "TUN",
+      "score": [
+        5,
+        1
+      ],
+      "date": "2026-06-15",
       "status": "final"
     }
   ]
