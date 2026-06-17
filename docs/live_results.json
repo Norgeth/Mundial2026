@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-17T18:32:44+00:00",
+    "updated_at": "2026-06-17T22:14:14+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 20
+    "matches_final": 22
   },
   "matches": [
     {
@@ -200,6 +200,26 @@
       "away": "JOR",
       "score": [
         3,
+        1
+      ],
+      "date": "2026-06-17",
+      "status": "final"
+    },
+    {
+      "home": "ENG",
+      "away": "CRO",
+      "score": [
+        4,
+        2
+      ],
+      "date": "2026-06-17",
+      "status": "final"
+    },
+    {
+      "home": "POR",
+      "away": "COD",
+      "score": [
+        1,
         1
       ],
       "date": "2026-06-17",
