@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-16T22:22:02+00:00",
+    "updated_at": "2026-06-17T05:15:43+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 17
+    "matches_final": 19
   },
   "matches": [
     {
@@ -173,6 +173,26 @@
         2
       ],
       "date": "2026-06-16",
+      "status": "final"
+    },
+    {
+      "home": "IRQ",
+      "away": "NOR",
+      "score": [
+        1,
+        4
+      ],
+      "date": "2026-06-16",
+      "status": "final"
+    },
+    {
+      "home": "ARG",
+      "away": "ALG",
+      "score": [
+        3,
+        0
+      ],
+      "date": "2026-06-17",
       "status": "final"
     }
   ]
