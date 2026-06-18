@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-18T15:52:42+00:00",
+    "updated_at": "2026-06-18T18:35:51+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 24
+    "matches_final": 25
   },
   "matches": [
     {
@@ -233,6 +233,16 @@
         1
       ],
       "date": "2026-06-17",
+      "status": "final"
+    },
+    {
+      "home": "CZE",
+      "away": "RSA",
+      "score": [
+        1,
+        1
+      ],
+      "date": "2026-06-18",
       "status": "final"
     },
     {
