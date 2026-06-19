@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-18T22:25:01+00:00",
+    "updated_at": "2026-06-19T05:23:35+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 26
+    "matches_final": 28
   },
   "matches": [
     {
@@ -236,6 +236,16 @@
       "status": "final"
     },
     {
+      "home": "CAN",
+      "away": "QAT",
+      "score": [
+        6,
+        0
+      ],
+      "date": "2026-06-18",
+      "status": "final"
+    },
+    {
       "home": "CZE",
       "away": "RSA",
       "score": [
@@ -263,6 +273,16 @@
         3
       ],
       "date": "2026-06-18",
+      "status": "final"
+    },
+    {
+      "home": "MEX",
+      "away": "KOR",
+      "score": [
+        1,
+        0
+      ],
+      "date": "2026-06-19",
       "status": "final"
     }
   ]
