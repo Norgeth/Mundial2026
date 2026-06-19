@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-19T18:06:12+00:00",
+    "updated_at": "2026-06-19T21:21:31+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 28
+    "matches_final": 29
   },
   "matches": [
     {
@@ -280,6 +280,16 @@
       "away": "KOR",
       "score": [
         1,
+        0
+      ],
+      "date": "2026-06-19",
+      "status": "final"
+    },
+    {
+      "home": "USA",
+      "away": "AUS",
+      "score": [
+        2,
         0
       ],
       "date": "2026-06-19",
