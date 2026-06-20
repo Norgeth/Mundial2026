@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-20T04:39:56+00:00",
+    "updated_at": "2026-06-20T10:40:54+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 31
+    "matches_final": 32
   },
   "matches": [
     {
@@ -311,6 +311,16 @@
       "score": [
         3,
         0
+      ],
+      "date": "2026-06-20",
+      "status": "final"
+    },
+    {
+      "home": "TUR",
+      "away": "PAR",
+      "score": [
+        0,
+        1
       ],
       "date": "2026-06-20",
       "status": "final"
