@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-21T17:51:12+00:00",
+    "updated_at": "2026-06-21T21:41:26+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 36
+    "matches_final": 38
   },
   "matches": [
     {
@@ -346,10 +346,30 @@
       "status": "final"
     },
     {
+      "home": "BEL",
+      "away": "IRN",
+      "score": [
+        0,
+        0
+      ],
+      "date": "2026-06-21",
+      "status": "final"
+    },
+    {
       "home": "ECU",
       "away": "CUW",
       "score": [
         0,
+        0
+      ],
+      "date": "2026-06-21",
+      "status": "final"
+    },
+    {
+      "home": "ESP",
+      "away": "KSA",
+      "score": [
+        4,
         0
       ],
       "date": "2026-06-21",
