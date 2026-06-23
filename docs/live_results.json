@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-22T22:15:46+00:00",
+    "updated_at": "2026-06-23T04:19:26+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 41
+    "matches_final": 43
   },
   "matches": [
     {
@@ -406,6 +406,16 @@
       "status": "final"
     },
     {
+      "home": "FRA",
+      "away": "IRQ",
+      "score": [
+        3,
+        0
+      ],
+      "date": "2026-06-22",
+      "status": "final"
+    },
+    {
       "home": "NZL",
       "away": "EGY",
       "score": [
@@ -413,6 +423,16 @@
         3
       ],
       "date": "2026-06-22",
+      "status": "final"
+    },
+    {
+      "home": "NOR",
+      "away": "SEN",
+      "score": [
+        3,
+        2
+      ],
+      "date": "2026-06-23",
       "status": "final"
     }
   ]
