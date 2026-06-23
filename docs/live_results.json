@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-23T04:19:26+00:00",
+    "updated_at": "2026-06-23T11:30:28+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 43
+    "matches_final": 44
   },
   "matches": [
     {
@@ -423,6 +423,16 @@
         3
       ],
       "date": "2026-06-22",
+      "status": "final"
+    },
+    {
+      "home": "JOR",
+      "away": "ALG",
+      "score": [
+        1,
+        2
+      ],
+      "date": "2026-06-23",
       "status": "final"
     },
     {
