@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-24T18:06:24+00:00",
+    "updated_at": "2026-06-24T21:44:10+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 48
+    "matches_final": 50
   },
   "matches": [
     {
@@ -476,11 +476,31 @@
       "status": "final"
     },
     {
+      "home": "BIH",
+      "away": "QAT",
+      "score": [
+        3,
+        1
+      ],
+      "date": "2026-06-24",
+      "status": "final"
+    },
+    {
       "home": "COL",
       "away": "COD",
       "score": [
         1,
         0
+      ],
+      "date": "2026-06-24",
+      "status": "final"
+    },
+    {
+      "home": "SUI",
+      "away": "CAN",
+      "score": [
+        2,
+        1
       ],
       "date": "2026-06-24",
       "status": "final"
