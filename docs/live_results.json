@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-23T21:50:24+00:00",
+    "updated_at": "2026-06-24T04:34:28+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 45
+    "matches_final": 48
   },
   "matches": [
     {
@@ -426,6 +426,16 @@
       "status": "final"
     },
     {
+      "home": "ENG",
+      "away": "GHA",
+      "score": [
+        0,
+        0
+      ],
+      "date": "2026-06-23",
+      "status": "final"
+    },
+    {
       "home": "JOR",
       "away": "ALG",
       "score": [
@@ -446,6 +456,16 @@
       "status": "final"
     },
     {
+      "home": "PAN",
+      "away": "CRO",
+      "score": [
+        0,
+        1
+      ],
+      "date": "2026-06-23",
+      "status": "final"
+    },
+    {
       "home": "POR",
       "away": "UZB",
       "score": [
@@ -453,6 +473,16 @@
         0
       ],
       "date": "2026-06-23",
+      "status": "final"
+    },
+    {
+      "home": "COL",
+      "away": "COD",
+      "score": [
+        1,
+        0
+      ],
+      "date": "2026-06-24",
       "status": "final"
     }
   ]
