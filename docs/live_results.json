@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-24T21:44:10+00:00",
+    "updated_at": "2026-06-25T04:32:48+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 50
+    "matches_final": 54
   },
   "matches": [
     {
@@ -496,6 +496,26 @@
       "status": "final"
     },
     {
+      "home": "MAR",
+      "away": "HAI",
+      "score": [
+        4,
+        2
+      ],
+      "date": "2026-06-24",
+      "status": "final"
+    },
+    {
+      "home": "SCO",
+      "away": "BRA",
+      "score": [
+        0,
+        3
+      ],
+      "date": "2026-06-24",
+      "status": "final"
+    },
+    {
       "home": "SUI",
       "away": "CAN",
       "score": [
@@ -503,6 +523,26 @@
         1
       ],
       "date": "2026-06-24",
+      "status": "final"
+    },
+    {
+      "home": "CZE",
+      "away": "MEX",
+      "score": [
+        0,
+        3
+      ],
+      "date": "2026-06-25",
+      "status": "final"
+    },
+    {
+      "home": "RSA",
+      "away": "KOR",
+      "score": [
+        1,
+        0
+      ],
+      "date": "2026-06-25",
       "status": "final"
     }
   ]
