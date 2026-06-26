@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-25T21:52:29+00:00",
+    "updated_at": "2026-06-26T04:38:33+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 54
+    "matches_final": 60
   },
   "matches": [
     {
@@ -526,11 +526,41 @@
       "status": "final"
     },
     {
+      "home": "CUW",
+      "away": "CIV",
+      "score": [
+        0,
+        2
+      ],
+      "date": "2026-06-25",
+      "status": "final"
+    },
+    {
       "home": "CZE",
       "away": "MEX",
       "score": [
         0,
         3
+      ],
+      "date": "2026-06-25",
+      "status": "final"
+    },
+    {
+      "home": "ECU",
+      "away": "GER",
+      "score": [
+        2,
+        1
+      ],
+      "date": "2026-06-25",
+      "status": "final"
+    },
+    {
+      "home": "JPN",
+      "away": "SWE",
+      "score": [
+        1,
+        1
       ],
       "date": "2026-06-25",
       "status": "final"
@@ -543,6 +573,36 @@
         0
       ],
       "date": "2026-06-25",
+      "status": "final"
+    },
+    {
+      "home": "TUN",
+      "away": "NED",
+      "score": [
+        1,
+        3
+      ],
+      "date": "2026-06-25",
+      "status": "final"
+    },
+    {
+      "home": "PAR",
+      "away": "AUS",
+      "score": [
+        0,
+        0
+      ],
+      "date": "2026-06-26",
+      "status": "final"
+    },
+    {
+      "home": "TUR",
+      "away": "USA",
+      "score": [
+        3,
+        2
+      ],
+      "date": "2026-06-26",
       "status": "final"
     }
   ]
