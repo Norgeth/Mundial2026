@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-26T21:39:50+00:00",
+    "updated_at": "2026-06-27T04:15:25+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 62
+    "matches_final": 64
   },
   "matches": [
     {
@@ -623,6 +623,26 @@
         2
       ],
       "date": "2026-06-26",
+      "status": "final"
+    },
+    {
+      "home": "CPV",
+      "away": "KSA",
+      "score": [
+        0,
+        0
+      ],
+      "date": "2026-06-27",
+      "status": "final"
+    },
+    {
+      "home": "URU",
+      "away": "ESP",
+      "score": [
+        0,
+        1
+      ],
+      "date": "2026-06-27",
       "status": "final"
     }
   ]
