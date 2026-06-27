@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-27T04:15:25+00:00",
+    "updated_at": "2026-06-27T10:22:19+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 64
+    "matches_final": 66
   },
   "matches": [
     {
@@ -631,6 +631,26 @@
       "score": [
         0,
         0
+      ],
+      "date": "2026-06-27",
+      "status": "final"
+    },
+    {
+      "home": "EGY",
+      "away": "IRN",
+      "score": [
+        1,
+        1
+      ],
+      "date": "2026-06-27",
+      "status": "final"
+    },
+    {
+      "home": "NZL",
+      "away": "BEL",
+      "score": [
+        1,
+        5
       ],
       "date": "2026-06-27",
       "status": "final"
