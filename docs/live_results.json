@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-29T21:43:34+00:00",
+    "updated_at": "2026-06-30T04:33:09+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 74
+    "matches_final": 76
   },
   "matches": [
     {
@@ -743,6 +743,26 @@
         1
       ],
       "date": "2026-06-29",
+      "status": "final"
+    },
+    {
+      "home": "GER",
+      "away": "PAR",
+      "score": [
+        1,
+        1
+      ],
+      "date": "2026-06-29",
+      "status": "final"
+    },
+    {
+      "home": "NED",
+      "away": "MAR",
+      "score": [
+        1,
+        1
+      ],
+      "date": "2026-06-30",
       "status": "final"
     }
   ]
