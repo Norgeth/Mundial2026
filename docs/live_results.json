@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-30T18:13:27+00:00",
+    "updated_at": "2026-06-30T21:46:03+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 76
+    "matches_final": 77
   },
   "matches": [
     {
@@ -753,6 +753,16 @@
         1
       ],
       "date": "2026-06-29",
+      "status": "final"
+    },
+    {
+      "home": "CIV",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ],
+      "date": "2026-06-30",
       "status": "final"
     },
     {
