@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-01T15:11:09+00:00",
+    "updated_at": "2026-07-01T18:15:31+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 79
+    "matches_final": 80
   },
   "matches": [
     {
@@ -783,6 +783,16 @@
         1
       ],
       "date": "2026-06-30",
+      "status": "final"
+    },
+    {
+      "home": "ENG",
+      "away": "COD",
+      "score": [
+        2,
+        1
+      ],
+      "date": "2026-07-01",
       "status": "final"
     },
     {
