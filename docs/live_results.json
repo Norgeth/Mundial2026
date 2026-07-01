@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-06-30T21:46:03+00:00",
+    "updated_at": "2026-07-01T04:52:51+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 77
+    "matches_final": 79
   },
   "matches": [
     {
@@ -766,6 +766,16 @@
       "status": "final"
     },
     {
+      "home": "FRA",
+      "away": "SWE",
+      "score": [
+        3,
+        0
+      ],
+      "date": "2026-06-30",
+      "status": "final"
+    },
+    {
       "home": "NED",
       "away": "MAR",
       "score": [
@@ -773,6 +783,16 @@
         1
       ],
       "date": "2026-06-30",
+      "status": "final"
+    },
+    {
+      "home": "MEX",
+      "away": "ECU",
+      "score": [
+        2,
+        0
+      ],
+      "date": "2026-07-01",
       "status": "final"
     }
   ]
