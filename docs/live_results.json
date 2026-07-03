@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-03T04:06:28+00:00",
+    "updated_at": "2026-07-03T07:34:43+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 84
+    "matches_final": 85
   },
   "matches": [
     {
@@ -843,6 +843,16 @@
         0
       ],
       "date": "2026-07-02",
+      "status": "final"
+    },
+    {
+      "home": "SUI",
+      "away": "ALG",
+      "score": [
+        2,
+        0
+      ],
+      "date": "2026-07-03",
       "status": "final"
     }
   ]
