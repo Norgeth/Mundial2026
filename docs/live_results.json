@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-02T21:31:03+00:00",
+    "updated_at": "2026-07-03T04:06:28+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 83
+    "matches_final": 84
   },
   "matches": [
     {
@@ -821,6 +821,16 @@
       "score": [
         3,
         0
+      ],
+      "date": "2026-07-02",
+      "status": "final"
+    },
+    {
+      "home": "POR",
+      "away": "CRO",
+      "score": [
+        2,
+        1
       ],
       "date": "2026-07-02",
       "status": "final"
