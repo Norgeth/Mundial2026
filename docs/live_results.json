@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-03T21:30:47+00:00",
+    "updated_at": "2026-07-04T03:59:54+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 86
+    "matches_final": 88
   },
   "matches": [
     {
@@ -846,6 +846,16 @@
       "status": "final"
     },
     {
+      "home": "ARG",
+      "away": "CPV",
+      "score": [
+        3,
+        2
+      ],
+      "date": "2026-07-03",
+      "status": "final"
+    },
+    {
       "home": "AUS",
       "away": "EGY",
       "score": [
@@ -863,6 +873,16 @@
         0
       ],
       "date": "2026-07-03",
+      "status": "final"
+    },
+    {
+      "home": "COL",
+      "away": "GHA",
+      "score": [
+        1,
+        0
+      ],
+      "date": "2026-07-04",
       "status": "final"
     }
   ]
