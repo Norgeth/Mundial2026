@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-05T21:18:40+00:00",
+    "updated_at": "2026-07-06T04:37:27+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 90
+    "matches_final": 92
   },
   "matches": [
     {
@@ -903,6 +903,26 @@
         1
       ],
       "date": "2026-07-04",
+      "status": "final"
+    },
+    {
+      "home": "BRA",
+      "away": "NOR",
+      "score": [
+        1,
+        2
+      ],
+      "date": "2026-07-05",
+      "status": "final"
+    },
+    {
+      "home": "MEX",
+      "away": "ENG",
+      "score": [
+        2,
+        3
+      ],
+      "date": "2026-07-06",
       "status": "final"
     }
   ]
