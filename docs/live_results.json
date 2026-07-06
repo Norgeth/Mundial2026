@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-06T18:23:00+00:00",
+    "updated_at": "2026-07-06T21:46:34+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 92
+    "matches_final": 93
   },
   "matches": [
     {
@@ -921,6 +921,16 @@
       "score": [
         2,
         3
+      ],
+      "date": "2026-07-06",
+      "status": "final"
+    },
+    {
+      "home": "POR",
+      "away": "ESP",
+      "score": [
+        0,
+        1
       ],
       "date": "2026-07-06",
       "status": "final"
