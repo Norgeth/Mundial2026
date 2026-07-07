@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-07T15:13:15+00:00",
+    "updated_at": "2026-07-07T18:18:54+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 94
+    "matches_final": 95
   },
   "matches": [
     {
@@ -933,6 +933,16 @@
         1
       ],
       "date": "2026-07-06",
+      "status": "final"
+    },
+    {
+      "home": "ARG",
+      "away": "EGY",
+      "score": [
+        3,
+        2
+      ],
+      "date": "2026-07-07",
       "status": "final"
     },
     {
