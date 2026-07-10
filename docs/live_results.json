@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-10T18:00:33+00:00",
+    "updated_at": "2026-07-10T21:19:16+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 97
+    "matches_final": 98
   },
   "matches": [
     {
@@ -973,6 +973,16 @@
         0
       ],
       "date": "2026-07-09",
+      "status": "final"
+    },
+    {
+      "home": "ESP",
+      "away": "BEL",
+      "score": [
+        2,
+        1
+      ],
+      "date": "2026-07-10",
       "status": "final"
     }
   ]
