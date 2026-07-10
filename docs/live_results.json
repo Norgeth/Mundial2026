@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-09T21:42:36+00:00",
+    "updated_at": "2026-07-10T04:12:31+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 96
+    "matches_final": 97
   },
   "matches": [
     {
@@ -963,6 +963,16 @@
         4
       ],
       "date": "2026-07-07",
+      "status": "final"
+    },
+    {
+      "home": "FRA",
+      "away": "MAR",
+      "score": [
+        2,
+        0
+      ],
+      "date": "2026-07-09",
       "status": "final"
     }
   ]
