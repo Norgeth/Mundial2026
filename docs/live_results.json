@@ -1,8 +1,8 @@
 {
   "meta": {
-    "updated_at": "2026-07-11T21:03:53+00:00",
+    "updated_at": "2026-07-12T03:54:53+00:00",
     "source": "ESPN scoreboard API",
-    "matches_final": 98
+    "matches_final": 100
   },
   "matches": [
     {
@@ -983,6 +983,26 @@
         1
       ],
       "date": "2026-07-10",
+      "status": "final"
+    },
+    {
+      "home": "NOR",
+      "away": "ENG",
+      "score": [
+        1,
+        2
+      ],
+      "date": "2026-07-11",
+      "status": "final"
+    },
+    {
+      "home": "ARG",
+      "away": "SUI",
+      "score": [
+        3,
+        1
+      ],
+      "date": "2026-07-12",
       "status": "final"
     }
   ]
